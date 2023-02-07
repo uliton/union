@@ -8,7 +8,7 @@ export const Intro = () => {
   const MOCK = getTranslation(lang);
   const TOKEN = '6116137615:AAFPkZMhlxYR5LMcl1QtdlT8GqH36uy-k4k';
   const CHAT_ID = '-1001247322645';
-  const URL_API = `http://api.telegram.org/bot${ TOKEN }/sendMessage`;
+  const URL_API = `https://api.telegram.org/bot${ TOKEN }/sendMessage?`;
 
   const handlerSendMessage = () => {
     const date = new Date();
