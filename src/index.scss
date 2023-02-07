@@ -1,0 +1,16 @@
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/reset';
+@import './utils/normolize';
+@import './utils/container';
+
+@import './App.scss';
+@import './components/Header/Header.scss';
+@import './components/Navigation/Navigation.scss';
+@import './components/Intro/Intro.scss';
+@import './components/PreviewCatalog/PreviewCatalog.scss';
+@import './components/ProductPreview/ProductPreview.scss';
+@import './components/Advertising/Advertising.scss';
+@import './components/About/About.scss';
+@import './components/Contacts/Contacts.scss';
+@import './components/Footer/Footer.scss';

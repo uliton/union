@@ -1,0 +1,67 @@
+.intro {
+  padding: 40px 0;
+
+  &__title {
+    margin: 18px 0;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1;
+    background-image: url('https://i.ytimg.com/vi/nOLqdLdSLI4/maxresdefault.jpg');
+    // background-size: cover;
+    background-position: center;
+    background-clip: text;
+    color: transparent;
+  }
+
+  &__description {
+    margin: 18px 0;
+    padding: 18px 0;
+    letter-spacing: 1px;
+    line-height: 1.5;
+  }
+
+  &__configurator {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.configurator {
+  letter-spacing: 0.4px;
+
+  &__button {
+    letter-spacing: 0.4px;
+    font-size: 14px;
+    width: max-content;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 10px 35px;
+    background-color: #fff;
+    color: green;
+    border: 1px solid green;
+    border-radius: 20px;
+    outline: none;
+    transition: all 500ms;
+
+    &:hover {
+      cursor: pointer;
+      background-color: green;
+      color: #fff;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    width: max-content;
+    text-decoration: none;
+    color: green;
+    margin-bottom: 10px;
+    transition: all 500ms;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.6;
+    }
+  }
+}

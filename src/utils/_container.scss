@@ -1,0 +1,23 @@
+.container {
+  margin: 0 auto;
+
+  @media (max-width: 1068px) {
+    width: 90%;
+  }
+
+  @media (min-width: 1069px) {
+    width: min(80%);
+    max-width: 1140px;
+  }
+
+
+
+
+  // @include on768 {
+  //   max-width: 768px;
+  // }
+
+  // @include on1280 {
+  //   max-width: 1280px;
+  // }
+}
