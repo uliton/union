@@ -56,20 +56,39 @@ export const Intro = () => {
       </div>
 
       <div className="intro__configurator configurator">
+        {/* first button */}
         <button
           type='button'
           className='configurator__button'
           onClick={handlerSendMessage}
         >
-          {MOCK.intro_searchButton}
+          {MOCK.intro_searchButton1}
+        </button>
+        
+        {/* second button */}
+        <button
+          type='button'
+          className='configurator__button'
+          onClick={handlerSendMessage}
+        >
+          {MOCK.intro_searchButton2}
         </button>
 
-        <Link
+        {/* third button */}
+        <button
+          type='button'
+          className='configurator__button'
+          onClick={handlerSendMessage}
+        >
+          {MOCK.intro_searchButton3}
+        </button>
+
+        {/* <Link
           to='/'
           className='configurator__link'
         >
           {MOCK.intro_configurator}
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
