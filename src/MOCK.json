@@ -4,12 +4,12 @@
     "header_subtitle": "откройте для себя янтарное чудо света",
     "contacts_title": "поделиться страницей",
     "intro_title": "Union Stone — это единственные в мире изделия из камней янтаря.",
-    "intro_description": "Ювелиры Union - это хранители вековых традицы, которые передавались из поколения в поколение и сегодня они первые, кто смогли в ручню объединить каждый камень янтаря, в одно целое. Благодрая изучению Арабских стран, Амберо Рости изобрел революционную формулу, которая позволила получить беспрецедентный материал с исключительными характеристиками, предельной контрастностью, цвета и тепла.",
+    "intro_description": "Ювелиры Union - это хранители вековых традицы, которые передавались из поколения в поколение и сегодня они первые, кто смогли в ручню объединить каждый камень янтаря, в одно целое. Благодрая изучению Арабских стран, Alessandro Rossti изобрел революционную формулу, которая позволила получить беспрецедентный материал с исключительными характеристиками, предельной контрастностью, цвета и тепла.",
     "intro_searchButton1": "Открой для себя коллекцию",
     "intro_searchButton2": "Конфигуратор",
     "intro_searchButton3": "Узнать больше",
     "intro_configurator": "Конфигуратор часов",
-    "catalog_info": "Часы Rolex",
+    "catalog_info": "Union Stone",
     "catalog_link": "Посмотреть все",
     "advertising_foreword": "Мир Rolex",
     "advertising_title": "Rolex и Открытый чемпионат Австралии",
@@ -18,18 +18,18 @@
     "about_first_story_title": "Секреты могучей реки Замбези ",
     "about_second_story_title": "Исследуя подземные пещеры",
     "about_third_story_title": "Следовать логике океана",
-    "about_story_website": "Rolex.org",
+    "about_story_website": "Union.org",
     "": "",
     "": "",
     "": "",
-    "": ""
+    "footer_service_language": "Сменить язык"
   },
   "en": {
     "header_title": "UNION STONE",
     "header_subtitle": "discover the amber wonder of the world",
     "contacts_title": "share this page",
     "intro_title": "Union Stone is the only amber stone product in the world.",
-    "intro_description": "Union jewelers are the keepers of centuries-old traditions that have been passed down from generation to generation, and today they are the first to be able to combine each amber stone into one whole by hand. Thanks to the study of the Arab countries, Ambero Rosti invented a revolutionary formula that allowed him to obtain an unprecedented material with exceptional characteristics, extreme contrast, color and warmth.",
+    "intro_description": "Union jewelers are the keepers of centuries-old traditions that have been passed down from generation to generation, and today they are the first to be able to combine each amber stone into one whole by hand. Thanks to the study of the Arab countries, Alessandro Rossti invented a revolutionary formula that allowed him to obtain an unprecedented material with exceptional characteristics, extreme contrast, color and warmth.",
     "intro_searchButton1": "Discover the collection",
     "intro_searchButton2": "Configurator",
     "intro_searchButton3": "More info",
@@ -44,6 +44,7 @@
     "about_second_story_title": "Исследуя подземные пещеры",
     "about_third_story_title": "Следовать логике океана",
     "about_story_website": "Rolex.org",
-    "": ""
+    "": "",
+    "footer_service_language": "Change language"
   }
 }

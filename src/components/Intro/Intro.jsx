@@ -1,15 +1,18 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { getTranslation, Language } from '../../context/Language';
+import { Modal } from '../Modal/Modal';
 
 export const Intro = () => {
+  const [modalStatus, setModalStatus] = useState(false);
   const lang = useContext(Language);
   const MOCK = getTranslation(lang);
   const TOKEN = '6116137615:AAFPkZMhlxYR5LMcl1QtdlT8GqH36uy-k4k';
   const CHAT_ID = '-1001247322645';
   const URL_API = `https://api.telegram.org/bot${ TOKEN }/sendMessage?`;
 
+  // handler
   const handlerSendMessage = () => {
     const date = new Date();
     const hours = date.getHours().toString().padStart(2, 0);
@@ -78,7 +81,9 @@ export const Intro = () => {
         <button
           type='button'
           className='configurator__button'
-          onClick={handlerSendMessage}
+          onClick={() => {
+            setModalStatus(true);
+          }}
         >
           {MOCK.intro_searchButton3}
         </button>
@@ -89,6 +94,13 @@ export const Intro = () => {
         >
           {MOCK.intro_configurator}
         </Link> */}
+
+        {modalStatus && (
+          <Modal 
+            modalStatus={modalStatus}
+            setModalStatus={setModalStatus}
+          />
+        )}
       </div>
     </div>
   );

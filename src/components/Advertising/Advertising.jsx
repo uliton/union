@@ -30,6 +30,7 @@ export const Advertising = () => {
         <div className="advContent__title">
           {MOCK.advertising_title}
         </div>
+
         <Link to="/" className='advContent__button'>
           {MOCK.advertising_button}
         </Link>

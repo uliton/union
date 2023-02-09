@@ -1,8 +1,11 @@
+@import '../fonts/font-family.scss';
+
 * {
   box-sizing: border-box;
 }
 
-html {
-  font-family: 'Play', sans-serif;
+html, button, input {
+  font-family: Gotham;
+  font-weight: 2;
   color: $mainColor;
 }

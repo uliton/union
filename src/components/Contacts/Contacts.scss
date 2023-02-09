@@ -3,6 +3,7 @@
 .contacts {
   padding: 55px 0 40px;
   background-color: $greyBg;
+  border-bottom: 1px solid $mainColor;
 
   &__title {
     text-transform: uppercase;

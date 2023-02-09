@@ -1,12 +1,13 @@
 .intro {
+  position: relative;
   padding: 40px 0;
 
   &__title {
     margin: 18px 0;
-    font-size: 2.5rem;
+    font-size: 1.9rem;
     font-weight: 800;
     line-height: 1;
-    background-image: url('https://i.ytimg.com/vi/nOLqdLdSLI4/maxresdefault.jpg');
+    background-image: url('../../images/bgi.jpg');
     // background-size: cover;
     background-position: center;
     background-clip: text;
@@ -28,15 +29,26 @@
 }
 
 .configurator {
-  letter-spacing: 0.4px;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 260px;
+  margin: auto;
+
+  @media (min-width: 768px) {
+    width: 350px;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+    width: max-content;
+    gap: 20px;
+  }
 
   &__button {
-    letter-spacing: 0.4px;
     font-size: 14px;
-    width: max-content;
-    margin-right: 20px;
+    width: 100%;
     margin-bottom: 10px;
-    padding: 10px 35px;
+    padding: 10px 20px;
     background-color: #fff;
     color: green;
     border: 1px solid green;
@@ -49,19 +61,23 @@
       background-color: green;
       color: #fff;
     }
-  }
 
-  &__link {
-    font-size: 14px;
-    width: max-content;
-    text-decoration: none;
-    color: green;
-    margin-bottom: 10px;
-    transition: all 500ms;
-
-    &:hover {
-      cursor: pointer;
-      opacity: 0.6;
+    @media (min-width: 769px) {
+      padding: 10px 30px;
     }
   }
+
+  // &__link {
+  //   font-size: 14px;
+  //   width: max-content;
+  //   text-decoration: none;
+  //   color: green;
+  //   margin-bottom: 10px;
+  //   transition: all 500ms;
+
+  //   &:hover {
+  //     cursor: pointer;
+  //     opacity: 0.6;
+  //   }
+  // }
 }

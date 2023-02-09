@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
-import { Language } from '../../context/Language';
+import { getTranslation, Language } from '../../context/Language';
 
 export const LanguageSelect =({ setLanguage }) => {
   const lang = useContext(Language);
+  const MOCK = getTranslation(lang);
 
   const handlerChange = () => {
     if (lang === 'ru') {
@@ -17,9 +18,10 @@ export const LanguageSelect =({ setLanguage }) => {
   return (
     <button
       type='button'
+      className='languageButton'
       onClick={handlerChange}
     >
-      {`Language is ${lang}`}
+      {MOCK.footer_service_language}
     </button>
   );
 };

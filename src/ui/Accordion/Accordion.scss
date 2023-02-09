@@ -1,0 +1,76 @@
+.accordion {
+  // @include onTablet {
+  //   width: 730px;
+  // }
+
+  // @include onDesktop {
+  //   width: 1160px;
+  // }
+
+  &__title {
+    display: flex;
+    align-items:flex-end;
+    position: relative;
+    cursor: pointer;
+    padding: 20px 0 16px;
+    margin: 0;
+    color: inherit;
+    background: none;
+    width: 100%;
+    border: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 2;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 28px;
+      right: 20px;
+      width: 15px;
+      height: 2px;
+      background-color: $mainColor;
+    }
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 28px;
+      right: 20px;
+      width: 15px;
+      height: 2px;
+      background-color: $mainColor;
+      transform: rotateZ(90deg);
+      transition: transform 500ms;
+    }
+
+    &--open {
+      transition: transform 500ms;
+
+      &::before {
+        transition: transform 500ms;
+        transform: rotateZ(0deg);
+      }
+    }
+  }
+
+  &__list {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 1.5s ease;
+
+    &--show {
+      max-height: 900px;
+      font-size: 16px;
+      transition: max-height 3s ease;
+    }
+  }
+
+  &__item {
+    list-style: none;
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+}
+
+

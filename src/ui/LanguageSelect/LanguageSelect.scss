@@ -1,0 +1,13 @@
+.languageButton {
+  width: max-content;
+  padding: 0;
+  border: none;
+  outline: none;
+  color: $greyText;
+  background-color: inherit;
+  border-bottom: 1px solid $greyText;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
