@@ -1,23 +1,15 @@
+@import './mixins';
+
 .container {
   margin: 0 auto;
+  width: 80%;
 
-  @media (max-width: 1068px) {
+  @include on768 {
     width: 90%;
   }
 
-  @media (min-width: 1069px) {
+  @include on1280 {
     width: min(80%);
     max-width: 1140px;
   }
-
-
-
-
-  // @include on768 {
-  //   max-width: 768px;
-  // }
-
-  // @include on1280 {
-  //   max-width: 1280px;
-  // }
 }

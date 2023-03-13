@@ -1,0 +1,27 @@
+@import '../../../utils/variables';
+@import '../../../utils/mixins';
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 80px;
+  padding-top: 30px;
+
+  @include on768 {
+    width: 88px;
+    padding-top: 32px;
+  }
+  @include on1280 {
+    width: 110px;
+    padding-top: 40px;
+  }
+}
+
+.st0 {
+  fill: #fff;
+}
+
+.st1 {
+  fill: #fff;
+}

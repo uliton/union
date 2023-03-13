@@ -1,36 +1,100 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
 .nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 50px;
-  background-color: #fff;
+  height: 70px;
   z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
+  color: #fff;
+  transition: all 500ms;
 
+  @include on768 {
+    height: 80px;
+    padding: 0 50px;
+  }
 
-  &__menu {
-    
+  @include on1280 {
+    height: 90px;
+    // padding: 0 130px;
+  }
 
+  &--position {
+    background-color: #fff;
+    color: $mainColor;
 
-    &--burger {
-
+    .search__P, .favorite__P, .bag__P, .menu__R {
+      fill: $mainColor;
+    }
+    .st0 {
+      fill:#28613C;
+    }
+    .st1 {
+      fill:#E8C347;
     }
   }
 
+  &:hover {
+    background-color: #fff;
+    color: $mainColor;
 
+    .search__P, .favorite__P, .bag__P, .menu__R {
+      fill: $mainColor;
+    }
 
+    .st0 {
+      fill:#28613C;
+    }
+    .st1 {
+      fill:#E8C347;
+    }
+  }
 
+  &__left, &__right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 
-  &__logo {
-    position: absolute;
-    width: 70px;
-    height: 40px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    background-image: url('../../images/logo.svg');
-    background-repeat: no-repeat;
+    &:hover {
+      cursor: pointer;
+    }
+
+    @include on768 {
+      font-size: 14px;
+      font-weight: 1;
+    }
+    @include on1280 {
+      font-size: 18px;
+    }
+  }
+
+  &__menu, &__portfolio, &__shop {
+    display: none;
+
+    @include on768 {
+      display: block;
+    }
+  }
+
+  &__menu {
+    &:hover {
+      color: $green;
+    }
+  }
+  &__portfolio {
+    &:hover {
+      color: $green;
+    }
+  }
+  &__shop {
+    &:hover {
+      color: $green;
+    }
   }
 }

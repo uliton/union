@@ -9,19 +9,18 @@ export const Header = () => {
 
   return (
     <header className='header'>
-      {/* <Navigation /> */}
+      <Navigation />
 
       <video
+        type='video/mp4'
+        src={video}
         className='header__video'
-        loop
+        preload="auto"
         autoPlay
+        loop
+        playsInline
         muted
-        >
-        <source
-          src={video}
-          type='video/mp4'
-        />
-      </video>
+      ></video>
 
       <div className="header__text">
         <div className="header__title">
@@ -32,6 +31,8 @@ export const Header = () => {
           {MOCK.header_subtitle}
         </div>
       </div>
+
+      <div className="header__arrow"></div>
     </header>
   );
 };

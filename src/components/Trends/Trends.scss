@@ -1,0 +1,98 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+.trends {
+  &__info {
+    line-height: 1.2;
+    letter-spacing: 0.8px;
+
+    &--title {
+      text-align: center;
+      width: 80%;
+      margin: 0 auto 16px;
+      font-size: 26px;
+      font-weight: 4;
+      background-image: url('../../images/bgi.jpg');
+      background-position: center;
+      background-clip: text;
+      color: transparent;
+    }
+
+    &--description {
+      text-align: center;
+      max-width: 75%;
+      margin: 0 auto 24px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 100%;
+    border: 12px solid #000;
+    overflow: hidden;
+    background-color: #000;
+
+    @include on768 {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      border: 24px solid #000;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    &--link {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      text-decoration: none;
+      margin-bottom: 24px;
+
+      @include on768 {
+        margin-bottom: 0;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &--imgBox {
+      position: relative;
+      display: flex;
+      overflow: hidden;
+    }
+
+    &--img {
+      width: 100%;
+      transition: all 800ms;
+
+      &:hover {
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+    }
+
+    &--name {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 3;
+      text-align: center;
+
+      @include on768 {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+        line-height: 120%;
+        font-size: 18px;
+      }
+
+      @include on1280 {
+        font-size: 26px;
+      }
+    }
+  }
+}

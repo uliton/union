@@ -1,14 +1,14 @@
 .intro {
   position: relative;
   padding: 40px 0;
+  line-height: 1.2;
+  letter-spacing: 0.8px;
 
   &__title {
     margin: 18px 0;
-    font-size: 1.9rem;
-    font-weight: 800;
-    line-height: 1;
+    font-size: 26px;
+    font-weight: 4;
     background-image: url('../../images/bgi.jpg');
-    // background-size: cover;
     background-position: center;
     background-clip: text;
     color: transparent;
@@ -17,8 +17,12 @@
   &__description {
     margin: 18px 0;
     padding: 18px 0;
-    letter-spacing: 1px;
-    line-height: 1.5;
+    text-align: justify;
+
+    &::before {
+      content: '';
+      margin-left: 40px;
+    }
   }
 
   &__configurator {
@@ -66,18 +70,4 @@
       padding: 10px 30px;
     }
   }
-
-  // &__link {
-  //   font-size: 14px;
-  //   width: max-content;
-  //   text-decoration: none;
-  //   color: green;
-  //   margin-bottom: 10px;
-  //   transition: all 500ms;
-
-  //   &:hover {
-  //     cursor: pointer;
-  //     opacity: 0.6;
-  //   }
-  // }
 }

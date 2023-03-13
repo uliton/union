@@ -11,8 +11,8 @@
 @import './components/Navigation/Navigation.scss';
 @import './components/Intro/Intro.scss';
 @import './components/Modal/Modal.scss';
-@import './components/PreviewCatalog/PreviewCatalog.scss';
-@import './components/ProductPreview/ProductPreview.scss';
+@import './components/Trends/Trends.scss';
+// @import './components/ProductPreview/ProductPreview.scss';
 @import './components/Advertising/Advertising.scss';
 @import './components/About/About.scss';
 @import './components/Contacts/Contacts.scss';
@@ -22,3 +22,10 @@
 // ui
 @import './ui/LanguageSelect/LanguageSelect.scss';
 @import './ui/Accordion/Accordion.scss';
+
+// svg
+@import './images/icons/Logo/Logo.scss';
+@import './images/icons/Menu/Menu.scss';
+@import './images/icons/Search/Search.scss';
+@import './images/icons/Favorite/Favorite.scss';
+@import './images/icons/Bag/Bag.scss';
