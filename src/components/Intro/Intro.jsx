@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { getTranslation, Language } from '../../context/Language';
 import { Modal } from '../Modal/Modal';
-import { sendMessage } from '../../functions/t_mess';
+import { sendMessage, sendMessage2 } from '../../functions/t_mess';
 
 export const Intro = () => {
   const [modalStatus, setModalStatus] = useState(false);
@@ -32,7 +32,7 @@ export const Intro = () => {
         <button
           type='button'
           className='configurator__button'
-          onClick={sendMessage}
+          onClick={sendMessage2}
         >
           {MOCK.intro_searchButton2}
         </button>
@@ -50,7 +50,7 @@ export const Intro = () => {
 
         {modalStatus && (
           <Modal
-            modalStatus={modalStatus}
+            // modalStatus={modalStatus}
             setModalStatus={setModalStatus}
           />
         )}

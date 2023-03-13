@@ -1,43 +1,50 @@
+import classNames from "classnames";
 import React, { useContext, useState } from "react";
 import { getTranslation, Language } from "../../context/Language";
-import exit_icon from '../../images/modal_exit_icon.svg';
+import { sendContacts } from "../../functions/t_mess";
+import { Close } from "../../images/icons/Close/Close";
+// import exit_icon from '../../images/modal_exit_icon.svg';
 
 
-export const Modal = ({ modalStatus, setModalStatus }) => {
+export const Modal = ({ setModalStatus }) => {
   const lang = useContext(Language);
   const MOCK = getTranslation(lang);
   const [name, setName] = useState('');
-  const [telefon, setTelefon] = useState('+38-(0');
+  const [telefon, setTelefon] = useState('+38 (0');
+  const [unmount, setUnmount] = useState(false);
 
   const handleExitClick = () => {
-    setModalStatus(false);
+    setUnmount(true);
+    setTimeout(() => {
+      setModalStatus(false);
+    }, 500);
   };
 
   const handleInputChange = (value) => {
     const symbols = '(+-1234567890)';
+    
     if (symbols.includes(value[value.length - 1])) {
-      
       if (value.length < telefon.length && value.length === 15) {
         return setTelefon(value.slice(0, 14));
       }
-
+        
       if (value.length < telefon.length && value.length === 12) {
         return setTelefon(value.slice(0, 11))
       }
-
+          
       if (value.length < telefon.length && value.length === 8) {
         return setTelefon(value.slice(0, 7))
       }
-  
+            
       if (value.length <= 18 ) {
         if (value.length >= 6) {
           setTelefon(value);
         }
-    
+  
         if (value.length === 8) {
           setTelefon(`${value})`);
         }
-    
+  
         if (value.length === 12 || value.length === 15) {
           setTelefon(`${value}-`);
         }
@@ -45,61 +52,62 @@ export const Modal = ({ modalStatus, setModalStatus }) => {
     }
   };
 
-  const handleSubmitClick = () => {
-    setModalStatus(false);
-  };
+  const submit = () => {
+    if (name.length && telefon.length === 18) {
+      sendContacts(name, telefon);
+      setModalStatus(false);
+    }
+  }
 
   return (
     <div
-      className="modal"
+      id="modal"
+      className={classNames('modal', {
+        'modal--unmount': unmount
+      })}
     >
-      <div className="modal__form form">
-        <div className="form__exit-button">
-          <button
-            type="button"
-            className="form__exit-button--container"
+      <div className="modal__area" onClick={handleExitClick}></div>
+      <div className="modal__body">
+        <div className="modal__header">
+          <div className="modal__header__text">
+            Узнать больше
+          </div>
+
+          <div
+            className="modal__close"
             onClick={handleExitClick}
           >
-            <img src={exit_icon} alt="exit" className="form__exit-button--image"/>
-          </button>
+            <Close />
+          </div>
         </div>
 
-        <div className="form__wrapper">
-          <div className="form__title">
-            UNION STONE
-          </div>
-
-          <div className="form__subtitle">
-            откройте для себя янтарное чудо света
-          </div>
-
-          <div className="form__text">
-            Union Stone — это единственные в мире изделия из камней янтаря
-          </div>
+        <form
+          className="modal__content"
+          onSubmit={submit}
+        >
+          <div className="modal__title">Мы свяжемся с выми и ответим на все вопросы</div>
 
           <input
             type="text"
-            className="form__input form__input--input"
-            placeholder="Name"
+            placeholder="Ваше имя"
+            className="modal__input"
             value={name}
-            onChange={(e) => setName(e.target.value)}
+            onChange={e => setName(e.target.value)}
           />
-
           <input
             type="text"
-            className="form__input form__input--input"
+            placeholder="Номер телефона"
+            className="modal__input"
             value={telefon}
-            onChange={(e) => {handleInputChange(e.target.value)}}
+            onChange={e => handleInputChange(e.target.value)}
           />
 
-          <button
-            type='button'
-            className='configurator__button'
-            onClick={handleSubmitClick}
-          >
-            GO
+          <button type="submit" className={classNames('modal__button', {
+            'modal__button--active': name.length && telefon.length === 18
+          })}>
+            Получить консультацию
           </button>
-        </div>
+        </form>
       </div>
     </div>
   );

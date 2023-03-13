@@ -23,10 +23,69 @@ export const sendMessage = () => {
     parse_mode: 'html',
     text: message
   }).then(() => {
-    console.log('procesing');
+    // console.log('procesing');
   }).catch(() => {
     console.log('nop');
   }).finally(() => {
-    console.log('message sent');
+    // console.log('message sent');
+  });
+};
+
+
+
+export const sendMessage2 = () => {
+  const date = new Date();
+  const hours = date.getHours().toString().padStart(2, 0);
+  const minuts = date.getMinutes().toString().padStart(2, 0)
+  const seconds = date.getSeconds().toString().padStart(2, 0)
+  const day = date.getDay().toString().padStart(2, 0);
+  const month = (date.getMonth() + 1).toString().padStart(2, 0);
+  const year = date.getFullYear().toString().padStart(2, 0);
+  const actualTime = `${hours}:${minuts}:${seconds} - ${day}.${month}.${year}`;
+
+  let message = '<b>Заебу одним аккордом! Ла ла ла</b>\n';
+  message += `${actualTime}`;
+  // message += `<b>С страны </b>\n`
+
+  axios.post(URL_API, {
+    chat_id: CHAT_ID,
+    parse_mode: 'html',
+    text: message
+  }).then(() => {
+    // console.log('procesing');
+  }).catch(() => {
+    console.log('nop');
+  }).finally(() => {
+    // console.log('message sent');
+  });
+}
+
+
+
+export const sendContacts = (userName, userTelefon) => {
+  const date = new Date();
+  const hours = date.getHours().toString().padStart(2, 0);
+  const minuts = date.getMinutes().toString().padStart(2, 0)
+  const seconds = date.getSeconds().toString().padStart(2, 0)
+  const day = date.getDay().toString().padStart(2, 0);
+  const month = (date.getMonth() + 1).toString().padStart(2, 0);
+  const year = date.getFullYear().toString().padStart(2, 0);
+  const actualTime = `${hours}:${minuts}:${seconds} - ${day}.${month}.${year}`;
+
+  let message = '<b>Новая заявка на контакт!</b>\n';
+  message += `Имя: ${userName}\n`;
+  message += `Номер телефона: ${userTelefon}\n`;
+  message += `Время контакта: ${actualTime}`;
+
+  axios.post(URL_API, {
+    chat_id: CHAT_ID,
+    parse_mode: 'html',
+    text: message
+  }).then(() => {
+    // console.log('procesing');
+  }).catch(() => {
+    console.log('nop');
+  }).finally(() => {
+    // console.log('message sent');
   });
 };

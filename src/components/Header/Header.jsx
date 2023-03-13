@@ -19,8 +19,6 @@ export const Header = () => {
     }
   }, []);
 
-  console.log(renderVideo);
-
   return (
     <header className='header'>
       <Navigation />
