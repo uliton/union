@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { getTranslation, Language } from '../../context/Language';
-import video from '../../videos/ns_amb_stone_360.mp4';
+// import video from '../../videos/ns_amb_stone_360.mp4';
 
 
 export const Advertising = () => {
@@ -10,7 +10,7 @@ export const Advertising = () => {
 
   return (
     <div className='advertising'>
-      <video
+      {/* <video
         className='advertising__video'
         loop
         autoPlay
@@ -20,7 +20,7 @@ export const Advertising = () => {
           src={video}
           type='video/mp4'
         />
-      </video>
+      </video> */}
 
       <div className="advertising__content advContent">
         <div className="advContent__foreword">

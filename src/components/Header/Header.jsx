@@ -1,11 +1,25 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { getTranslation, Language } from '../../context/Language';
-import video from '../../videos/ns_amb_stone_360.mp4';
+import min from '../../videos/min.mp4';
+import max from '../../videos/max.mp4';
 import { Navigation } from '../Navigation/Navigation';
 
 export const Header = () => {
   const lang = useContext(Language);
   const MOCK = getTranslation(lang);
+  const [renderVideo, setRenderVideo] = useState(min);
+
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setRenderVideo(min);
+    }
+
+    if (window.innerWidth >= 768) {
+      setRenderVideo(max);
+    }
+  }, []);
+
+  console.log(renderVideo);
 
   return (
     <header className='header'>
@@ -13,7 +27,7 @@ export const Header = () => {
 
       <video
         type='video/mp4'
-        src={video}
+        src={renderVideo}
         className='header__video'
         preload="auto"
         autoPlay

@@ -60,17 +60,17 @@
     display: flex;
     align-items: center;
     gap: 16px;
+    font-size: 12px;
 
     &:hover {
       cursor: pointer;
     }
 
     @include on768 {
-      font-size: 14px;
       font-weight: 1;
     }
     @include on1280 {
-      font-size: 18px;
+      font-size: 14px;
     }
   }
 
