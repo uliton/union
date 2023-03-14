@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { About } from './components/About';
 import { Advertising } from './components/Advertising';
+import { Catch } from './components/Catch/Catch';
 import { Contacts } from './components/Contacts';
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
@@ -17,6 +18,7 @@ export const App = () => {
         <Header />
         <Intro />
         <Trends />
+        <Catch />
         {/* <Advertising /> */}
         {/* <About /> */}
         {/* <Contacts /> */}
