@@ -10,7 +10,7 @@ export const Modal = ({ ident, setModalStatus }) => {
   const lang = useContext(Language);
   const MOCK = getTranslation(lang);
   const [name, setName] = useState('');
-  const [telefon, setTelefon] = useState('+38 (0');
+  const [phone, setPhone] = useState('+38 (0');
   const [unmount, setUnmount] = useState(false);
 
   const handleExitClick = () => {
@@ -53,8 +53,8 @@ export const Modal = ({ ident, setModalStatus }) => {
   };
 
   const submit = () => {
-    if (name.length && telefon.length === 18) {
-      sendContacts(name, telefon);
+    if (name.length && phone.length === 18) {
+      sendContacts(name, phone);
       setModalStatus(false);
     }
   }
