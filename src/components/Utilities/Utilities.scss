@@ -49,8 +49,8 @@
       margin: 0 auto 10px;
       padding: 10px 20px;
       background-color: #fff;
-      color: green;
-      border: 1px solid green;
+      color: $green;
+      border: 1px solid $green;
       border-radius: 20px;
       outline: none;
       transition: all 500ms;
@@ -61,7 +61,7 @@
 
       &:hover {
         cursor: pointer;
-        background-color: green;
+        background-color: $green;
         color: #fff;
       }
     }

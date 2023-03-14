@@ -7,11 +7,14 @@ import { Trends } from './components/Trends';
 import { Catch } from './components/Catch';
 import { Products } from './components/Products';
 import { Utilities } from './components/Utilities';
+import { Shop } from './components/Shop';
+import { Design } from './components/Design';
+import { Subscribe } from './components/Subscribe';
 
 // import { Advertising } from './components/Advertising';
 // import { About } from './components/About';
 // import { Contacts } from './components/Contacts';
-// import { Footer } from './components/Footer';
+import { Footer } from './components/Footer';
 
 export const App = () => {
   const [language, setLanguage] = useState('ru');
@@ -26,12 +29,14 @@ export const App = () => {
         <Catch />
         <Products />
         <Utilities />
+        <Shop />
+        <Design />
+        <Subscribe />
         {/* <Advertising /> */}
         {/* <About /> */}
         {/* <Contacts /> */}
-        {/* <Footer setLanguage={setLanguage} /> */}
+        <Footer setLanguage={setLanguage} />
       </Language.Provider>
-
     </div>
   );
 };

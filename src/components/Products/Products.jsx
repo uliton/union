@@ -32,7 +32,7 @@ export const Products = () => {
           <div className='products__item__imgBox'>
             <img
               src={one}
-              alt="residence"
+              alt={MOCK.products_item_1}
               className='products__item__img'
             />
           </div>
@@ -50,7 +50,7 @@ export const Products = () => {
           <div className='products__item__imgBox'>
             <img
               src={two}
-              alt="residence"
+              alt={MOCK.products_item_2}
               className='products__item__img'
             />
           </div>
@@ -68,7 +68,7 @@ export const Products = () => {
           <div className='products__item__imgBox'>
             <img
               src={three}
-              alt="residence"
+              alt={MOCK.products_item_3}
               className='products__item__img'
             />
           </div>
@@ -86,7 +86,7 @@ export const Products = () => {
           <div className='products__item__imgBox'>
             <img
               src={four}
-              alt="residence"
+              alt={MOCK.products_item_4}
               className='products__item__img'
             />
           </div>
@@ -104,7 +104,7 @@ export const Products = () => {
           <div className='products__item__imgBox'>
             <img
               src={five}
-              alt="residence"
+              alt={MOCK.products_item_5}
               className='products__item__img'
             />
           </div>
@@ -122,7 +122,7 @@ export const Products = () => {
           <div className='products__item__imgBox'>
             <img
               src={six}
-              alt="residence"
+              alt={MOCK.products_item_6}
               className='products__item__img'
             />
           </div>

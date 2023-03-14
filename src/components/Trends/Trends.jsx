@@ -28,7 +28,7 @@ export const Trends = () => {
             <div className='trends__item--imgBox'>
               <img
                 src={residence}
-                alt="residence"
+                alt={MOCK.trends_item_1}
                 className='trends__item--img'
               />
             </div>
@@ -44,7 +44,7 @@ export const Trends = () => {
             <div className='trends__item--imgBox'>
               <img
                 src={industry}
-                alt="residence"
+                alt={MOCK.trends_item_2}
                 className='trends__item--img'
               />
             </div>
@@ -60,7 +60,7 @@ export const Trends = () => {
             <div className='trends__item--imgBox'>
               <img
                 src={architecture}
-                alt="residence"
+                alt={MOCK.trends_item_3}
                 className='trends__item--img'
               />
             </div>
@@ -76,7 +76,7 @@ export const Trends = () => {
             <div className='trends__item--imgBox'>
               <img
                 src={projects}
-                alt="residence"
+                alt={MOCK.trends_item_4}
                 className='trends__item--img'
               />
             </div>

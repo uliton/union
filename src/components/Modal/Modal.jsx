@@ -1,15 +1,14 @@
-import classNames from "classnames";
 import React, { useContext, useState } from "react";
+import classNames from "classnames";
 import { getTranslation, Language } from "../../context/Language";
 import { sendContacts } from "../../functions/t_mess";
-import { Close } from "../../images/icons/Close/Close";
-// import exit_icon from '../../images/modal_exit_icon.svg';
+import { Close } from "../../images/icons/Close";
 
 export const Modal = ({ ident, setModalStatus }) => {
   const lang = useContext(Language);
   const MOCK = getTranslation(lang);
   const [name, setName] = useState('');
-  const [phone, setPhone] = useState('+38 (0');
+  const [phone, setPhone] = useState('');
   const [unmount, setUnmount] = useState(false);
 
   const handleExitClick = () => {
@@ -53,7 +52,7 @@ export const Modal = ({ ident, setModalStatus }) => {
 
   const submit = () => {
     if (name.length && phone.length === 18) {
-      sendContacts(name, phone);
+      sendContacts(name, phone, ident);
       setModalStatus(false);
     }
   }
@@ -102,6 +101,7 @@ export const Modal = ({ ident, setModalStatus }) => {
             className="modal__input"
             value={phone}
             onChange={e => handleInputChange(e.target.value)}
+            onClick={() => setPhone('+38 (0')}
           />
 
           <button type="submit" className={classNames('modal__button', {
