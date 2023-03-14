@@ -6,11 +6,11 @@ import { Close } from "../../images/icons/Close/Close";
 // import exit_icon from '../../images/modal_exit_icon.svg';
 
 
-export const Modal = ({ setModalStatus }) => {
+export const Modal = ({ ident, setModalStatus }) => {
   const lang = useContext(Language);
   const MOCK = getTranslation(lang);
   const [name, setName] = useState('');
-  const [telefon, setTelefon] = useState('+38 (0');
+  const [telefon, setTelefon] = useState('');
   const [unmount, setUnmount] = useState(false);
 
   const handleExitClick = () => {
@@ -19,6 +19,12 @@ export const Modal = ({ setModalStatus }) => {
       setModalStatus(false);
     }, 500);
   };
+
+  const handlerTelefonClick = () => {
+    if (telefon.length === 0) {
+      setTelefon('+38 (0');
+    }
+  }
 
   const handleInputChange = (value) => {
     const symbols = '(+-1234567890)';
@@ -52,9 +58,10 @@ export const Modal = ({ setModalStatus }) => {
     }
   };
 
-  const submit = () => {
+  const submit = (e) => {
+    e.preventDefault();
     if (name.length && telefon.length === 18) {
-      sendContacts(name, telefon);
+      sendContacts(name, telefon, ident);
       setModalStatus(false);
     }
   }
@@ -100,6 +107,7 @@ export const Modal = ({ setModalStatus }) => {
             className="modal__input"
             value={telefon}
             onChange={e => handleInputChange(e.target.value)}
+            onClick={handlerTelefonClick}
           />
 
           <button type="submit" className={classNames('modal__button', {

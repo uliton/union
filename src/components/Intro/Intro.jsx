@@ -23,7 +23,7 @@ export const Intro = () => {
         <button
           type='button'
           className='configurator__button'
-          onClick={sendMessage}
+          onClick={() => sendMessage('Intro Btn1')}
         >
           {MOCK.intro_searchButton1}
         </button>
@@ -32,7 +32,7 @@ export const Intro = () => {
         <button
           type='button'
           className='configurator__button'
-          onClick={sendMessage2}
+          onClick={() => sendMessage2('Intro Btn2')}
         >
           {MOCK.intro_searchButton2}
         </button>
@@ -50,7 +50,7 @@ export const Intro = () => {
 
         {modalStatus && (
           <Modal
-            // modalStatus={modalStatus}
+            ident={'Intro Modal'}
             setModalStatus={setModalStatus}
           />
         )}
