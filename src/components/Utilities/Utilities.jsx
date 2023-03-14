@@ -1,7 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { getTranslation, Language } from '../../context/Language';
 import { Modal } from '../Modal/Modal';
-import { sendMessage, sendMessage2 } from '../../functions/t_mess';
 
 export const Utilities = () => {
   const [modalStatus, setModalStatus] = useState(false);
@@ -9,49 +8,52 @@ export const Utilities = () => {
   const MOCK = getTranslation(lang);
 
   return (
-    <section className='intro container'>
-      <div className="intro__title">
-        У процесі
-        {/* {MOCK.intro_title} */}
+    <section className='utilities container'>
+      <div className="utilities__title">
+        {MOCK.utilities_title}
       </div>
 
-      <div className="intro__description">
-        {MOCK.intro_description}
-      </div>
+      {/* <div className="utilities__description">
+        {MOCK.utilities_description}
+      </div> */}
 
-      <div className="intro__configurator configurator">
+      <div className="utilities__configurator">
         {/* first button */}
         <button
           type='button'
-          className='configurator__button'
-          onClick={() => sendMessage('Intro Btn1')}
+          className='utilities__configurator__button'
+          onClick={() => {
+            setModalStatus(true);
+          }}
         >
-          {MOCK.intro_searchButton1}
+          {MOCK.utilities_button_1}
         </button>
         
         {/* second button */}
         <button
           type='button'
-          className='configurator__button'
-          onClick={() => sendMessage2('Intro Btn2')}
+          className='utilities__configurator__button'
+          onClick={() => {
+            setModalStatus(true);
+          }}
         >
-          {MOCK.intro_searchButton2}
+          {MOCK.utilities_button_2}
         </button>
 
         {/* third button */}
         <button
           type='button'
-          className='configurator__button'
+          className='utilities__configurator__button'
           onClick={() => {
             setModalStatus(true);
           }}
         >
-          {MOCK.intro_searchButton3}
+          {MOCK.utilities_button_3}
         </button>
 
         {modalStatus && (
           <Modal
-            ident={'Intro Modal'}
+            ident={'Utilities Modal'}
             setModalStatus={setModalStatus}
           />
         )}

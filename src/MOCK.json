@@ -8,9 +8,9 @@
     "contacts_title": "поделиться страницей",
     "intro_title": "Union Stone — это единственные в мире изделия из камней янтаря.",
     "intro_description": "Ювелиры Union - это хранители вековых традицы, которые передавались из поколения в поколение и сегодня они первые, кто смогли в ручню объединить каждый камень янтаря, в одно целое. Благодрая изучению Арабских стран, Alessandro Rossti изобрел революционную формулу, которая позволила получить беспрецедентный материал с исключительными характеристиками, предельной контрастностью, цвета и тепла.",
-    "intro_searchButton1": "Задолбать Серого",
-    "intro_searchButton2": "Продолжить долбежку",
-    "intro_searchButton3": "Задолбем вас",
+    "intro_button_1": "Задолбать Серого",
+    "intro_button_2": "Продолжить долбежку",
+    "intro_button_3": "Задолбем вас",
     "intro_configurator": "Конфигуратор часов",
     "modal_header": "Узнать больше",
     "modal_title": "Мы свяжемся с вами и ответим на все вопросы",
@@ -36,6 +36,10 @@
     "products_item_4": "Стол",
     "products_item_5": "Знаковые продукты",
     "products_item_6": "Новое",
+    "utilities_title": "Утилиты",
+    "utilities_button_1": "Дилеры",
+    "utilities_button_2": "Зарегистрировать продукт",
+    "utilities_button_3": "Подписка",
 
 
 
@@ -92,6 +96,11 @@
     "products_item_4": "Table",
     "products_item_5": "Iconic Products",
     "products_item_6": "New",
+    "utilities_button_1": "Dealers",
+    "utilities_button_2": "Register a product",
+    "utilities_button_3": "Subscription",
+
+
 
 
     "advertising_foreword": "World of Rolex",

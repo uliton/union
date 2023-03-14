@@ -5,7 +5,6 @@ import { sendContacts } from "../../functions/t_mess";
 import { Close } from "../../images/icons/Close/Close";
 // import exit_icon from '../../images/modal_exit_icon.svg';
 
-
 export const Modal = ({ ident, setModalStatus }) => {
   const lang = useContext(Language);
   const MOCK = getTranslation(lang);
