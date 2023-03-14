@@ -10,7 +10,7 @@ export const Modal = ({ ident, setModalStatus }) => {
   const lang = useContext(Language);
   const MOCK = getTranslation(lang);
   const [name, setName] = useState('');
-  const [phone, setPhone] = useState('');
+  const [telefon, setTelefon] = useState('+38 (0');
   const [unmount, setUnmount] = useState(false);
 
   const handleExitClick = () => {
@@ -19,12 +19,6 @@ export const Modal = ({ ident, setModalStatus }) => {
       setModalStatus(false);
     }, 500);
   };
-
-  const handlerphoneClick = () => {
-    if (phone.length === 0) {
-      setPhone('+38 (0');
-    }
-  }
 
   const handleInputChange = (value) => {
     const symbols = '(+-1234567890)';
@@ -58,10 +52,9 @@ export const Modal = ({ ident, setModalStatus }) => {
     }
   };
 
-  const submit = (e) => {
-    e.preventDefault();
-    if (name.length && phone.length === 18) {
-      sendContacts(name, phone, ident);
+  const submit = () => {
+    if (name.length && telefon.length === 18) {
+      sendContacts(name, telefon);
       setModalStatus(false);
     }
   }
@@ -110,7 +103,6 @@ export const Modal = ({ ident, setModalStatus }) => {
             className="modal__input"
             value={phone}
             onChange={e => handleInputChange(e.target.value)}
-            onClick={handlerphoneClick}
           />
 
           <button type="submit" className={classNames('modal__button', {
