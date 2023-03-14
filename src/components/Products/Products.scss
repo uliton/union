@@ -1,0 +1,73 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+.products {
+  margin-bottom: 40px;
+
+  &__title {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto 16px;
+    font-size: 24px;
+    font-weight: 4;
+    background-image: url('../../images/bgi.jpg');
+    background-position: center;
+    background-clip: text;
+    color: transparent;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    border: 12px solid #fff;
+    overflow: hidden;
+    background-color: #fff;
+
+    @include on768 {
+      grid-template-columns: repeat(6, 1fr);
+      gap: 24px;
+    }
+  }
+
+  &__item {
+    list-style: none;
+    position: relative;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &__imgBox {
+      position: relative;
+      display: flex;
+      overflow: hidden;
+      margin: 0 0 8px 0;
+    }
+
+    &__img {
+      width: 100%;
+      transition: all 800ms;
+
+      &:hover {
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+    }
+
+    &__name {
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 3;
+      text-align: center;
+
+      @include on768 {
+        font-size: 18px;
+      }
+
+      @include on1280 {
+        font-size: 26px;
+      }
+    }
+  }
+}

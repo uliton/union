@@ -15,6 +15,7 @@ export const Navigation = () => {
 
   window.onscroll = function() {
     const currentScrollPos = window.pageYOffset;
+    console.log(currentScrollPos)
 
     if (currentScrollPos > 1) {
       setPosition(true);

@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
-import { About } from './components/About';
-import { Advertising } from './components/Advertising';
-import { Catch } from './components/Catch/Catch';
-import { Contacts } from './components/Contacts';
-import { Footer } from './components/Footer';
+import { Language } from './context/Language';
+import { Navigation } from './components/Navigation';
 import { Header } from './components/Header';
 import { Intro } from './components/Intro';
 import { Trends } from './components/Trends';
-import { Language } from './context/Language';
+import { Catch } from './components/Catch';
+import { Products } from './components/Products';
+import { Utilities } from './components/Utilities';
+
+import { Advertising } from './components/Advertising';
+import { About } from './components/About';
+import { Contacts } from './components/Contacts';
+import { Footer } from './components/Footer';
 
 export const App = () => {
   const [language, setLanguage] = useState('ru');
@@ -15,10 +19,13 @@ export const App = () => {
   return (
     <div className='app'>
       <Language.Provider value={language}>
+        <Navigation />
         <Header />
         <Intro />
         <Trends />
         <Catch />
+        <Products />
+        <Utilities />
         {/* <Advertising /> */}
         {/* <About /> */}
         {/* <Contacts /> */}

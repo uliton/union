@@ -3,7 +3,7 @@ import { getTranslation, Language } from '../../context/Language';
 import { Modal } from '../Modal/Modal';
 import { sendMessage, sendMessage2 } from '../../functions/t_mess';
 
-export const Intro = () => {
+export const Utilities = () => {
   const [modalStatus, setModalStatus] = useState(false);
   const lang = useContext(Language);
   const MOCK = getTranslation(lang);
@@ -11,7 +11,8 @@ export const Intro = () => {
   return (
     <section className='intro container'>
       <div className="intro__title">
-        {MOCK.intro_title}
+        У процесі
+        {/* {MOCK.intro_title} */}
       </div>
 
       <div className="intro__description">

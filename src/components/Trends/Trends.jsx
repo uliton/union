@@ -11,7 +11,7 @@ export const Trends = () => {
   const MOCK = getTranslation(lang);
 
   return (
-    <div className='trends'>
+    <section className='trends'>
       <div className="trends__info">
         <div className="trends__info--title">
           {MOCK.trends_title}
@@ -87,6 +87,6 @@ export const Trends = () => {
           </Link>
         </li>
       </ul>
-    </div>
+    </section>
   );
 };

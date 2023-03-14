@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from 'react';
 import { getTranslation, Language } from '../../context/Language';
 import min from '../../videos/min.mp4';
 import max from '../../videos/max.mp4';
-import { Navigation } from '../Navigation/Navigation';
 
 export const Header = () => {
   const lang = useContext(Language);
@@ -20,9 +19,7 @@ export const Header = () => {
   }, []);
 
   return (
-    <header className='header'>
-      <Navigation />
-
+    <section className='header'>
       <video
         type='video/mp4'
         src={renderVideo}
@@ -45,6 +42,6 @@ export const Header = () => {
       </div>
 
       <div className="header__arrow"></div>
-    </header>
+    </section>
   );
 };

@@ -60,7 +60,7 @@ export const Catch = () => {
 
   const submit = () => {
     if (name.length && telefon.length === 18) {
-      sendContacts(name, telefon);
+      sendContacts(name, telefon, 'Catch');
       setCatchStatus(true);
     }
   }
@@ -70,7 +70,15 @@ export const Catch = () => {
       className={classNames('catch', {})}
     >
       <div className="catch__body">
-        <div className="catch__title">Мы свяжемся с выми и ответим на все вопросы</div>
+        <div className="catch__title">
+          {MOCK.catch_title}
+        </div>
+        
+        {catchStatus && (
+          <div className="catch__success">
+            {MOCK.catch_success_1}
+          </div>
+        )}
 
         <form
           className="catch__content"
@@ -78,14 +86,14 @@ export const Catch = () => {
         >
           <input
             type="text"
-            placeholder="Ваше имя"
+            placeholder={MOCK.catch_name}
             className="catch__input"
             value={name}
             onChange={e => setName(e.target.value)}
           />
           <input
             type="text"
-            placeholder="Номер телефона"
+            placeholder={MOCK.catch_phone}
             className="catch__input"
             value={telefon}
             onChange={e => handleInputChange(e.target.value)}
@@ -95,9 +103,15 @@ export const Catch = () => {
           <button type="submit" className={classNames('catch__button', {
             'catch__button--active': name.length && telefon.length === 18
           })}>
-            Получить консультацию
+            {MOCK.catch_button}
           </button>
         </form>
+
+        {catchStatus && (
+          <div className="catch__success">
+            {MOCK.catch_success_2}
+          </div>
+        )}
       </div>
     </section>
   );
