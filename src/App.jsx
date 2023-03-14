@@ -8,10 +8,10 @@ import { Catch } from './components/Catch';
 import { Products } from './components/Products';
 import { Utilities } from './components/Utilities';
 
-import { Advertising } from './components/Advertising';
-import { About } from './components/About';
-import { Contacts } from './components/Contacts';
-import { Footer } from './components/Footer';
+// import { Advertising } from './components/Advertising';
+// import { About } from './components/About';
+// import { Contacts } from './components/Contacts';
+// import { Footer } from './components/Footer';
 
 export const App = () => {
   const [language, setLanguage] = useState('ru');
