@@ -14,6 +14,9 @@ html, button, input {
   color: $mainColor;
 }
 
-input {
+textarea,
+input[type="text"] {
+  -webkit-border-radius: 0;
   -webkit-appearance: none;
+  border-radius: 0;
 }
