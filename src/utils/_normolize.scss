@@ -13,3 +13,7 @@ html, button, input {
   font-weight: 1;
   color: $mainColor;
 }
+
+input {
+  -webkit-appearance: none;
+}
