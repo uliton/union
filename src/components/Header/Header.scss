@@ -31,13 +31,14 @@
     line-height: 1.2;
     letter-spacing: 0.8px;
     user-select: none;
+    width: min-content;
   }
   
   &__title {
     text-align: center;
     font-size: calc(20px + (1vw * 3));
     font-weight: 4;
-    min-width: max-content;
+    width: max-content;
     margin-bottom: 12px;
   }
 
