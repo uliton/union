@@ -13,9 +13,12 @@ export const Modal = ({ ident, setModalStatus }) => {
 
   const handleExitClick = () => {
     setUnmount(true);
-    setTimeout(() => {
+  };
+
+  const modalUnmount = () => {
+    if (unmount) {
       setModalStatus(false);
-    }, 500);
+    }
   };
 
   const handleInputChange = (value) => {
@@ -63,8 +66,10 @@ export const Modal = ({ ident, setModalStatus }) => {
       className={classNames('modal', {
         'modal--unmount': unmount
       })}
+      onAnimationEnd={modalUnmount}
     >
       <div className="modal__area" onClick={handleExitClick}></div>
+
       <div className="modal__body">
         <div className="modal__header">
           <div className="modal__header__text">

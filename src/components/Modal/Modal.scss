@@ -14,7 +14,7 @@
   z-index: 1;
   animation: born 500ms linear;
 
-  &--unmount {
+  &--unmount, .modal__area {
     animation: deth 500ms linear;
   }
 
@@ -25,6 +25,7 @@
     top: 0;
     left: 0;
     cursor: pointer;
+    animation: born 500ms linear;
   }
 
   &__body {
@@ -149,8 +150,5 @@
   }
   100% {
     opacity: 0;
-    .modal__body {
-      display: none;
-    }
   }
 }
