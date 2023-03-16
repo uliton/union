@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Language } from './context/Language';
+import { Language } from './functions/language';
 import { Navigation } from './components/Navigation';
 import { Header } from './components/Header';
 import { Intro } from './components/Intro';

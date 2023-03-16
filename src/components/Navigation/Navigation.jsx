@@ -1,10 +1,10 @@
 import React, { useContext, useState } from 'react';
-import { getTranslation, Language } from '../../context/Language';
-import { Logo } from '../../images/icons/Logo/Logo';
+import { getTranslation, Language } from '../../functions/language';
+import { Logo } from '../../images/icons/Logo';
 import { Search } from '../../images/icons/Search';
 import { Favorite } from '../../images/icons/Favorite';
-import { Bag } from '../../images/icons/Bag/Bag';
-import { Menu } from '../../images/icons/Menu/Menu';
+import { Bag } from '../../images/icons/Bag';
+import { Menu } from '../../images/icons/Menu';
 import classNames from 'classnames';
 
 export const Navigation = () => {
@@ -15,7 +15,7 @@ export const Navigation = () => {
 
   window.onscroll = function() {
     const currentScrollPos = window.pageYOffset;
-    console.log(currentScrollPos)
+    // console.log(currentScrollPos)
 
     if (currentScrollPos > 1) {
       setPosition(true);

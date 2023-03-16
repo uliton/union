@@ -1,3 +1,6 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
 .footer {
   width: 100%;
   background-color: $greyBg;
@@ -5,14 +8,51 @@
 
   &__accordion {
     padding: 0 20px;
-    background-color: none;
-    // margin-bottom: 20px;
+    margin-bottom: 20px;
 
     & > * {
       border-bottom: 1px solid $greyText;
 
       &:last-child {
         border-bottom: none;
+      }
+    }
+
+    @include on768 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      row-gap: 12px;
+      width: max-content;
+      margin: 0 auto 40px;
+
+      & > * {
+        border: none;
+      }
+    }
+
+    @include on1280 {
+      grid-template-areas:
+        "cus sr legal our follow"
+        "cus sr legal our pay";
+
+      & > :nth-child(1) {
+        grid-area: cus;
+      }
+      & > :nth-child(2) {
+        grid-area: sr;
+      }
+      & > :nth-child(3) {
+        grid-area: legal;
+      }
+      & > :nth-child(4) {
+        grid-area: our;
+      }
+      & > :nth-child(5) {
+        grid-area: follow;
+      }
+      & > :nth-child(6) {
+        grid-area: pay;
       }
     }
   }
@@ -24,7 +64,7 @@
     align-items: center;
     -webkit-box-pack: justify;
     -webkit-box-align: center;
-    padding: 50px 5%;
+    padding: 20px 5%;
     color: inherit;
     font-size: 13px;
 

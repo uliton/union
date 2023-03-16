@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { getTranslation, Language } from '../../context/Language';
+import { getTranslation, Language } from '../../functions/language';
 import { Modal } from '../Modal/Modal';
 
 export const Utilities = () => {

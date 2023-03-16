@@ -1,61 +1,61 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import classNames from 'classnames';
-import fb from '../../images/icons/fb.svg';
-import insta from '../../images/icons/insta.svg';
-import twitter from '../../images/icons/twitter.svg';
-import youtube from '../../images/icons/youtube.svg';
-// import payment_systems from '../../images/icons/payment_systems.svg';
-import paypal from '../../images/icons/paypal.svg';
+import { getLink } from '../../functions/links';
+import { Fb } from '../../images/icons/Fb';
+import { Insta } from '../../images/icons/Insta';
+import { Twitter } from '../../images/icons/Twitter';
+import { Youtube } from '../../images/icons/Youtube/Youtube';
+import { Paypal } from '../../images/icons/Paypal/Paypal';
 import arrow from '../../images/icons/arrow.svg';
 
-export const Accordion = ({ content, index }) => {
-  const [selected, setSelected] = useState(null);
+export const Accordion = ({ content, index, currentIndex, setCurrentIndex }) => {
+  const [opened, setOpened] = useState(false);
 
-  const neededImage = (innerDirectory) => {
-    console.log(innerDirectory, fb);
-    if (innerDirectory === fb) {
-      return fb;
-    }
-    if (innerDirectory === insta) {
-      return insta;
-    }
-    if (innerDirectory === twitter) {
-      return twitter;
-    }
-    if (innerDirectory === youtube) {
-      return youtube;
-    }
-    if (innerDirectory === paypal) {
-      return paypal;
-    }
-    if (innerDirectory === arrow) {
-      return arrow;
+  const neededImage = (img) => {
+    switch (img) {
+      case 'fb':
+        return <Fb />;
+      case 'insta':
+        return <Insta />;
+      case 'twitter':
+        return <Twitter />;
+      case 'youtube':
+        return <Youtube />;
+      case 'payment_systems': // не та картинка
+        return <Paypal />;
+      // case 'paypal':
+      //   return <Paypal />;
+      default:
+        return '';
     }
   }
 
   useEffect(() => {
+    if (window.innerWidth < 768) {
+      setOpened(false);
+    }
+
     if (window.innerWidth >= 768) {
-      setSelected(true)
+      setOpened(true);
     }
   }, [window.innerWidth])
 
   const toggle = (i) => {
-    if (selected === i) {
-      return setSelected(null);
+    if (i !== currentIndex) {
+      return setCurrentIndex(i);
     }
 
-    setSelected(i);
+    if (i === currentIndex) {
+      return setCurrentIndex(false);
+    }
   };
 
-
-
-
   return (
-    <section className='accordion'>
+    <div className='accordion'>
       <button
         type="button"
         className={classNames('accordion__title', {
-          'accordion__title--open': selected
+          'accordion__title--open': index === currentIndex,
         })}
         onClick={() => toggle(index)}
       >
@@ -63,14 +63,19 @@ export const Accordion = ({ content, index }) => {
       </button>
 
       <span>
-        {content.links.length && (
+        {content.links && content.links.length > 0 && (
           <ul className={classNames('accordion__list', {
-            'accordion__list--show': selected
+            'accordion__list--open': index === currentIndex || opened
           })}>
-            {content.links.map((link, i) => (
+            {content.links.map((name, i) => (
               <li key={i} className='accordion__item'>
-                <a href={link.url} rel="noreferrer" target='_blank'>
-                  {link.name}
+                <a
+                  href={getLink(index, i)}
+                  rel="noreferrer"
+                  // target='_blank'
+                  className='accordion__link'
+                >
+                  {name}
                 </a>
               </li>
             ))}
@@ -78,32 +83,23 @@ export const Accordion = ({ content, index }) => {
         )}
       </span>
 
-      
-        {content.images.length && (
-          <ul className={classNames('accordion__list', {
-            'accordion__list--show': selected
-          })}>
-            {content.images.map((link, i) => (
-              <li key={i} className='accordion__item'>
-                <a
-                  href={link.url}
-                  rel="noreferrer"
-                  target='_blank'
-                  style={{
-                    width: '15px',
-                    height: '15px',
-                    backgroundImage: `url(../../images/icons/${neededImage(link.directory)}.svg)`
-                  }}
-                >
-                  
-                </a>
-              </li>
-            ))}
-          </ul>
-        )}
-      <p className='test'>
-
-      </p>
-    </section>
+      {content.images && content.images.length > 0 && (
+        <ul className={classNames('accordion__list', 'accordion__img-list', {
+          'accordion__list--open': index === currentIndex || opened
+        })}>
+          {content.images.map((img, i) => (
+            <li key={i} className='accordion__item'>
+              <a
+                href={getLink(index, i)}
+                rel="noreferrer"
+                // target='_blank'
+              >
+                {neededImage(img)}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
   );
 };

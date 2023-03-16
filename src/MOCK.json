@@ -65,8 +65,44 @@
     "about_third_story_title": "Следовать логике океана",
     "about_story_website": "Union.org",
 
-    "footer_service_language": "Сменить язык"
+
+
+    "footer_service_language": "Сменить язык",
+    "footer_content": [
+      {
+        "title": "Обслуживание клиентов",
+        "links": ["Связаться с нами", "Руководство по размерам", "Мой заказ", "Мой аккаунт", "Оплата", "Подлинность", "Наши услуги"]
+      },
+      {
+        "title": "Доставка и возврат",
+        "links": ["Доставка", "Отследить ваш заказ", "Возврат и обмен"]
+      },
+      {
+        "title": "Юридическая зона",
+        "links": ["Условия продажи", "Политика конфиденциальности", "Политика в отношении cookie", "Настройки файлов cookie"]
+      },
+      {
+        "title": "Наша компания",
+        "links": ["Найти бутик", "Карьера", "Armani/Ценности"]
+      },
+      {
+        "title": "Подписывайтесь на нас",
+        "images": ["fb", "insta", "twitter", "youtube"]
+      },
+      {
+        "title": "Способы оплаты",
+        "images": ["payment_systems", "paypal"]
+      }
+    ]
   },
+
+
+
+
+
+
+
+
 
 
 
@@ -134,6 +170,34 @@
     "about_third_story_title": "Следовать логике океана",
     "about_story_website": "Rolex.org",
 
-    "footer_service_language": "Change language"
+
+
+    "footer_service_language": "Change language",
+    "footer_content": [
+      {
+        "title": "Customer Care",
+        "links": ["Contact us", "Size Guide", "My Order", "My Account", "Payment", "Authenticity", "Our Services"]
+      },
+      {
+        "title": "Shipping & Returns",
+        "links": ["Shipping", "Tasck your order", "Returns and exchanges"]
+      },
+      {
+        "title": "Legal Area",
+        "links": ["Terms and Conditions of Sale", "Privacy Policy", "Cookie Policy", "Cookie settings"]
+      },
+      {
+        "title": "Our Company",
+        "links": ["Find a Boutique", "Careers", "Armani/Values"]
+      },
+      {
+        "title": "Follow Us",
+        "images": ["fb", "insta", "twitter", "youtube"]
+      },
+      {
+        "title": "Payment Methods",
+        "images": ["payment_systems", "paypal"]
+      }
+    ]
   }
 }

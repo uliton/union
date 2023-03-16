@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import classNames from "classnames";
-import { getTranslation, Language } from "../../context/Language";
+import { getTranslation, Language } from "../../functions/language";
 import { sendContacts } from "../../functions/t_mess";
 import { Close } from "../../images/icons/Close";
 

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { getTranslation, Language } from '../../context/Language';
+import { getTranslation, Language } from '../../functions/language';
 
 export const LanguageSelect =({ setLanguage }) => {
   const lang = useContext(Language);

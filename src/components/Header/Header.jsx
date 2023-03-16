@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { getTranslation, Language } from '../../context/Language';
+import { getTranslation, Language } from '../../functions/language';
 import min from '../../videos/min.mp4';
 import max from '../../videos/max.mp4';
 
@@ -19,7 +19,7 @@ export const Header = () => {
   }, []);
 
   return (
-    <section className='header'>
+    <section className='header' id='header'>
       <video
         type='video/mp4'
         src={renderVideo}

@@ -1,12 +1,7 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
 .accordion {
-  // @include onTablet {
-  //   width: 730px;
-  // }
-
-  // @include onDesktop {
-  //   width: 1160px;
-  // }
-
   &__title {
     display: flex;
     align-items:flex-end;
@@ -19,8 +14,12 @@
     width: 100%;
     border: none;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 2;
+
+    @include on768 {
+      cursor: auto;
+    }
 
     &::after {
       content: '';
@@ -30,6 +29,10 @@
       width: 15px;
       height: 2px;
       background-color: $mainColor;
+
+      @include on768 {
+        display: none;
+      }
     }
     
     &::before {
@@ -42,27 +45,27 @@
       background-color: $mainColor;
       transform: rotateZ(90deg);
       transition: transform 500ms;
+
+      @include on768 {
+        display: none;
+      }
     }
 
-    &--open {
+    &--open::before {
       transition: transform 500ms;
-
-      &::before {
-        transition: transform 500ms;
-        transform: rotateZ(0deg);
-      }
+      transform: rotateZ(0deg);
     }
   }
 
   &__list {
+    display: none;
     max-height: 0;
     overflow: hidden;
-    transition: all 1.5s ease;
+    transition: all 600ms;
 
-    &--show {
-      max-height: 900px;
-      font-size: 16px;
-      transition: max-height 3s ease;
+    &--open {
+      display: inline;
+      max-height: 400px;
     }
   }
 
@@ -71,12 +74,19 @@
     font-size: 12px;
     margin-bottom: 16px;
   }
-}
 
+  &__img-list {
+    display: flex;
+    gap: 12px;
+  }
 
-.test {
-  width: 15px;
-  height: 15px;
-  background-color: yellowgreen;
-  background-image: url(../../images/icons/fb.svg);
+  &__link {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      cursor: pointer;
+      color: $green;
+    }
+  }
 }

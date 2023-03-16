@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { getTranslation, Language } from '../../context/Language';
+import { getTranslation, Language } from '../../functions/language';
 import residence from '../../images/trends/residence.jpg';
 import industry from '../../images/trends/industry.jpg';
 import architecture from '../../images/trends/architecture.jpg';

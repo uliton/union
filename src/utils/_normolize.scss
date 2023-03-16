@@ -8,6 +8,10 @@
   -webkit-border-image: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, button, input {
   font-family: Gotham;
   font-weight: 1;

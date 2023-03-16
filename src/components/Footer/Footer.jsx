@@ -1,146 +1,24 @@
-import React from 'react';
-import { Accordion } from '../../ui/Accordion/Accordion';
-import { LanguageSelect } from '../../ui/LanguageSelect/LanguageSelect';
+import React, { useContext, useState } from 'react';
+import { getTranslation, Language } from '../../functions/language';
+import { Accordion } from '../../ui/Accordion';
+import { LanguageSelect } from '../../ui/LanguageSelect';
 
 export const Footer = ({ setLanguage }) => {
-
-  const content = [
-    {
-      title: 'Customer Care',
-      links: [
-        {
-          name: 'Contact us',
-          url: '/'
-        },
-        {
-          name: 'Size Guide',
-          url: '/'
-        },
-        {
-          name: 'My Order',
-          url: '/'
-        },
-        {
-          name: 'My Account',
-          url: '/'
-        },
-        {
-          name: 'Payment',
-          url: '/'
-        },
-        {
-          name: 'Authenticity',
-          url: '/'
-        },
-        {
-          name: 'Our Services',
-          url: '/'
-        }
-      ],
-      images: []
-    },
-    // {
-    //   title: 'Shipping & Returns',
-    //   links: [
-    //     {
-    //       name: 'Shipping',
-    //       url: '/'
-    //     },
-    //     {
-    //       name: 'Tasck your order',
-    //       url: '/'
-    //     },
-    //     {
-    //       name: 'Returns and exchanges',
-    //       url: '/'
-    //     }
-    //   ],
-    //   images: []
-    // },
-    // {
-    //   title: 'Legal Area',
-    //   links: [
-    //     {
-    //       name: 'Terms and Conditions of Sale',
-    //       url: '/'
-    //     },
-    //     {
-    //       name: 'Privacy Policy',
-    //       url: '/'
-    //     },
-    //     {
-    //       name: 'Cookie Policy',
-    //       url: '/'
-    //     },
-    //     {
-    //       name: 'Cookie settings',
-    //       url: '/'
-    //     }
-    //   ],
-    //   images: []
-    // },
-    // {
-    //   title: 'Our Company',
-    //   links: [
-    //     {
-    //       name: 'Find a Boutique',
-    //       url: '/'
-    //     },
-    //     {
-    //       name: 'Careers',
-    //       url: '/'
-    //     },
-    //     {
-    //       name: 'Armani/Values',
-    //       url: '/'
-    //     }
-    //   ],
-    //   images: []
-    // },
-    // {
-    //   title: 'Follow Us',
-    //   links: [],
-    //   images: [
-    //     {
-    //       directory: '../../images/icons/fb.svg',
-    //       url: ''
-    //     },
-    //     {
-    //       directory: '../../images/icons/insta.svg',
-    //       url: ''
-    //     },
-    //     {
-    //       directory: '../../images/icons/twitter.svg',
-    //       url: ''
-    //     },
-    //     {
-    //       directory: '../../images/icons/youtube.svg',
-    //       url: ''
-    //     }
-    //   ]
-    // },
-    // {
-    //   title: 'Payment Methods',
-    //   links: [],
-    //   images: [
-    //     {
-    //       directory: '../../images/icons/payment_systems.svg',
-    //       url: ''
-    //     },
-    //     {
-    //       directory: '../../images/icons/paypal.svg',
-    //       url: ''
-    //     }
-    //   ]
-    // }
-  ]
+  const lang = useContext(Language);
+  const MOCK = getTranslation(lang);
+  const [currentIndex, setCurrentIndex] = useState(false);
 
   return (
     <footer className='footer'>
       <div className="footer__accordion">
-        {content.map((item, i) => (
+        {MOCK.footer_content.map((sectionContent, i) => (
           <React.Fragment key={i}>
-            <Accordion content={item} index={i} />
+            <Accordion
+              content={sectionContent}
+              index={i}
+              currentIndex={currentIndex}
+              setCurrentIndex={setCurrentIndex}
+            />
           </React.Fragment>
         ))}
       </div>

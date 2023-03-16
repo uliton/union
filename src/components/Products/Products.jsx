@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { getTranslation, Language } from '../../context/Language';
+import { getTranslation, Language } from '../../functions/language';
 import one from '../../images/products/01.png';
 import two from '../../images/products/02.png';
 import three from '../../images/products/03.png';
