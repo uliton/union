@@ -6,7 +6,7 @@ import { Insta } from '../../images/icons/Insta';
 import { Twitter } from '../../images/icons/Twitter';
 import { Youtube } from '../../images/icons/Youtube/Youtube';
 import { Paypal } from '../../images/icons/Paypal/Paypal';
-import arrow from '../../images/icons/arrow.svg';
+// import arrow from '../../images/icons/arrow.svg';
 
 export const Accordion = ({ content, index, currentIndex, setCurrentIndex }) => {
   const [opened, setOpened] = useState(false);
@@ -30,15 +30,30 @@ export const Accordion = ({ content, index, currentIndex, setCurrentIndex }) => 
     }
   }
 
+  const [windowSize, setWindowSize] = useState([
+    window.innerWidth,
+    window.innerHeight,
+  ]);
+// console.log(windowSize[0], opened)
   useEffect(() => {
-    if (window.innerWidth < 768) {
-      setOpened(false);
+    const handleWindowResize = () => {
+      setWindowSize([window.innerWidth, window.innerHeight]);
+    };
+
+    window.addEventListener('resize', handleWindowResize);
+
+    if (windowSize[0] < 768) {
+      setOpened(() => false);
     }
 
-    if (window.innerWidth >= 768) {
-      setOpened(true);
+    if (windowSize[0] >= 768) {
+      setOpened(() => true);
     }
-  }, [window.innerWidth])
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, [windowSize]);
 
   const toggle = (i) => {
     if (i !== currentIndex) {

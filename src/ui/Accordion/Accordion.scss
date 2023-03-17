@@ -52,20 +52,17 @@
     }
 
     &--open::before {
-      transition: transform 500ms;
       transform: rotateZ(0deg);
     }
   }
 
   &__list {
-    display: none;
     max-height: 0;
     overflow: hidden;
-    transition: all 600ms;
+    transition: all 700ms;
 
     &--open {
-      display: inline;
-      max-height: 400px;
+      max-height: 300px;
     }
   }
 

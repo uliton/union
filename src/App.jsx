@@ -25,8 +25,9 @@ export const App = () => {
         <Navigation />
         <Header />
         <Intro />
-        <Trends />
+
         <Catch />
+        <Trends />
         <Products />
         <Utilities />
         <Shop />
