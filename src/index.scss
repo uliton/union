@@ -4,7 +4,6 @@
 @import './utils/normolize';
 @import './utils/container';
 
-
 // components
 @import './App.scss';
 @import './components/Header/Header.scss';
@@ -18,15 +17,15 @@
 @import './components/Shop/Shop.scss';
 @import './components/Design/Design.scss';
 @import './components/Subscribe/Subscribe.scss';
+@import './components/Footer/Footer.scss';
 // @import './components/Advertising/Advertising.scss';
 // @import './components/About/About.scss';
 // @import './components/Contacts/Contacts.scss';
-@import './components/Footer/Footer.scss';
-
 
 // ui
 @import './ui/LanguageSelect/LanguageSelect.scss';
 @import './ui/Accordion/Accordion.scss';
+@import './ui/Carousel/Carousel.scss';
 
 // svg
 @import './images/icons/Logo/Logo.scss';
