@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import { getLink } from '../../functions/links';
 import { Fb } from '../../images/icons/Fb';
@@ -6,7 +6,6 @@ import { Insta } from '../../images/icons/Insta';
 import { Twitter } from '../../images/icons/Twitter';
 import { Youtube } from '../../images/icons/Youtube/Youtube';
 import { Paypal } from '../../images/icons/Paypal/Paypal';
-// import arrow from '../../images/icons/arrow.svg';
 
 export const Accordion = ({ content, index, currentIndex, setCurrentIndex }) => {
   const [opened, setOpened] = useState(false);
@@ -34,7 +33,7 @@ export const Accordion = ({ content, index, currentIndex, setCurrentIndex }) => 
     window.innerWidth,
     window.innerHeight,
   ]);
-// console.log(windowSize[0], opened)
+
   useEffect(() => {
     const handleWindowResize = () => {
       setWindowSize([window.innerWidth, window.innerHeight]);
