@@ -1,5 +1,8 @@
 import React, { useContext, useState } from 'react';
 import { getTranslation, Language } from '../../functions/language';
+import { Description } from '../../ui/Description';
+import { OpenModalButton } from '../../ui/OpenModalButton/OpenModalButton';
+import { Title } from '../../ui/Title';
 import { Modal } from '../Modal/Modal';
 
 export const Utilities = () => {
@@ -9,47 +12,28 @@ export const Utilities = () => {
 
   return (
     <section className='utilities container'>
-      <div className="utilities__title">
-        {MOCK.utilities_title}
-      </div>
+      <Title content={MOCK.utilities_title} />
 
-      {/* <div className="utilities__description">
-        {MOCK.utilities_description}
-      </div> */}
+      {/* <Description content={MOCK.utilities_description}/> */}
 
       <div className="utilities__configurator">
         {/* first button */}
-        <button
-          type='button'
-          className='utilities__configurator__button'
-          onClick={() => {
-            setModalStatus(true);
-          }}
-        >
-          {MOCK.utilities_button_1}
-        </button>
-        
+        <OpenModalButton
+          content={MOCK.utilities_button_1}
+          onClick={setModalStatus}
+        />
+
         {/* second button */}
-        <button
-          type='button'
-          className='utilities__configurator__button'
-          onClick={() => {
-            setModalStatus(true);
-          }}
-        >
-          {MOCK.utilities_button_2}
-        </button>
+        <OpenModalButton
+          content={MOCK.utilities_button_2}
+          onClick={setModalStatus}
+        />
 
         {/* third button */}
-        <button
-          type='button'
-          className='utilities__configurator__button'
-          onClick={() => {
-            setModalStatus(true);
-          }}
-        >
-          {MOCK.utilities_button_3}
-        </button>
+        <OpenModalButton
+          content={MOCK.utilities_button_3}
+          onClick={setModalStatus}
+        />
 
         {modalStatus && (
           <Modal

@@ -1,7 +1,6 @@
 @import './mixins';
 
 .container {
-  margin: 0 auto;
   width: 80%;
 
   @include on768 {

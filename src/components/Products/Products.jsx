@@ -6,6 +6,8 @@ import three from '../../images/products/03.png';
 import four from '../../images/products/04.png';
 import five from '../../images/products/05.png';
 import six from '../../images/products/06.png';
+import { TextLink } from '../../ui/TextLink';
+import { Title } from '../../ui/Title';
 import { Modal } from '../Modal/Modal';
 
 export const Products = () => {
@@ -19,9 +21,7 @@ export const Products = () => {
 
   return (
     <section className='products'>
-      <div className="products__title">
-        {MOCK.products_title}
-      </div>
+      <Title content={MOCK.products_title} />
 
       <ul className="products__list">
         {/* one */}
@@ -40,6 +40,8 @@ export const Products = () => {
           <p className='products__item__name'>
             {MOCK.products_item_1}
           </p>
+
+          <TextLink content={MOCK.products_link} />
         </li>
 
         {/* two */}
@@ -58,6 +60,8 @@ export const Products = () => {
           <p className='products__item__name'>
             {MOCK.products_item_2}
           </p>
+
+          <TextLink content={MOCK.products_link} />
         </li>
 
         {/* three */}
@@ -76,6 +80,8 @@ export const Products = () => {
           <p className='products__item__name'>
             {MOCK.products_item_3}
           </p>
+
+          <TextLink content={MOCK.products_link} />
         </li>
 
         {/* four */}
@@ -94,6 +100,8 @@ export const Products = () => {
           <p className='products__item__name'>
             {MOCK.products_item_4}
           </p>
+
+          <TextLink content={MOCK.products_link} />
         </li>
 
         {/* five */}
@@ -130,6 +138,8 @@ export const Products = () => {
           <p className='products__item__name'>
             {MOCK.products_item_6}
           </p>
+
+          <TextLink content={MOCK.products_link} />
         </li>
       </ul>
 

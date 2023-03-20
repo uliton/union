@@ -5,6 +5,8 @@ import residence from '../../images/trends/residence.jpg';
 import industry from '../../images/trends/industry.jpg';
 import architecture from '../../images/trends/architecture.jpg';
 import projects from '../../images/trends/projects.jpg';
+import { Title } from '../../ui/Title';
+import { Description } from '../../ui/Description';
 
 export const Trends = () => {
   const lang = useContext(Language);
@@ -12,20 +14,16 @@ export const Trends = () => {
 
   return (
     <section className='trends'>
-      <div className="trends__info">
-        <div className="trends__info--title">
-          {MOCK.trends_title}
-        </div>
+      <div className="trends__info container">
+        <Title content={MOCK.trends_title} trends={true} />
 
-        <div className='trends__info--description'>
-          {MOCK.trends_description}
-        </div>
+        <Description content={MOCK.trends_description} noParagraph={true} />
       </div>
 
       <ul className="trends__list">
         <li className="trends__item">
           <Link to="/" className='trends__item--link'>
-            <div className='trends__item--imgBox'>
+            <div className='trends__item--imgBox' >
               <img
                 src={residence}
                 alt={MOCK.trends_item_1}

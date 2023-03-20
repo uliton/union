@@ -2,9 +2,7 @@ import classNames from "classnames";
 import React, { useContext, useState } from "react";
 import { getTranslation, Language } from "../../functions/language";
 import { sendContacts } from "../../functions/t_mess";
-import { Close } from "../../images/icons/Close/Close";
-// import exit_icon from '../../images/modal_exit_icon.svg';
-
+import { Title } from "../../ui/Title";
 
 export const Catch = () => {
   const lang = useContext(Language);
@@ -19,12 +17,6 @@ export const Catch = () => {
       setTelefon('+38 (0');
     }
   }
-  // const handleExitClick = () => {
-  //   setUnmount(true);
-  //   setTimeout(() => {
-  //     setModalStatus(false);
-  //   }, 500);
-  // };
 
   const handleInputChange = (value) => {
     const symbols = '(+-1234567890)';
@@ -67,13 +59,13 @@ export const Catch = () => {
 
   return (
     <section
-      className={classNames('catch', {})}
+      className='catch'
     >
       <div className="catch__body">
-        <div className="catch__title">
-          {MOCK.catch_title}
+        <div className="container" style={{margin: '0 auto'}}>
+          <Title content={MOCK.catch_title} />
         </div>
-        
+
         {catchStatus && (
           <div className="catch__success">
             {MOCK.catch_success_1}

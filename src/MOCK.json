@@ -1,35 +1,43 @@
 {
   "ru": {
-    "header_title": "UNION STONE",
-    "header_subtitle": "откройте для себя янтарное чудо света",
-    "nav_menu": "Меню",
-    "nav_portfolio": "Портфолио",
-    "nav_online_shop": "Онлайн магазин",
-    "contacts_title": "поделиться страницей",
-    "intro_title": "Union Stone — это единственные в мире изделия из камней янтаря",
-    "intro_description": "Ювелиры Union - это хранители вековых традицы, которые передавались из поколения в поколение и сегодня они первые, кто смогли в ручню объединить каждый камень янтаря, в одно целое. Благодрая изучению Арабских стран, Alessandro Rossti изобрел революционную формулу, которая позволила получить беспрецедентный материал с исключительными характеристиками, предельной контрастностью, цвета и тепла",
-    
-    "intro_button_1": "Задолбать Серого",
-    "intro_button_2": "Продолжить долбежку",
-    "intro_button_3": "Задолбать окончательно",
-
     "modal_header": "Узнать больше",
     "modal_title": "Мы свяжемся с вами и ответим на все вопросы",
     "modal_name": "Ваше имя",
     "modal_phone": "Номер телефона",
     "modal_button": "Узнать больше",
-    "trends_title": "Сделайте свой дом уникальным",
-    "trends_description": "Изучите современные тенденции и обставьте свой дом в соответствии со своими вкусами",
-    "trends_item_1": "Жилые интерьеры",
-    "trends_item_2": "Промышленность",
-    "trends_item_3": "Архитектурное проектирование",
-    "trends_item_4": "Проекты сезона от UNION",
+
+    "nav_menu": "Меню",
+    "nav_portfolio": "Портфолио",
+    "nav_online_shop": "Онлайн магазин",
+
+    "header_title": "UNION STONE",
+    "header_subtitle": "откройте для себя янтарное чудо света",
+
+    "intro_title": "Union Stone — это единственные в мире изделия из камней янтаря",
+    "intro_description": "Ювелиры Union - это хранители вековых традицы, которые передавались из поколения в поколение и сегодня они первые, кто смогли в ручню объединить каждый камень янтаря, в одно целое. Благодрая изучению Арабских стран, Alessandro Rossti изобрел революционную формулу, которая позволила получить беспрецедентный материал с исключительными характеристиками, предельной контрастностью, цвета и тепла",
+    "intro_button_1": "Коллекция плит",
+    "intro_button_2": "Заказать дизайн-проект",
+    
     "catch_title": "Мы свяжемся с вами и ответим на все вопросы",
     "catch_success_1": "Ваш запрос успешно отправлен",
     "catch_success_2": "Наш менеджер свяжится с вами в ближайшее время",
     "catch_name": "Ваше имя",
     "catch_phone": "Номер телефона",
     "catch_button": "Узнать больше",
+
+    "trends_title": "Сделайте свой дом уникальным",
+    "trends_description": "Изучите современные тенденции и обставьте свой дом в соответствии со своими вкусами",
+    "trends_item_1": "Жилые интерьеры",
+    "trends_item_2": "Промышленность",
+    "trends_item_3": "Архитектурное проектирование",
+    "trends_item_4": "Проекты сезона от UNION",
+
+    "architecture_title": "Архитектурный рационализм и личное настроение",
+    "architecture_description_1": "В UNION мы пошли дальше",
+    "architecture_description_2": "Каждой нашей коллекции мы дали ключк прочтению, смысл, душу",
+    "architecture_description_3": "Потому что наши кухни живут с нами каждый день нашей жизни",
+    "architecture_link": "Коллекции",
+    
     "products_title": "Открой для себя продукты UNION",
     "products_item_1": "Кулон",
     "products_item_2": "Стена/Потолок",
@@ -37,35 +45,33 @@
     "products_item_4": "Стол",
     "products_item_5": "Знаковые продукты",
     "products_item_6": "Новое",
+    "products_link": "Показать продукты",
+    
+    "showroom_title": "Новый облик выставочного зала UNION",
+    "showroom_description": "Входя в новый шоурум UNION, вы попадаете в теплую и уютную атмосферу роскошного и комфотабельного дома. Этот щоурум воплозает в себе атмосферу домащнего уюта и тепла",
+    "showroom_link": "Показать продукты",
+    
     "utilities_title": "Утилиты",
     "utilities_button_1": "Дилеры",
     "utilities_button_2": "Зарегистрировать продукт",
     "utilities_button_3": "Подписка",
+    
     "shop_title": "Завершите ваш дом",
-    "shop_description": "Персонализируйте свой дом с помощью аксессуаров UNION, чтобы создать уединенное место, создающее ощущение благополучия",
+    "shop_description_1": "Аксессуары",
+    "shop_description_2": "Персонализируйте свой дом с помощью аксессуаров UNION, чтобы создать уединенное место, создающее ощущение благополучия",
     "shop_button": "Узнать больше",
+    
     "design_title": "Услуги дизайна интерьера",
     "design_description": "Студия дизайна интерьера, основана в 2004-м году под непосредственным руководством Джорджио Армани, предлагает полный комплекс услуг по созданию проектов любого типа: апартаменты в самых эксклюзивных местах, частные яхты и самолеты, экзотические виллы и престижные жилые комплексы. Реализуя стиль Армани в разных контекстах и с разными нюансами, конечной целью студии является всегда реагировать и удовлетворять все запросы и пожелания клиента",
     "design_button": "Узнать больше",
+    
     "subscribe_title": "Подписывайтесь на нашу рассылку",
     "subscribe_success": "Вы подписались на рассылку",
     "subscribe_error": "",
     "subscribe_name": "Ваша электронная почта",
     "subscribe_button": "Подписаться",
 
-
-
-    "advertising_foreword": "Мир Rolex",
-    "advertising_title": "Rolex и Открытый чемпионат Австралии",
-    "advertising_button": "Подробнее",
-
-    "about_foreword": "Многогранность Rolex",
-    "about_first_story_title": "Секреты могучей реки Замбези ",
-    "about_second_story_title": "Исследуя подземные пещеры",
-    "about_third_story_title": "Следовать логике океана",
-    "about_story_website": "Union.org",
-
-
+    "contacts_title": "ХЕР",
 
     "footer_service_language": "Сменить язык",
     "footer_content": [
@@ -107,36 +113,44 @@
 
 
   "en": {
-    "header_title": "UNION STONE",
-    "header_subtitle": "discover the amber wonder of the world",
-    "nav_menu": "Menu",
-    "nav_portfolio": "Portfolio",
-    "nav_online_shop": "Online shop",
-    "contacts_title": "share this page",
-    "intro_title": "Union Stone is the only amber stone product in the world",
-    "intro_description": "Union jewelers are the keepers of centuries-old traditions that have been passed down from generation to generation, and today they are the first to be able to combine each amber stone into one whole by hand. Thanks to the study of the Arab countries, Alessandro Rossti invented a revolutionary formula that allowed him to obtain an unprecedented material with exceptional characteristics, extreme contrast, color and warmth",
-
-    "intro_button_1": "Задолбать Серого",
-    "intro_button_2": "Продолжить долбежку",
-    "intro_button_3": "Задолбать окончательно",
-    
     "modal_header": "More informathion",
     "modal_title": "We will contact you and answer all your questions",
     "modal_name": "Your name",
     "modal_phone": "Your phone",
     "modal_button": "More informathion",
-    "trends_title": "Make your home unique",
-    "trends_description": "Explore current trends and furnish your home according to your tastes",
-    "trends_item_1": "Residential interiors",
-    "trends_item_2": "Industry",
-    "trends_item_3": "Architectural Engineering",
-    "trends_item_4": "Projects of the season from UNION",
+
+    "nav_menu": "Menu",
+    "nav_portfolio": "Portfolio",
+    "nav_online_shop": "Online shop",
+    
+    "header_title": "UNION STONE",
+    "header_subtitle": "discover the amber wonder of the world",
+
+    "intro_title": "Union Stone is the only amber stone product in the world",
+    "intro_description": "Union jewelers are the keepers of centuries-old traditions that have been passed down from generation to generation, and today they are the first to be able to combine each amber stone into one whole by hand. Thanks to the study of the Arab countries, Alessandro Rossti invented a revolutionary formula that allowed him to obtain an unprecedented material with exceptional characteristics, extreme contrast, color and warmth",
+    "intro_button_1": "Slab collection",
+    "intro_button_2": "Order a design project",
+
     "catch_title": "We will contact you and answer all your questions",
     "catch_success_1": "Your request is successful",
     "catch_success_2": "Our manager will contact you shortly",
     "catch_name": "Your name",
     "catch_phone": "Your phone",
     "catch_button": "More informathion",
+
+    "trends_title": "Make your home unique",
+    "trends_description": "Explore current trends and furnish your home according to your tastes",
+    "trends_item_1": "Residential interiors",
+    "trends_item_2": "Industry",
+    "trends_item_3": "Architectural Engineering",
+    "trends_item_4": "Projects of the season from UNION",
+
+    "architecture_title": "Architectural rationalism and personal mood",
+    "architecture_description_1": "At UNION we have gone further",
+    "architecture_description_2": "We gave each of our collections the key to reading, meaning, soul",
+    "architecture_description_3": "Because our kitchens live with us every day of our lives",
+    "architecture_link": "Collections",
+
     "products_title": "Discover products by UNION",
     "products_item_1": "Pendant",
     "products_item_2": "Wall/Ceiling",
@@ -144,34 +158,33 @@
     "products_item_4": "Table",
     "products_item_5": "Iconic Products",
     "products_item_6": "New",
+    "products_link": "Show products",
+
+    "showroom_title": "New look of the UNION showroom",
+    "showroom_description": "Entering the new UNION showroom, you find yourself in a warm and cozy atmosphere of a luxurious and comfortable home. This showroom embodies the atmosphere of home comfort and warmth",
+    "showroom_link": "Show products",
+
     "utilities_button_1": "Dealers",
     "utilities_button_2": "Register a product",
     "utilities_button_3": "Subscription",
+    
     "shop_title": "Complete your home",
-    "shop_description": "Personalize your home with UNION accessories to create a private space that creates a sense of well-being",
+    "shop_description_1": "Accessories",
+    "shop_description_2": "Personalize your home with UNION accessories to create a private space that creates a sense of well-being",
     "shop_button": "More informathion",
+    
     "design_title": "Interior design services",
     "design_description": "The interior design studio, founded in 2004 under the direct supervision of Giorgio Armani, offers a full range of services for the creation of projects of any type: apartments in the most exclusive locations, private yachts and planes, exotic villas and prestigious residential complexes. Realizing the Armani style in different contexts and with different nuances, the ultimate goal of the studio is to always respond and satisfy all the requests and wishes of the client",
     "design_button": "More informathion",
+    
     "subscribe_title": "Subscribe to our newsletter",
     "subscribe_success": "You have subscribed",
     "subscribe_error": "",
     "subscribe_name": "Your email",
     "subscribe_button": "Subscribe",
-
-
-    "advertising_foreword": "World of Rolex",
-    "advertising_title": "Rolex and the Australian Open",
-    "advertising_button": "Discover more",
-
-    "about_foreword": "Многогранность Rolex",
-    "about_first_story_title": "Секреты могучей реки Замбези ",
-    "about_second_story_title": "Исследуя подземные пещеры",
-    "about_third_story_title": "Следовать логике океана",
-    "about_story_website": "Rolex.org",
-
-
-
+    
+    "contacts_title": "share this page",
+    
     "footer_service_language": "Change language",
     "footer_content": [
       {

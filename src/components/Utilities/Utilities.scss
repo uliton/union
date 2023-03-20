@@ -2,68 +2,16 @@
 @import '../../utils/mixins';
 
 .utilities {
-  position: relative;
-  line-height: 1.2;
-  letter-spacing: 0.8px;
-  margin-bottom: 40px;
-
-  &__title {
-    text-align: center;
-    margin: 18px 0;
-    font-size: 24px;
-    font-weight: 4;
-    background-image: url('../../images/bgi.jpg');
-    background-position: center;
-    background-clip: text;
-    color: transparent;
-  }
-
-  // &__description {
-  //   margin: 18px 0;
-  //   padding: 18px 0;
-  //   text-align: justify;
-
-  //   &::before {
-  //     content: '';
-  //     margin-left: 40px;
-  //   }
-  // }
-
   &__configurator {
-    display: grid;
-    grid-template-columns: minmax(280px, 384px);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 12px;
 
-    @include on768 {
-      grid-template-columns: 50%;
-    }
-    
     @include on1280 {
-      grid-template-columns: repeat(3, 300px);
+      flex-direction: row;
       gap: 20px;
-    }
-
-    &__button {
-      font-size: 14px;
-      width: 100%;
-      margin: 0 auto 10px;
-      padding: 10px 20px;
-      background-color: #fff;
-      color: $green;
-      border: 1px solid $green;
-      border-radius: 20px;
-      outline: none;
-      transition: all 500ms;
-    
-      @include on768 {
-        padding: 10px 30px;
-      }
-
-      &:hover {
-        cursor: pointer;
-        background-color: $green;
-        color: #fff;
-      }
     }
   }
 }

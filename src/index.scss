@@ -6,26 +6,32 @@
 
 // components
 @import './App.scss';
-@import './components/Header/Header.scss';
-@import './components/Navigation/Navigation.scss';
-@import './components/Intro/Intro.scss';
 @import './components/Modal/Modal.scss';
-@import './components/Trends/Trends.scss';
+@import './components/Navigation/Navigation.scss';
+@import './components/Header/Header.scss';
+@import './components/Intro/Intro.scss';
+@import './components/Catalog/Catalog.scss';
 @import './components/Catch/Catch.scss';
+@import './components/Trends/Trends.scss';
+@import './components/Architecture/Architecture.scss';
 @import './components/Products/Products.scss';
+
+@import './components/Showroom/Showroom.scss';
 @import './components/Utilities/Utilities.scss';
+
 @import './components/Shop/Shop.scss';
 @import './components/Design/Design.scss';
 @import './components/Subscribe/Subscribe.scss';
 @import './components/Footer/Footer.scss';
-// @import './components/Advertising/Advertising.scss';
-// @import './components/About/About.scss';
-// @import './components/Contacts/Contacts.scss';
 
 // ui
 @import './ui/LanguageSelect/LanguageSelect.scss';
 @import './ui/Accordion/Accordion.scss';
 @import './ui/Carousel/Carousel.scss';
+@import './ui/OpenModalButton/OpenModalButton.scss';
+@import './ui/Title/Title.scss';
+@import './ui/Description/Description.scss';
+@import './ui/TextLink/TextLink.scss';
 
 // svg
 @import './images/icons/Logo/Logo.scss';

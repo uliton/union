@@ -2,42 +2,24 @@
 @import '../../utils/mixins';
 
 .trends {
-  margin-bottom: 40px;
-
   &__info {
-    line-height: 1.2;
-    letter-spacing: 0.8px;
-
-    &--title {
-      text-align: center;
-      width: 80%;
-      margin: 0 auto 16px;
-      font-size: 24px;
-      font-weight: 4;
-      background-image: url('../../images/bgi.jpg');
-      background-position: center;
-      background-clip: text;
-      color: transparent;
-    }
-
-    &--description {
-      text-align: center;
-      max-width: 75%;
-      margin: 0 auto 24px;
-    }
+    margin: 0 auto;
   }
 
   &__list {
     display: grid;
     grid-template-columns: 100%;
-    border: 12px solid #000;
+    border-right: 12px solid #fff;
+    border-left: 12px solid #fff;
     overflow: hidden;
-    background-color: #000;
+    background-color: #fff;
+    list-style: none;
 
     @include on768 {
       grid-template-columns: repeat(2, 1fr);
       gap: 24px;
-      border: 24px solid #000;
+      border-right: 24px solid #fff;
+      border-left: 24px solid #fff;
     }
   }
 
@@ -57,6 +39,11 @@
 
       &:hover {
         cursor: pointer;
+
+        .trends__item--img {
+          transform: scale(1.04);
+          opacity: 0.8;
+        }
       }
     }
 
@@ -64,36 +51,33 @@
       position: relative;
       display: flex;
       overflow: hidden;
+      background: #000;
     }
 
     &--img {
       width: 100%;
       transition: all 800ms;
-
-      &:hover {
-        transform: scale(1.1);
-        opacity: 0.8;
-      }
     }
 
     &--name {
-      color: #fff;
+      color: $mainColor;
       text-transform: uppercase;
-      font-size: 12px;
+      font-size: 10px;
       font-weight: 3;
       text-align: center;
+      user-select: none;
 
       @include on768 {
         position: absolute;
-        top: 70%;
-        left: 50%;
-        transform: translateX(-50%);
-        line-height: 120%;
-        font-size: 18px;
+        left: 20px;
+        bottom: 20px;
+        transform: translate(0, 50%);
+        font-size: 12px;
+        color: #fff;
       }
 
       @include on1280 {
-        font-size: 26px;
+        font-size: 16px;
       }
     }
   }

@@ -1,7 +1,9 @@
 import React, { useContext, useState } from 'react';
 import { getTranslation, Language } from '../../functions/language';
-import { Modal } from '../Modal/Modal';
-import { sendMessage } from '../../functions/t_mess';
+import { Modal } from '../Modal';
+import { OpenModalButton } from '../../ui/OpenModalButton';
+import { Title } from '../../ui/Title';
+import { Description } from '../../ui/Description';
 
 export const Intro = () => {
   const [modalStatus, setModalStatus] = useState(false);
@@ -10,45 +12,22 @@ export const Intro = () => {
 
   return (
     <section className='intro container'>
-      <div className="intro__title">
-        {MOCK.intro_title}
-      </div>
+      <Title content={MOCK.intro_title} intro={true} />
 
-      <div className="intro__description">
-        {MOCK.intro_description}
-      </div>
+      <Description content={MOCK.intro_description} />
 
       <div className="intro__configurator">
         {/* first button */}
-        <button
-          type='button'
-          className='intro__configurator__button'
-          onClick={() => sendMessage('Intro Btn1')}
-        >
-          {MOCK.intro_button_1}
-        </button>
-        
-        {/* second button */}
-        <button
-          type='button'
-          className='intro__configurator__button'
-          onClick={() => {
-            setModalStatus(true);
-          }}
-        >
-          {MOCK.intro_button_2}
-        </button>
+        <OpenModalButton
+          content={MOCK.intro_button_1}
+          onClick={setModalStatus}
+        />
 
-        {/* third button */}
-        <button
-          type='button'
-          className='intro__configurator__button'
-          onClick={() => {
-            setModalStatus(true);
-          }}
-        >
-          {MOCK.intro_button_3}
-        </button>
+        {/* second button */}
+        <OpenModalButton
+          content={MOCK.intro_button_2}
+          onClick={setModalStatus}
+        />
 
         {modalStatus && (
           <Modal
