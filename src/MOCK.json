@@ -99,7 +99,8 @@
         "title": "Способы оплаты",
         "images": ["payment_systems", "paypal"]
       }
-    ]
+    ],
+    "not_found": "страница не найдена"
   },
 
 
@@ -211,6 +212,7 @@
         "title": "Payment Methods",
         "images": ["payment_systems", "paypal"]
       }
-    ]
+    ],
+    "not_found": "page not found"
   }
 }

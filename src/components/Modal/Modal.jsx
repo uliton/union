@@ -53,7 +53,9 @@ export const Modal = ({ ident, setModalStatus }) => {
     }
   };
 
-  const submit = () => {
+  const submit = (e) => {
+    e.preventDefault();
+
     if (name.length && phone.length === 18) {
       sendContacts(name, phone, ident);
       setModalStatus(false);
@@ -107,6 +109,11 @@ export const Modal = ({ ident, setModalStatus }) => {
             value={phone}
             onChange={e => handleInputChange(e.target.value)}
             onClick={() => setPhone('+38 (0')}
+            onSelect={() => {
+              if (phone.length === 0) {
+                setPhone('+38 (0');
+              }
+            }}
           />
 
           <button type="submit" className={classNames('modal__button', {

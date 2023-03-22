@@ -5,7 +5,7 @@
 @import './utils/container';
 
 // components
-@import './App.scss';
+// @import './App.scss';
 @import './components/Modal/Modal.scss';
 @import './components/Navigation/Navigation.scss';
 @import './components/Header/Header.scss';
@@ -15,14 +15,14 @@
 @import './components/Trends/Trends.scss';
 @import './components/Architecture/Architecture.scss';
 @import './components/Products/Products.scss';
-
+@import './components/Rooms/Rooms.scss';
 @import './components/Showroom/Showroom.scss';
 @import './components/Utilities/Utilities.scss';
-
 @import './components/Shop/Shop.scss';
 @import './components/Design/Design.scss';
 @import './components/Subscribe/Subscribe.scss';
 @import './components/Footer/Footer.scss';
+@import './components/NotFound/NotFound.scss';
 
 // ui
 @import './ui/LanguageSelect/LanguageSelect.scss';

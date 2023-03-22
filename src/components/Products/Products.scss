@@ -20,15 +20,6 @@
     list-style: none;
     margin-bottom: 16px;
 
-    &:hover {
-      cursor: pointer;
-
-      .products__item__img {
-        transform: scale(1.08);
-        opacity: 0.8;
-      }
-    }
-
     &__imgBox {
       position: relative;
       display: flex;
@@ -40,6 +31,12 @@
     &__img {
       width: 100%;
       transition: all 800ms;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.08);
+        opacity: 0.8;
+      }
     }
 
     &__name {

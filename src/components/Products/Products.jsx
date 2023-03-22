@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { getTranslation, Language } from '../../functions/language';
 import one from '../../images/products/01.png';
 import two from '../../images/products/02.png';
@@ -8,16 +8,10 @@ import five from '../../images/products/05.png';
 import six from '../../images/products/06.png';
 import { TextLink } from '../../ui/TextLink';
 import { Title } from '../../ui/Title';
-import { Modal } from '../Modal/Modal';
 
 export const Products = () => {
   const lang = useContext(Language);
   const MOCK = getTranslation(lang);
-  const [modalStatus, setModalStatus] = useState(false);
-
-  const handlerClick = () => {
-    setModalStatus(true);
-  }
 
   return (
     <section className='products'>
@@ -25,10 +19,7 @@ export const Products = () => {
 
       <ul className="products__list">
         {/* one */}
-        <li
-          className="products__item"
-          onClick={handlerClick}
-        >
+        <li className="products__item">
           <div className='products__item__imgBox'>
             <img
               src={one}
@@ -45,10 +36,7 @@ export const Products = () => {
         </li>
 
         {/* two */}
-        <li
-          className="products__item"
-          onClick={handlerClick}
-        >
+        <li className="products__item">
           <div className='products__item__imgBox'>
             <img
               src={two}
@@ -65,10 +53,7 @@ export const Products = () => {
         </li>
 
         {/* three */}
-        <li
-          className="products__item"
-          onClick={handlerClick}
-        >
+        <li className="products__item">
           <div className='products__item__imgBox'>
             <img
               src={three}
@@ -85,10 +70,7 @@ export const Products = () => {
         </li>
 
         {/* four */}
-        <li
-          className="products__item"
-          onClick={handlerClick}
-        >
+        <li className="products__item">
           <div className='products__item__imgBox'>
             <img
               src={four}
@@ -105,10 +87,7 @@ export const Products = () => {
         </li>
 
         {/* five */}
-        <li
-          className="products__item"
-          onClick={handlerClick}
-        >
+        <li className="products__item">
           <div className='products__item__imgBox'>
             <img
               src={five}
@@ -120,13 +99,12 @@ export const Products = () => {
           <p className='products__item__name'>
             {MOCK.products_item_5}
           </p>
+
+          <TextLink content={MOCK.products_link} />
         </li>
 
         {/* six */}
-        <li
-          className="products__item"
-          onClick={handlerClick}
-        >
+        <li className="products__item">
           <div className='products__item__imgBox'>
             <img
               src={six}
@@ -142,13 +120,6 @@ export const Products = () => {
           <TextLink content={MOCK.products_link} />
         </li>
       </ul>
-
-      {modalStatus && (
-        <Modal
-          ident={'Products'}
-          setModalStatus={setModalStatus}
-        />
-      )}
     </section>
   );
 };

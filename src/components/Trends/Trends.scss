@@ -32,26 +32,33 @@
       gap: 12px;
       text-decoration: none;
       margin-bottom: 24px;
+      cursor: auto;
 
       @include on768 {
         margin-bottom: 0;
-      }
-
-      &:hover {
-        cursor: pointer;
-
-        .trends__item--img {
-          transform: scale(1.04);
-          opacity: 0.8;
+        
+        &:hover {
+          .trends__item--img {
+            transform: scale(1.04);
+            opacity: 0.8;
+          }
         }
       }
     }
-
+    
     &--imgBox {
       position: relative;
       display: flex;
       overflow: hidden;
       background: #000;
+      cursor: pointer;
+      
+      &:hover {
+        .trends__item--img {
+          transform: scale(1.04);
+          opacity: 0.8;
+        }
+      }
     }
 
     &--img {
@@ -66,8 +73,10 @@
       font-weight: 3;
       text-align: center;
       user-select: none;
-
+      cursor: default;
+      
       @include on768 {
+        cursor: pointer;
         position: absolute;
         left: 20px;
         bottom: 20px;

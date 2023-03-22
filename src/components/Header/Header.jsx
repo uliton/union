@@ -29,6 +29,7 @@ export const Header = () => {
         loop
         playsInline
         muted
+        loading="lazy"
       ></video>
 
       <div className="header__text">

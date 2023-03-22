@@ -104,9 +104,9 @@ export const Accordion = ({ content, index, currentIndex, setCurrentIndex }) => 
           {content.images.map((img, i) => (
             <li key={i} className='accordion__item'>
               <a
-                href={getLink(index, i)}
+                href={getLink(index, i).link}
                 rel="noreferrer"
-                // target='_blank'
+                target={getLink(index, i).target}
               >
                 {neededImage(img)}
               </a>

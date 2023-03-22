@@ -1,3 +1,4 @@
+@import './variables';
 @import '../fonts/font-family.scss';
 
 * {
@@ -11,6 +12,18 @@ html {
   scroll-behavior: smooth;
   line-height: 1.2;
   letter-spacing: 0.8px;
+  
+  ::selection {
+    color: #fff;
+    background: $green;
+  }
+
+  ::-moz-selection {
+    color: #fff;
+    background: $green;
+  }
+
+  
 }
 
 html, button, input {

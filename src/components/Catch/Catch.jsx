@@ -9,12 +9,12 @@ export const Catch = () => {
   const MOCK = getTranslation(lang);
 
   const [name, setName] = useState('');
-  const [telefon, setTelefon] = useState('');
+  const [phone, setPhone] = useState('');
   const [catchStatus, setCatchStatus] = useState(false);
 
-  const handlerTelefonClick = () => {
-    if (telefon.length === 0) {
-      setTelefon('+38 (0');
+  const handlerPhoneClick = () => {
+    if (phone.length === 0) {
+      setPhone('+38 (0');
     }
   }
 
@@ -22,38 +22,42 @@ export const Catch = () => {
     const symbols = '(+-1234567890)';
     
     if (symbols.includes(value[value.length - 1])) {
-      if (value.length < telefon.length && value.length === 15) {
-        return setTelefon(value.slice(0, 14));
+      if (value.length < phone.length && value.length === 15) {
+        return setPhone(value.slice(0, 14));
       }
         
-      if (value.length < telefon.length && value.length === 12) {
-        return setTelefon(value.slice(0, 11))
+      if (value.length < phone.length && value.length === 12) {
+        return setPhone(value.slice(0, 11))
       }
           
-      if (value.length < telefon.length && value.length === 8) {
-        return setTelefon(value.slice(0, 7))
+      if (value.length < phone.length && value.length === 8) {
+        return setPhone(value.slice(0, 7))
       }
             
       if (value.length <= 18 ) {
         if (value.length >= 6) {
-          setTelefon(value);
+          setPhone(value);
         }
   
         if (value.length === 8) {
-          setTelefon(`${value})`);
+          setPhone(`${value})`);
         }
   
         if (value.length === 12 || value.length === 15) {
-          setTelefon(`${value}-`);
+          setPhone(`${value}-`);
         }
       }
     }
   };
 
-  const submit = () => {
-    if (name.length && telefon.length === 18) {
-      sendContacts(name, telefon, 'Catch');
+  const submit = (e) => {
+    e.preventDefault();
+
+    if (name.length && phone.length === 18) {
+      sendContacts(name, phone, 'Catch');
       setCatchStatus(true);
+      setName('');
+      setPhone('');
     }
   }
 
@@ -67,9 +71,15 @@ export const Catch = () => {
         </div>
 
         {catchStatus && (
-          <div className="catch__success">
-            {MOCK.catch_success_1}
-          </div>
+          <>
+            <div className="catch__success">
+              {MOCK.catch_success_1}
+            </div>
+
+            <div className="catch__success">
+              {MOCK.catch_success_2}
+            </div>
+          </>
         )}
 
         <form
@@ -87,23 +97,22 @@ export const Catch = () => {
             type="text"
             placeholder={MOCK.catch_phone}
             className="catch__input"
-            value={telefon}
+            value={phone}
             onChange={e => handleInputChange(e.target.value)}
-            onClick={handlerTelefonClick}
+            onClick={handlerPhoneClick}
+            onSelect={() => {
+              if (phone.length === 0) {
+                setPhone('+38 (0');
+              }
+            }}
           />
 
           <button type="submit" className={classNames('catch__button', {
-            'catch__button--active': name.length && telefon.length === 18
+            'catch__button--active': name.length && phone.length === 18
           })}>
             {MOCK.catch_button}
           </button>
         </form>
-
-        {catchStatus && (
-          <div className="catch__success">
-            {MOCK.catch_success_2}
-          </div>
-        )}
       </div>
     </section>
   );

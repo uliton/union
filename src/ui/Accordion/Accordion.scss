@@ -80,6 +80,7 @@
   &__link {
     text-decoration: none;
     color: inherit;
+    transition: all 500ms;
 
     &:hover {
       cursor: pointer;
