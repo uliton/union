@@ -12,7 +12,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  color: #fff;
   transition: all 500ms;
 
   @include on768 {
@@ -37,11 +36,18 @@
     .st1 {
       fill:#E8C347;
     }
+
+    .nav__menu, .nav__portfolio, .nav__shop {
+      color: $mainColor;
+    }
   }
 
   &:hover {
     background-color: #fff;
-    color: $mainColor;
+
+    .nav__menu, .nav__portfolio, .nav__shop {
+      color: $mainColor;
+    }
 
     .search__P, .favorite__P, .bag__P, .menu__R {
       fill: $mainColor;
@@ -79,25 +85,24 @@
 
   &__menu, &__portfolio, &__shop {
     display: none;
+    user-select: none;
+    text-decoration: none;
+    color: #fff;
 
     @include on768 {
-      display: block;
+      display: flex;
     }
   }
 
-  &__menu {
-    &:hover {
-      color: $green;
-    }
+  &__logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
-  &__portfolio {
-    &:hover {
-      color: $green;
-    }
-  }
-  &__shop {
-    &:hover {
-      color: $green;
-    }
+}
+
+#nav__menu, #nav__portfolio, #nav__shop {
+  &:hover {
+    color: $green;
   }
 }

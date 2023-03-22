@@ -6,6 +6,7 @@ import { Favorite } from '../../images/icons/Favorite';
 import { Bag } from '../../images/icons/Bag';
 import { Menu } from '../../images/icons/Menu';
 import classNames from 'classnames';
+import { Link } from 'react-router-dom';
 
 export const Navigation = () => {
   const lang = useContext(Language);
@@ -38,18 +39,22 @@ export const Navigation = () => {
       <div className='nav__left'>
         <Menu />
 
-        <div className="nav__menu">
+        <Link to='/' className="nav__menu" id='nav__menu'>
           {MOCK.nav_menu}
-        </div>
-        <div className="nav__portfolio">
+        </Link>
+
+        <Link to='portfolio' className="nav__portfolio" id='nav__portfolio'>
           {MOCK.nav_portfolio}
-        </div>
-        <div className="nav__shop">
+        </Link>
+
+        <Link to='/' className="nav__shop" id='nav__shop'>
           {MOCK.nav_online_shop}
-        </div>
+        </Link>
       </div>
 
-      <Logo />
+      <Link to='/' className='nav__logo'>
+        <Logo />
+      </Link>
 
       <div className='nav__right'>
         <Search />

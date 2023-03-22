@@ -2,9 +2,9 @@
 @import '../../../utils/mixins';
 
 .logo {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
+  // position: absolute;
+  // left: 50%;
+  // transform: translate(-50%, 0);
   height: 40px;
 
   @include on768 {
