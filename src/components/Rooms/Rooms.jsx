@@ -36,38 +36,46 @@ export const Rooms = () => {
       path: '/',
     },
   ]
-
-  // const [flexCarouselArray, setFlexCarouselArray] = useState([...carouselArray, ...carouselArray]);
   const [displayImage, setDisplayImage] = useState(-1);
 
-  // const checkCarouselArray = () => {
-  //   let newArray = [...flexCarouselArray];
+  // const [rightCarouselArray, setRightCarouselArray] = useState([...carouselArray, ...carouselArray]);
+  // const [leftCarouselArray, setLeftCarouselArray] = useState(carouselArray);
+  // const [leftCarouselArrayStatus, setLeftCarouselArrayStatus] = useState(false);
 
-  //   if (displayImage < -4 && flexCarouselArray.length + displayImage === 3) {
+  // const handlerClickNext = () => {
+  //   let newArray = [...rightCarouselArray];
+
+  //   if (displayImage < -4 && rightCarouselArray.length + displayImage === 3) {
   //     newArray = [...newArray, ...carouselArray]
-
-  //     setFlexCarouselArray(newArray);
+  //     setRightCarouselArray(newArray);
+  //   }
+  //   setDisplayImage(prev => prev - 1);
+  //   console.log(rightCarouselArray, displayImage);
+  // }
+  
+  // const handlerClickPrev = () => {
+  //   console.log(leftCarouselArrayStatus, displayImage > -4, rightCarouselArray.length - displayImage )
+  //   if (leftCarouselArrayStatus === false && displayImage > -4 && rightCarouselArray.length - displayImage === 10) {
+  //     setLeftCarouselArrayStatus(true);
+  //     console.log('in')
   //   }
 
-  //   if (displayImage > -4 && flexCarouselArray.length - displayImage === 10) {
-  //     newArray = [...carouselArray, ...newArray]
-
-  //     setFlexCarouselArray(newArray);
-  //   }
-
-  //   console.log(flexCarouselArray, flexCarouselArray.length - displayImage);
+  //   // if (leftCarouselArrayStatus && displayImage > -4 && rightCarouselArray.length - displayImage === 10) {
+  //   // }
+  //   setDisplayImage(prev => prev + 1);
   // }
 
   const handlerClickPrev = () => {
     if (displayImage < 0) {
       setDisplayImage(prev => prev + 1);
     }
-  }
+  };
+
   const handlerClickNext = () => {
     if (displayImage > -3) {
       setDisplayImage(prev => prev - 1);
     }
-  }
+  };
 
   return (
     <section className='rooms'>
@@ -77,6 +85,31 @@ export const Rooms = () => {
           transform: `translateX(calc(50% - (var(--itemWidth) / 2) - var(--pad) + (var(--itemWidth) + var(--pad) * 2) * ${displayImage}))`
         }}
       >
+        {/* left side carousel */}
+        {/* {leftCarouselArrayStatus && (
+          leftCarouselArray.map((item, i) => (
+            <li key={i} className='rooms__item'>
+              <h1>
+                test
+              </h1>
+              <Link to={item.path} className='rooms__link'>
+                <Title content={item.title} rooms={true} />
+  
+                <Description content={item.description} rooms={true} />
+  
+                <span className='rooms__anim-btn'>
+                  <span className='rooms__anim-btn--text'>
+                    {item.anim_bnt}
+                  </span>
+                  <span className='rooms__anim-btn--box' data-content={item.anim_bnt}></span>
+                </span>
+              </Link>
+            </li>
+          ))
+        )} */}
+
+
+        {/* right side carousel */}
         {carouselArray.map((item, i) => (
           <li key={i} className='rooms__item'>
             <Link to={item.path} className='rooms__link'>
