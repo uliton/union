@@ -16,7 +16,6 @@ export const Navigation = () => {
 
   window.onscroll = function() {
     const currentScrollPos = window.pageYOffset;
-    // console.log(currentScrollPos)
 
     if (currentScrollPos > 1) {
       setPosition(true);
@@ -39,30 +38,30 @@ export const Navigation = () => {
       <div className='nav__left'>
         <Menu />
 
-        <Link to='/' className="nav__menu" id='nav__menu'>
-          {MOCK.nav_menu}
+        <Link to='/' className="nav__main" id='nav__main'>
+          {MOCK.nav_main}
         </Link>
 
         <Link to='portfolio' className="nav__portfolio" id='nav__portfolio'>
           {MOCK.nav_portfolio}
         </Link>
 
-        <Link to='/' className="nav__shop" id='nav__shop'>
+        {/* <Link to='/' className="nav__shop" id='nav__shop'>
           {MOCK.nav_online_shop}
-        </Link>
+        </Link> */}
       </div>
 
       <Link to='/' className='nav__logo'>
         <Logo />
       </Link>
 
-      <div className='nav__right'>
+      {/* <div className='nav__right'>
         <Search />
 
         <Favorite />
 
         <Bag />
-      </div>
+      </div> */}
     </div>
   );
 };

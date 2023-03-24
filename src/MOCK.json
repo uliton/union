@@ -6,7 +6,7 @@
     "modal_phone": "Номер телефона",
     "modal_button": "Узнать больше",
 
-    "nav_menu": "Меню",
+    "nav_main": "Главная",
     "nav_portfolio": "Портфолио",
     "nav_online_shop": "Онлайн магазин",
 
@@ -46,7 +46,20 @@
     "products_item_5": "Знаковые продукты",
     "products_item_6": "Новое",
     "products_link": "Показать продукты",
-    
+
+    "rooms_title_1": "Гостиные",
+    "rooms_title_2": "Ванные комнаты",
+    "rooms_title_3": "Многофункциональные системы",
+    "rooms_title_4": "Кухни",
+    "rooms_description_1": "Программа Scavolini для создания универсальной, удобной и стильной мебели для дома. Дизайн, не делающий различий между персонализацией и индивидуальностью",
+    "rooms_description_2": "Найдите свою ванную комнату. Выберите ванную комнату, гармонирующую с вами и вашим домом",
+    "rooms_description_3": "Множество универсальных решений для всех комнат в доме",
+    "rooms_description_4": "Найдите кухню своей мечты, идеально гармонирующую с вами и вашим домом!",
+    "rooms_anim_btn_1": "Откройте для себя наши предложения для гостиной",
+    "rooms_anim_btn_2": "Найдите свою ванную комнату",
+    "rooms_anim_btn_3": "Откройте для себя Бокслайф",
+    "rooms_anim_btn_4": "Найдите свою кухню",
+
     "showroom_title": "Новый облик выставочного зала UNION",
     "showroom_description": "Входя в новый шоурум UNION, вы попадаете в теплую и уютную атмосферу роскошного и комфотабельного дома. Этот щоурум воплозает в себе атмосферу домащнего уюта и тепла",
     "showroom_link": "Показать продукты",
@@ -120,7 +133,7 @@
     "modal_phone": "Your phone",
     "modal_button": "More informathion",
 
-    "nav_menu": "Menu",
+    "nav_main": "Main",
     "nav_portfolio": "Portfolio",
     "nav_online_shop": "Online shop",
     
@@ -160,6 +173,19 @@
     "products_item_5": "Iconic Products",
     "products_item_6": "New",
     "products_link": "Show products",
+
+    "rooms_title_1": "Living rooms",
+    "rooms_title_2": "Bathrooms",
+    "rooms_title_3": "Multi-functional systems",
+    "rooms_title_4": "Kitchens",
+    "rooms_description_1": "Scavolini programme to furnish homes with versatility, convenience and style. Design that makes no distinction between personalisation and personality",
+    "rooms_description_2": "Find your bathroom. Choose the bathroom in harmony with you and your home",
+    "rooms_description_3": "Lots of versatile solutions for all rooms in the house",
+    "rooms_description_4": "Find your dream kitchen, in perfect harmony with you and your home!",
+    "rooms_anim_btn_1": "Discover our proposals for the Living room",
+    "rooms_anim_btn_2": "Find your Bathroom",
+    "rooms_anim_btn_3": "Discover Boxlife",
+    "rooms_anim_btn_4": "Find your Kitchen",
 
     "showroom_title": "New look of the UNION showroom",
     "showroom_description": "Entering the new UNION showroom, you find yourself in a warm and cozy atmosphere of a luxurious and comfortable home. This showroom embodies the atmosphere of home comfort and warmth",

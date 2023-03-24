@@ -32,7 +32,7 @@ export const Products = () => {
             {MOCK.products_item_1}
           </p>
 
-          <TextLink content={MOCK.products_link} />
+          <TextLink path='portfolio' content={MOCK.products_link} />
         </li>
 
         {/* two */}
@@ -49,7 +49,7 @@ export const Products = () => {
             {MOCK.products_item_2}
           </p>
 
-          <TextLink content={MOCK.products_link} />
+          <TextLink path='portfolio' content={MOCK.products_link} />
         </li>
 
         {/* three */}
@@ -66,7 +66,7 @@ export const Products = () => {
             {MOCK.products_item_3}
           </p>
 
-          <TextLink content={MOCK.products_link} />
+          <TextLink path='portfolio' content={MOCK.products_link} />
         </li>
 
         {/* four */}
@@ -83,7 +83,7 @@ export const Products = () => {
             {MOCK.products_item_4}
           </p>
 
-          <TextLink content={MOCK.products_link} />
+          <TextLink path='portfolio' content={MOCK.products_link} />
         </li>
 
         {/* five */}
@@ -100,7 +100,7 @@ export const Products = () => {
             {MOCK.products_item_5}
           </p>
 
-          <TextLink content={MOCK.products_link} />
+          <TextLink path='portfolio' content={MOCK.products_link} />
         </li>
 
         {/* six */}
@@ -117,7 +117,7 @@ export const Products = () => {
             {MOCK.products_item_6}
           </p>
 
-          <TextLink content={MOCK.products_link} />
+          <TextLink path='portfolio' content={MOCK.products_link} />
         </li>
       </ul>
     </section>

@@ -27,7 +27,7 @@
     background-color: #fff;
     color: $mainColor;
 
-    .search__P, .favorite__P, .bag__P, .menu__R {
+    .search__P, .favorite__P, .bag__P, .main__R {
       fill: $mainColor;
     }
     .st0 {
@@ -37,7 +37,7 @@
       fill:#E8C347;
     }
 
-    .nav__menu, .nav__portfolio, .nav__shop {
+    .nav__main, .nav__portfolio, .nav__shop {
       color: $mainColor;
     }
   }
@@ -45,11 +45,11 @@
   &:hover {
     background-color: #fff;
 
-    .nav__menu, .nav__portfolio, .nav__shop {
+    .nav__main, .nav__portfolio, .nav__shop {
       color: $mainColor;
     }
 
-    .search__P, .favorite__P, .bag__P, .menu__R {
+    .search__P, .favorite__P, .bag__P, .main__R {
       fill: $mainColor;
     }
 
@@ -83,7 +83,7 @@
     }
   }
 
-  &__menu, &__portfolio, &__shop {
+  &__main, &__portfolio, &__shop {
     display: none;
     user-select: none;
     text-decoration: none;
@@ -101,7 +101,7 @@
   }
 }
 
-#nav__menu, #nav__portfolio, #nav__shop {
+#nav__main, #nav__portfolio, #nav__shop {
   &:hover {
     color: $green;
   }

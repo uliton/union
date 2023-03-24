@@ -28,8 +28,8 @@ export const Header = () => {
         autoPlay
         loop
         playsInline
-        muted
-        loading="lazy"
+        // muted
+        // loading="lazy"
       ></video>
 
       <div className="header__text">
