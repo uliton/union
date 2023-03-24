@@ -1,0 +1,44 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+.link {
+  display: flex;
+  width: max-content;
+  text-decoration: none;
+  grid-area: link;
+
+  &__text {
+    width: max-content;
+    font-size: 10px;
+    font-weight: 2;
+    color: $mainColor;
+    border-bottom: 1px solid $mainColor;
+    transition: all 500ms;
+    
+    &:hover {
+      color: $green;
+      border-bottom: 1px solid $green;
+    }
+
+    &--architecture {
+      margin-right: auto;
+      margin-top: 8px;
+      grid-area: link;
+
+      @include on768 {
+        margin-top: auto;
+      }
+    }
+
+    &--showroom {
+    }
+
+    &--not-found {
+      text-transform: uppercase;
+      font-size: 16px;
+      color: #fff;
+      border-bottom: 1px solid #fff;
+
+    }
+  }
+}

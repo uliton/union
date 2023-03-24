@@ -1,0 +1,25 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+.openModalButton {
+  font-size: 14px;
+  width: 280px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: $green;
+  border: 1px solid $green;
+  border-radius: 20px;
+  outline: none;
+  transition: all 500ms;
+
+  @include on768 {
+    padding: 10px 30px;
+    width: 300px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: $green;
+    color: #fff;
+  }
+}

@@ -1,0 +1,11 @@
+@import '../../../utils/variables';
+@import '../../../utils/mixins';
+
+.fb {
+  fill: $mainColor;
+  transition: fill 500ms;
+
+  &:hover {
+    fill: $green;
+  }
+}

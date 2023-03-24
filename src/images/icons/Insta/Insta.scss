@@ -1,0 +1,11 @@
+@import '../../../utils/variables';
+@import '../../../utils/mixins';
+
+.insta {
+  fill: $mainColor;
+  transition: fill 500ms;
+
+  &:hover {
+    fill: $green;
+  }
+}

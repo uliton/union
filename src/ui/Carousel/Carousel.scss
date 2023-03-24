@@ -1,0 +1,128 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+.carousel {
+  position: relative;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    list-style: none;
+    width: 100%;
+    position: relative;
+
+    &--imgBox {
+      display: flex;
+      overflow: hidden;
+      background: #000;
+    }
+
+    &--img {
+      width: 100%;
+      transition: all 800ms;
+
+      &:hover {
+        transform: scale(1.04);
+        opacity: 0.75;
+      }
+    }
+  }
+
+  &__button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    border: none;
+    outline: none;
+    background-color: $mainColor;
+    transform: translateY(-50%);
+    overflow: hidden;
+
+    &:hover {
+      cursor: pointer;
+    }
+    
+    &--left {
+      padding-left: 16px;
+      left: 0;
+
+      &:hover::after {
+        left: 0;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        transform: rotateZ(-45deg);
+        width: 16px;
+        height: 16px;
+        border-top: 1px solid #fff;
+        border-left: 1px solid #fff;
+        z-index: 1;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: $green;
+        transition: all 500ms;
+      }
+    }
+
+    &--right {
+      padding-right: 16px;
+      right: 0;
+
+      &:hover::after {
+        right: 0;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        transform: rotateZ(45deg);
+        width: 16px;
+        height: 16px;
+        border-top: 1px solid #fff;
+        border-right: 1px solid #fff;
+        z-index: 1;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: $green;
+        transition: all 500ms;
+      }
+    }
+  }
+
+  &__arrow {
+    width: 16px;
+    height: 16px;
+    border-left: 2px solid #000;
+    border-top: 2px solid #000;
+
+    &--left {
+      transform: rotateZ(-45deg);
+    }
+
+    &--right {
+      transform: rotateZ(135deg);
+    }
+  }
+}

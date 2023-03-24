@@ -1,0 +1,52 @@
+@import '../../../utils/variables';
+@import '../../../utils/mixins';
+
+.arrowR {
+  width: 30px;
+  height: 30px;
+  transition: scale 500ms;
+
+  @include on768 {
+    display: inline;
+    width: 38px;
+    height: 38px;
+  }
+
+  @include on1280 {
+    width: 46px;
+    height: 46px;
+  }
+
+  &:hover {
+    scale: 1.2;
+  }
+
+  &:hover &__P {
+    fill: $green;
+  }
+
+  &__G {
+    stroke: none;
+    stroke-width: 0;
+    stroke-dasharray: none;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 10;
+    fill: $mainColor;
+    fill-rule: nonzero;
+    opacity: 1;
+  }
+
+  &__P {
+    stroke: none;
+    stroke-width: 1;
+    stroke-dasharray: none;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 10;
+    fill: $mainColor;
+    fill-rule: nonzero;
+    opacity: 1;
+    transition: fill 500ms;
+  }
+}

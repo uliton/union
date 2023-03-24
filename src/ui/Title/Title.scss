@@ -1,0 +1,35 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+.title {
+  text-align: center;
+  margin: 0 0 18px 0;
+  font-size: 24px;
+  font-weight: 3;
+  grid-area: title;
+
+  &--intro {
+    font-weight: 4;
+    background-image: url('../../images/bgi.jpg');
+    background-position: center;
+    background-clip: text;
+    color: transparent;
+  }
+
+  &--trends {
+    margin-right: auto;
+    margin-left: auto;
+    width: 220px;
+  }
+
+  &--architecture {
+    @include on768 {
+      margin: 0;
+      text-align: left;
+    }
+  }
+
+  &--rooms {
+    text-align: left;
+  }
+}

@@ -1,0 +1,11 @@
+@import '../../../utils/variables';
+@import '../../../utils/mixins';
+
+.youtube {
+  fill: $mainColor;
+  transition: fill 500ms;
+
+  &:hover {
+    fill: $green;
+  }
+}
