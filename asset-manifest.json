@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.d3d5764c.css",
-    "main.js": "./static/js/main.7d43e9e4.js",
-    "static/media/max.mp4": "./static/media/max.d4d30bbd9acf31465d49.mp4",
+    "main.css": "./static/css/main.6ca42e31.css",
+    "main.js": "./static/js/main.47c60d8b.js",
     "static/media/projects.jpg": "./static/media/projects.a7d91d10ce4de1638882.jpg",
     "static/media/industry.jpg": "./static/media/industry.d66628df6459de3ff3db.jpg",
     "static/media/architecture.jpg": "./static/media/architecture.d2b18f491b64d655713c.jpg",
@@ -22,6 +21,7 @@
     "static/media/shop.png": "./static/media/shop.ca35faaeda6c4f4b63ff.png",
     "static/media/10.jpg": "./static/media/10.9baf6ceeeef5336f8acd.jpg",
     "static/media/7.jpg": "./static/media/7.d60ee57c415a0f326196.jpg",
+    "static/media/utilities.jpeg": "./static/media/utilities.be65148dd75d60f9a921.jpeg",
     "static/media/05.png": "./static/media/05.3d405268c6f0b8257d93.png",
     "static/media/02.png": "./static/media/02.3ae54261328c23d2dd09.png",
     "static/media/03.png": "./static/media/03.73c505ab5ac2da6aa75a.png",
@@ -48,11 +48,11 @@
     "static/media/fourth.jpg": "./static/media/fourth.f64f1010f72c6fc394cc.jpg",
     "static/media/bgi.jpg": "./static/media/bgi.18f25f8922f5a6555d1d.jpg",
     "index.html": "./index.html",
-    "main.d3d5764c.css.map": "./static/css/main.d3d5764c.css.map",
-    "main.7d43e9e4.js.map": "./static/js/main.7d43e9e4.js.map"
+    "main.6ca42e31.css.map": "./static/css/main.6ca42e31.css.map",
+    "main.47c60d8b.js.map": "./static/js/main.47c60d8b.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3d5764c.css",
-    "static/js/main.7d43e9e4.js"
+    "static/css/main.6ca42e31.css",
+    "static/js/main.47c60d8b.js"
   ]
 }
