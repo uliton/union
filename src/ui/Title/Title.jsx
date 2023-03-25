@@ -1,7 +1,14 @@
 import classNames from 'classnames';
 import React from 'react';
 
-export const Title = ({ content, intro, trends, architecture, rooms }) => {
+export const Title = ({
+  content = '',
+  intro = false,
+  trends = false,
+  architecture = false,
+  rooms = false,
+  utilities = false,
+}) => {
   return (
     <div
       className={classNames('title', {
@@ -9,6 +16,7 @@ export const Title = ({ content, intro, trends, architecture, rooms }) => {
         'title--trends': trends,
         'title--architecture': architecture,
         'title--rooms': rooms,
+        'title--utilities': utilities,
       })}
     >
         {content}

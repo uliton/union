@@ -23,7 +23,7 @@
   }
 
   @include on768 {
-    background-image: none;
+    background-color: $mainColor;
   }
 
   &__video {
@@ -70,6 +70,7 @@
     bottom: 40px;
     left: 50%;
     animation: loopAnim 1000ms linear infinite;
+    user-select: none;
   }
 }
 

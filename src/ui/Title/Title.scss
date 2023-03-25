@@ -32,4 +32,25 @@
   &--rooms {
     text-align: left;
   }
+
+  &--utilities {
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    // left: -40px;
+    // bottom: 50px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: end;
+    // width: min-content;
+    // background: yellowgreen;
+    // width: min-content;
+    // height: min-content;
+    margin: auto;
+    transform: rotateZ(90deg);
+
+    @include on768 {
+      font-size: 44px;
+    }
+  }
 }

@@ -1,35 +1,33 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import { getTranslation, Language } from '../../functions/language';
 import min from '../../videos/min.mp4';
-import max from '../../videos/max.mp4';
+// import max from '../../videos/max.mp4';
 
 export const Header = () => {
   const lang = useContext(Language);
   const MOCK = getTranslation(lang);
-  const [renderVideo, setRenderVideo] = useState(min);
+  // const [renderVideo, setRenderVideo] = useState(min);
 
-  useEffect(() => {
-    if (window.innerWidth < 768) {
-      setRenderVideo(min);
-    }
+  // useEffect(() => {
+  //   if (window.innerWidth < 768) {
+  //     setRenderVideo(min);
+  //   }
 
-    if (window.innerWidth >= 768) {
-      setRenderVideo(max);
-    }
-  }, []);
+  //   if (window.innerWidth >= 768) {
+  //     setRenderVideo(max);
+  //   }
+  // }, []);
 
   return (
     <section className='header' id='header'>
       <video
         type='video/mp4'
-        src={renderVideo}
+        src={min}
         className='header__video'
         preload="auto"
         autoPlay
         loop
         playsInline
-        // muted
-        // loading="lazy"
       ></video>
 
       <div className="header__text">

@@ -2,9 +2,6 @@
 @import '../../../utils/mixins';
 
 .logo {
-  // position: absolute;
-  // left: 50%;
-  // transform: translate(-50%, 0);
   height: 40px;
 
   @include on768 {
@@ -12,6 +9,20 @@
   }
   @include on1280 {
     height: 60px;
+  }
+
+  &--menu {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+
+    .st0 {
+      fill:#28613C;
+    }
+    .st1 {
+      fill:#E8C347;
+    }
   }
 }
 

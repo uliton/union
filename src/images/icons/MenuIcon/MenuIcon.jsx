@@ -1,15 +1,15 @@
 import React from 'react';
 
-export const Menu = () => {
+export const MenuIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       version="1.1"
       viewBox="0 0 256 256"
-      className='menu'
+      className='menu-icon'
     >
       <g
-        className='menu__G'
+        className='menu-icon__G'
         transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
       >
         <rect
@@ -19,7 +19,7 @@ export const Menu = () => {
           ry="0"
           width="90"
           height="4"
-          className='menu__R'
+          className='menu-icon__R'
           transform=" matrix(1 0 0 1 0 0) "
         />
 
@@ -30,7 +30,7 @@ export const Menu = () => {
           ry="0"
           width="90"
           height="4"
-          className='menu__R'
+          className='menu-icon__R'
           transform=" matrix(1 0 0 1 0 0) "
         />
 
@@ -41,7 +41,7 @@ export const Menu = () => {
           ry="0"
           width="90"
           height="4"
-          className='menu__R'
+          className='menu-icon__R'
           transform=" matrix(1 0 0 1 0 0) "
         />
       </g>

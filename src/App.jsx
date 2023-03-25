@@ -9,15 +9,15 @@ import { PortfolioRoom } from './components/PortfolioRoom';
 
 export const App = () => {
   return (
-    <Routes>
-      <Route path='/' element={<MainLayout />}>
-        <Route index element={<Main />} />
-        <Route path='portfolio' element={<PortfolioLayout />}>
-          <Route index element={<Portfolio />} />
-          <Route path=":f" element={<PortfolioRoom />} />
+      <Routes>
+        <Route path='/' element={<MainLayout />}>
+          <Route index element={<Main />} />
+          <Route path='portfolio' element={<PortfolioLayout />}>
+            <Route index element={<Portfolio />} />
+            <Route path=":f" element={<PortfolioRoom />} />
+          </Route>
         </Route>
-      </Route>
-      <Route path='*' element={<NotFound />} />
-    </Routes>
+        <Route path='*' element={<NotFound />} />
+      </Routes>
   );
 };

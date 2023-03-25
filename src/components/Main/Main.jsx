@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Header } from '../Header';
 import { Intro } from '../Intro';
 import { Catalog } from '../Catalog';
@@ -14,6 +14,15 @@ import { Design } from '../Design';
 import { Subscribe } from '../Subscribe';
 
 export const Main = () => {
+  // "document.documentElement.scrollTo" is the magic
+  useEffect(() => {
+    document.documentElement.scrollTo({
+      top: 0,
+      left: 0,
+      // behavior: "instant", // Optional, to skip the scrolling animation
+    });
+  }, []);
+
   return (
     <>
       <Header />
@@ -26,7 +35,7 @@ export const Main = () => {
       <Rooms />
       <Showroom />
       
-      <Utilities />
+      {/* <Utilities /> */}
 
       <Shop />/
       <Design />

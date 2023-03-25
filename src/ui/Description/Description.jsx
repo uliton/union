@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 
 export const Description = ({
-  content,
+  content = '',
   noParagraph = false,
   architecture = false,
   shop = false,

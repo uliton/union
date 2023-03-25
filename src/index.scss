@@ -6,6 +6,7 @@
 
 // Main page components
 @import './components/Modal/Modal.scss';
+@import './components/Menu/Menu.scss';
 @import './components/Navigation/Navigation.scss';
 @import './components/Header/Header.scss';
 @import './components/Intro/Intro.scss';
@@ -38,7 +39,7 @@
 
 // svg
 @import './images/icons/Logo/Logo.scss';
-@import './images/icons/Menu/Menu.scss';
+@import './images/icons/MenuIcon/MenuIcon.scss';
 @import './images/icons/Search/Search.scss';
 @import './images/icons/Favorite/Favorite.scss';
 @import './images/icons/Bag/Bag.scss';

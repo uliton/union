@@ -2,6 +2,27 @@
 @import '../../utils/mixins';
 
 .utilities {
+  position: relative;
+  display: grid;
+  // justify-content: center;
+  grid-template-columns: min-content minmax(var(--itemWidth), 100%);
+  grid-template-rows: 360px max-content;
+  grid-template-areas:
+    "title img"
+    "title carousel";
+
+  @include on768 {
+    grid-template-rows: 440px max-content;
+  }
+
+  @include on1280 {
+    grid-template-columns: min-content min-content 1fr;
+    grid-template-rows: max-content;
+
+    grid-template-areas:
+      "title carousel img";
+  }
+
   &__configurator {
     display: flex;
     flex-direction: column;
@@ -12,6 +33,18 @@
     @include on1280 {
       flex-direction: row;
       gap: 20px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 850px;
+    height: 360px;
+    object-fit: cover;
+    object-position: center;
+
+    @include on768 {
+      height: 440px;
     }
   }
 }

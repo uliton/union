@@ -4,6 +4,7 @@ import { Description } from '../../ui/Description';
 import { OpenModalButton } from '../../ui/OpenModalButton/OpenModalButton';
 import { Title } from '../../ui/Title';
 import { Modal } from '../Modal/Modal';
+import utilities from '../../images/utilities.jpeg';
 
 export const Utilities = () => {
   const [modalStatus, setModalStatus] = useState(false);
@@ -12,7 +13,7 @@ export const Utilities = () => {
 
   return (
     <section className='utilities container'>
-      <Title content={MOCK.utilities_title} />
+      <Title content={MOCK.utilities_title} utilities={true} />
 
       {/* <Description content={MOCK.utilities_description}/> */}
 
@@ -24,16 +25,16 @@ export const Utilities = () => {
         />
 
         {/* second button */}
-        <OpenModalButton
+        {/* <OpenModalButton
           content={MOCK.utilities_button_2}
           onClick={setModalStatus}
-        />
+        /> */}
 
         {/* third button */}
-        <OpenModalButton
+        {/* <OpenModalButton
           content={MOCK.utilities_button_3}
           onClick={setModalStatus}
-        />
+        /> */}
 
         {modalStatus && (
           <Modal
@@ -42,6 +43,14 @@ export const Utilities = () => {
           />
         )}
       </div>
+
+      {/* <div></div> */}
+      <img
+        src={utilities}
+        alt="utilities"
+        style={{gridArea: "img"}}
+        className="utilities__img"
+      />
     </section>
   );
 };

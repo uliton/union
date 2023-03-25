@@ -4,31 +4,49 @@ import { Logo } from '../../images/icons/Logo';
 import { Search } from '../../images/icons/Search';
 import { Favorite } from '../../images/icons/Favorite';
 import { Bag } from '../../images/icons/Bag';
-import { Menu } from '../../images/icons/Menu';
+import { MenuIcon } from '../../images/icons/MenuIcon';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 
-export const Navigation = () => {
+export const Navigation = ({ menuStatus, setMenuStatus }) => {
   const lang = useContext(Language);
   const MOCK = getTranslation(lang);
   const [position, setPosition] = useState(false);
-  let prevScrollpos = window.pageYOffset;
 
+  // scroll disable
+  menuStatus ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto';
+
+  // let prevScrollpos = window.pageYOffset;
   window.onscroll = function() {
     const currentScrollPos = window.pageYOffset;
 
-    if (currentScrollPos > 1) {
+    if (currentScrollPos > 3) {
       setPosition(true);
     } else {
       setPosition(false);
     }
 
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("nav").style.top = "0";
-    } else {
-      document.getElementById("nav").style.top = "-90px";
-    }
-    prevScrollpos = currentScrollPos;
+    //in top
+    // if (prevScrollpos === 0 && currentScrollPos < 5) {
+    //   // prevScrollpos = currentScrollPos;
+    //   return;
+    // }
+    // move down
+    // if (prevScrollpos < currentScrollPos) {
+    //   if (document.getElementById("nav").style.top !== "-90px") {
+    //     document.getElementById("nav").style.top = "-90px";
+    //   }
+    //   prevScrollpos = currentScrollPos;
+    //   return;
+    // }
+    // move up
+    // if (prevScrollpos > currentScrollPos) {
+    //   if (document.getElementById("nav").style.top !== "0") {
+    //     document.getElementById("nav").style.top = "0";
+    //   }
+    //   prevScrollpos = currentScrollPos;
+    //   return;
+    // }
   }
 
   return (
@@ -36,11 +54,22 @@ export const Navigation = () => {
       'nav--position': position
     })} id='nav'>
       <div className='nav__left'>
-        <Menu />
+        <button
+          type='button'
+          className='nav__menu-btn'
+          onClick={() => setMenuStatus(true)}
+        >
+          <MenuIcon />
+        </button>
 
-        <Link to='/' className="nav__main" id='nav__main'>
-          {MOCK.nav_main}
-        </Link>
+        <div
+          id='nav__menu'
+          className="nav__menu"
+          onClick={() => setMenuStatus(true)}
+        >
+          {MOCK.nav_menu}
+        </div>
+        {/* bl */}
 
         <Link to='portfolio' className="nav__portfolio" id='nav__portfolio'>
           {MOCK.nav_portfolio}

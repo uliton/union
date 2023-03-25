@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import portfolio from '../../images/bg/portfolio.jpg';
 import b1 from '../../images/portfolio_preview/1.jpg';
 import l1 from '../../images/portfolio_preview/2.jpg';
@@ -11,8 +11,22 @@ import i3 from '../../images/portfolio_preview/8.jpg';
 import h1 from '../../images/portfolio_preview/9.jpg';
 import d2 from '../../images/portfolio_preview/10.jpg';
 import { Link } from 'react-router-dom';
+import { getTranslation, Language } from '../../functions/language';
 
 export const Portfolio = () => {
+  const lang = useContext(Language);
+  const MOCK = getTranslation(lang);
+
+
+  // "document.documentElement.scrollTo" is the magic
+  useEffect(() => {
+    document.documentElement.scrollTo({
+      top: 0,
+      left: 0,
+      // behavior: "instant", // Optional, to skip the scrolling animation
+    });
+  }, []);
+
   const filters = [
     'Interior',
     'Dining room',
@@ -105,7 +119,7 @@ export const Portfolio = () => {
   return (
     <main className='portfolio'>
       <form className="portfolio__nav container" onSubmit={submit}>
-        <input type="submit" value='Посмотреть' className='portfolio__nav__submit' />
+        <input type="submit" value={MOCK.portfolio_filter_submit} className='portfolio__nav__submit' />
         
         <div className="portfolio__nav__filters">
           {filters.map(filter => (

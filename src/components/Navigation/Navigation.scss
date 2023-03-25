@@ -2,7 +2,7 @@
 @import '../../utils/mixins';
 
 .nav {
-  position: fixed;
+  position:fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -13,6 +13,7 @@
   align-items: center;
   padding: 0 20px;
   transition: all 500ms;
+  background: none;
 
   @include on768 {
     height: 50px;
@@ -27,7 +28,7 @@
     background-color: #fff;
     color: $mainColor;
 
-    .search__P, .favorite__P, .bag__P, .main__R {
+    .search__P, .favorite__P, .bag__P, .menu-icon__R {
       fill: $mainColor;
     }
     .st0 {
@@ -37,7 +38,7 @@
       fill:#E8C347;
     }
 
-    .nav__main, .nav__portfolio, .nav__shop {
+    .nav__menu, .nav__portfolio, .nav__shop {
       color: $mainColor;
     }
   }
@@ -45,11 +46,11 @@
   &:hover {
     background-color: #fff;
 
-    .nav__main, .nav__portfolio, .nav__shop {
+    .nav__menu, .nav__portfolio, .nav__shop {
       color: $mainColor;
     }
 
-    .search__P, .favorite__P, .bag__P, .main__R {
+    .search__P, .favorite__P, .bag__P, .menu-icon__R {
       fill: $mainColor;
     }
 
@@ -83,7 +84,29 @@
     }
   }
 
-  &__main, &__portfolio, &__shop {
+  &__menu-btn {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &__menu {
+    display: none;
+    user-select: none;
+    color: #fff;
+
+    @include on768 {
+      display: flex;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: $green;
+    }
+  }
+
+  &__portfolio, &__shop {
     display: none;
     user-select: none;
     text-decoration: none;
@@ -101,7 +124,7 @@
   }
 }
 
-#nav__main, #nav__portfolio, #nav__shop {
+#nav__menu, #nav__portfolio, #nav__shop {
   &:hover {
     color: $green;
   }

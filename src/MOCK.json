@@ -6,6 +6,7 @@
     "modal_phone": "Номер телефона",
     "modal_button": "Узнать больше",
 
+    "nav_menu": "Меню",
     "nav_main": "Главная",
     "nav_portfolio": "Портфолио",
     "nav_online_shop": "Онлайн магазин",
@@ -63,28 +64,26 @@
     "showroom_title": "Новый облик выставочного зала UNION",
     "showroom_description": "Входя в новый шоурум UNION, вы попадаете в теплую и уютную атмосферу роскошного и комфотабельного дома. Этот щоурум воплозает в себе атмосферу домащнего уюта и тепла",
     "showroom_link": "Показать продукты",
-    
+
     "utilities_title": "Утилиты",
     "utilities_button_1": "Дилеры",
     "utilities_button_2": "Зарегистрировать продукт",
     "utilities_button_3": "Подписка",
-    
+
     "shop_title": "Завершите ваш дом",
     "shop_description_1": "Аксессуары",
     "shop_description_2": "Персонализируйте свой дом с помощью аксессуаров UNION, чтобы создать уединенное место, создающее ощущение благополучия",
     "shop_button": "Узнать больше",
-    
+
     "design_title": "Услуги дизайна интерьера",
     "design_description": "Студия дизайна интерьера, основана в 2004-м году под непосредственным руководством Джорджио Армани, предлагает полный комплекс услуг по созданию проектов любого типа: апартаменты в самых эксклюзивных местах, частные яхты и самолеты, экзотические виллы и престижные жилые комплексы. Реализуя стиль Армани в разных контекстах и с разными нюансами, конечной целью студии является всегда реагировать и удовлетворять все запросы и пожелания клиента",
     "design_button": "Узнать больше",
-    
+
     "subscribe_title": "Подписывайтесь на нашу рассылку",
     "subscribe_success": "Вы подписались на рассылку",
     "subscribe_error": "",
     "subscribe_name": "Ваша электронная почта",
     "subscribe_button": "Подписаться",
-
-    "contacts_title": "ХЕР",
 
     "footer_service_language": "Сменить язык",
     "footer_content": [
@@ -113,7 +112,13 @@
         "images": ["payment_systems", "paypal"]
       }
     ],
-    "not_found": "страница не найдена"
+
+    "not_found": "страница не найдена",
+
+
+
+    "portfolio_header_title": "Портфолио",
+    "portfolio_filter_submit": "Применить"
   },
 
 
@@ -133,6 +138,7 @@
     "modal_phone": "Your phone",
     "modal_button": "More informathion",
 
+    "nav_menu": "Menu",
     "nav_main": "Main",
     "nav_portfolio": "Portfolio",
     "nav_online_shop": "Online shop",
@@ -191,27 +197,26 @@
     "showroom_description": "Entering the new UNION showroom, you find yourself in a warm and cozy atmosphere of a luxurious and comfortable home. This showroom embodies the atmosphere of home comfort and warmth",
     "showroom_link": "Show products",
 
+    "utilities_title": "Utilities",
     "utilities_button_1": "Dealers",
     "utilities_button_2": "Register a product",
     "utilities_button_3": "Subscription",
-    
+
     "shop_title": "Complete your home",
     "shop_description_1": "Accessories",
     "shop_description_2": "Personalize your home with UNION accessories to create a private space that creates a sense of well-being",
     "shop_button": "More informathion",
-    
+
     "design_title": "Interior design services",
     "design_description": "The interior design studio, founded in 2004 under the direct supervision of Giorgio Armani, offers a full range of services for the creation of projects of any type: apartments in the most exclusive locations, private yachts and planes, exotic villas and prestigious residential complexes. Realizing the Armani style in different contexts and with different nuances, the ultimate goal of the studio is to always respond and satisfy all the requests and wishes of the client",
     "design_button": "More informathion",
-    
+
     "subscribe_title": "Subscribe to our newsletter",
     "subscribe_success": "You have subscribed",
     "subscribe_error": "",
     "subscribe_name": "Your email",
     "subscribe_button": "Subscribe",
-    
-    "contacts_title": "share this page",
-    
+
     "footer_service_language": "Change language",
     "footer_content": [
       {
@@ -239,6 +244,12 @@
         "images": ["payment_systems", "paypal"]
       }
     ],
-    "not_found": "page not found"
+
+    "not_found": "page not found",
+
+
+
+    "portfolio_header_title": "Portfolio",
+    "portfolio_filter_submit": "Apply"
   }
 }
