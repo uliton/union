@@ -3,117 +3,77 @@
 
 .portfolio {
   position: relative;
+  margin: 0 auto 40px;
 
-  &__header {
-    position: relative;
-    margin-bottom: 40px;
+  &__setings {
+    display: none;
 
-    &__img {
-      width: 100%;
-      height: 140px;
-      object-fit: cover;
-
-      @include on768 {
-        height: 200px;
-      }
-      @include on1280 {
-        height: 240px;
-      }
-    }
-
-    &__name {
-      position: absolute;
-      top: 50%;
-      left: 10%;
-      transform: translate(0, -50%);
-      font-size: 24px;
-      font-weight: 3;
-      color: #fff;
-      user-select: none;
-      text-decoration: none;
-
-      @include on768 {
-        font-size: 32px;
-        left: 15%;
-      }
-      @include on1280 {
-        font-size: 40px;
-      }
-    }
-
-    &__sbuname {
-      position: absolute;
-      top: 70%;
-      left: 10%;
-      transform: translate(0, -50%);
-      font-size: 16px;
-      font-weight: 2;
-      color: #fff;
-      user-select: none;
-
-      @include on768 {
-        font-size: 22px;
-        left: 15%;
-      }
-      @include on1280 {
-        font-size: 28px;
-      }
+    @include on768 {
+      display: flex;
+      gap: $pad24 * 3;
+      margin-bottom: 40px;
     }
   }
 
-  &__nav {
+  &__control {
     display: flex;
-    flex-direction: column-reverse;
-    gap: 24px;
-    
-    margin: auto;
-    margin-bottom: 40px;
-
-    &__filters {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      height: 64px;
-    }
-
-    &__submit {
-      font-size: 14px;
-      width: 280px;
-      height: min-content;
-      padding: 10px 20px;
-      background-color: #fff;
-      color: $green;
-      border: 1px solid $green;
-      border-radius: 4px;
-      outline: none;
-      border-radius: 20px;
-      transition: all 500ms;
-
-      @include on768 {
-        padding: 10px 30px;
-        width: 300px;
-      }
-
-      &:hover {
-        cursor: pointer;
-        background-color: $green;
-        color: #fff;
-      }
-    }
+    gap: $pad12;
+  }
+  
+  &__filters {
+    display: flex;
+    flex-direction: column;
+    gap: $pad24 * 2;
+    row-gap: 0;
+    flex-wrap: wrap;
+    height: 64px;
   }
 
   &__preview {
+    
     display: grid;
     grid-template-columns: 1fr;
     gap: 24px;
     margin-bottom: 40px;
+    
 
     @include on768 {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    &__img{
+    &__link {
+      position: relative;
+      background: #000;
+      overflow: hidden;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: $pad12;
+        right: $pad12;
+        bottom: $pad12;
+        left: $pad12;
+        border: 1px solid $green;
+        transition: all 500ms;
+        z-index: 1;
+      }
+      
+      &:hover {
+        .portfolio__preview--img {
+          transform: scale(1.04);
+          opacity: 0.8;
+        }
+        
+        &::before {
+          border: 1px solid $gold;
+        }
+      }
+
+    }
+
+    &--img{
       width: 100%;
+      transition: all 800ms;
     }
   }
 }

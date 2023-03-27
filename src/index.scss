@@ -26,6 +26,7 @@
 
 // Portfolio page components
 @import './components/Portfolio/Portfolio.scss';
+@import './components/PortfolioHead/PortfolioHead.scss';
 @import './components/PortfolioRoom/PortfolioRoom.scss';
 
 // ui
@@ -36,6 +37,7 @@
 @import './ui/Title/Title.scss';
 @import './ui/Description/Description.scss';
 @import './ui/TextLink/TextLink.scss';
+@import './ui/Button/Button.scss';
 
 // svg
 @import './images/icons/Logo/Logo.scss';

@@ -118,7 +118,9 @@
 
 
     "portfolio_header_title": "Портфолио",
-    "portfolio_filter_submit": "Применить"
+    "portfolio_button_projects": "Портфолио",
+    "portfolio_button_gallery": "Галерея",
+    "porfolio_filters": [ "Интерьер", "Столовая", "Кабинет", "Холл", "Спальня", "Гостиная" ]
   },
 
 
@@ -250,6 +252,8 @@
 
 
     "portfolio_header_title": "Portfolio",
-    "portfolio_filter_submit": "Apply"
+    "portfolio_button_projects": "Portfolio",
+    "portfolio_button_gallery": "Gallery",
+    "porfolio_filters": [ "Interior","Dining room","Office","Hall","Bedroom","Living room" ]
   }
 }

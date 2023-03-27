@@ -10,14 +10,14 @@ export const PortfolioHead = () => {
   const { f } = useParams();
 
   return (
-    <header className='portfolio__header'>
-      <img src={portfolio} alt="portfolio" className='portfolio__header__img' />
+    <header className='portfolio-header'>
+      <img src={portfolio} alt="portfolio" className='portfolio-header__img' />
 
-      <Link to='/portfolio' className='portfolio__header__name'>
+      <Link to='/portfolio' className='portfolio-header__name'>
         {MOCK.portfolio_header_title}
       </Link>
 
-      <h3 className='portfolio__header__sbuname'>
+      <h3 className='portfolio-header__sbuname'>
         {f !== undefined && f.split('_').slice(0, -1).join(' ')}
       </h3>
     </header>
