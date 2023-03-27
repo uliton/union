@@ -6,7 +6,7 @@ import { Button } from '../../ui/Button/Button';
 import { getProjectsImages } from '../../functions/portfolio_projects';
 import { Checkbox } from '../../ui/Checkbox/Checkbox';
 
-export const Portfolio = () => {
+export const PortfolioGallery = () => {
   const lang = useContext(Language);
   const MOCK = getTranslation(lang);
   const [filterArray, setFilterArray] = useState([]);
@@ -39,11 +39,11 @@ export const Portfolio = () => {
     <main className='portfolio container'>
       <div className="portfolio__setings">
         <div className="portfolio__control">
-          <Link to=''>
+          <Link to='/portfolio'>
             <Button content={MOCK.portfolio_button_projects} />
           </Link>
 
-          <Link to='gallery'>
+          <Link to=''>
             <Button content={MOCK.portfolio_button_gallery} />
           </Link>
         </div>
@@ -60,11 +60,16 @@ export const Portfolio = () => {
         </div>
       </div>
 
+      {/* <form className="portfolio__filters " onSubmit={submit}>
+        <input type="submit" value={MOCK.portfolio_filter_submit} className='portfolio__filters__submit' />
+        
+      </form> */}
+
       <div className="portfolio__preview">
         {filteredImages.map((img, i) => (
           <Link
             key={i}
-            to={img.name}
+            to={`/portfolio/${img.name}`}
             className='portfolio__preview__link'
             data-conent={img.category}
           >

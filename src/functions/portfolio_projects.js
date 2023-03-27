@@ -23,129 +23,168 @@ import p_22 from '../images/portfolio_preview/p_22.jpeg';
 import p_23 from '../images/portfolio_preview/p_23.jpeg';
 import p_24 from '../images/portfolio_preview/p_24.jpeg';
 
-export const getProjectsImages = () => {
-  const images = [
-    {
-      id: 1,
-      name: '1234',
-      src: p_1,
-    },
-    {
-      id: 2,
-      name: '1234',
-      src: p_2,
-    },
-    {
-      id: 3,
-      name: '1234',
-      src: p_3,
-    },
-    {
-      id: 4,
-      name: '1234',
-      src: p_4,
-    },
-    {
-      id: 5,
-      name: '1234',
-      src: p_5,
-    },
-    {
-      id: 6,
-      name: '1234',
-      src: p_6,
-    },
-    {
-      id: 7,
-      name: '1234',
-      src: p_7,
-    },
-    {
-      id: 8,
-      name: '1234',
-      src: p_8,
-    },
-    {
-      id: 9,
-      name: '1234',
-      src: p_9,
-    },
-    {
-      id: 10,
-      name: '1234',
-      src: p_10,
-    },
-    {
-      id: 11,
-      name: '1234',
-      src: p_11,
-    },
-    {
-      id: 12,
-      name: '1234',
-      src: p_12,
-    },
-    {
-      id: 13,
-      name: '1234',
-      src: p_13,
-    },
-    {
-      id: 14,
-      name: '1234',
-      src: p_14,
-    },
-    {
-      id: 15,
-      name: '1234',
-      src: p_15,
-    },
-    {
-      id: 16,
-      name: '1234',
-      src: p_16,
-    },
-    {
-      id: 17,
-      name: '1234',
-      src: p_17,
-    },
-    {
-      id: 18,
-      name: '1234',
-      src: p_18,
-    },
-    {
-      id: 19,
-      name: '1234',
-      src: p_19,
-    },
-    {
-      id: 20,
-      name: '1234',
-      src: p_20,
-    },
-    {
-      id: 21,
-      name: '1234',
-      src: p_21,
-    },
-    {
-      id: 22,
-      name: '1234',
-      src: p_22,
-    },
-    {
-      id: 23,
-      name: '1234',
-      src: p_23,
-    },
-    {
-      id: 24,
-      name: '1234',
-      src: p_24,
-    },
-  ]
+const PROJECTS_IMAGES = [
+  {
+    id: 1,
+    name: '1234',
+    src: p_1,
+    category: 'Unique stylistics',
+  },
+  {
+    id: 2,
+    name: '1234',
+    src: p_2,
+    category: 'Unique stylistics',
+  },
+  {
+    id: 3,
+    name: '1234',
+    src: p_3,
+    category: 'Unique stylistics',
+  },
+  {
+    id: 4,
+    name: '1234',
+    src: p_4,
+    category: 'Unique stylistics',
+  },
+  {
+    id: 5,
+    name: '1234',
+    src: p_5,
+    category: 'Residential interiors',
+  },
+  {
+    id: 6,
+    name: '1234',
+    src: p_6,
+    category: 'Residential interiors',
+  },
+  {
+    id: 7,
+    name: '1234',
+    src: p_7,
+    category: 'Residential interiors',
+  },
+  {
+    id: 8,
+    name: '1234',
+    src: p_8,
+    category: 'Residential interiors',
+  },
+  {
+    id: 9,
+    name: '1234',
+    src: p_9,
+    category: 'Residential interiors',
+  },
+  {
+    id: 10,
+    name: '1234',
+    src: p_10,
+    category: 'Residential interiors',
+  },
+  {
+    id: 11,
+    name: '1234',
+    src: p_11,
+    category: 'Residential interiors',
+  },
+  {
+    id: 12,
+    name: '1234',
+    src: p_12,
+    category: 'Residential interiors',
+  },
+  {
+    id: 13,
+    name: '1234',
+    src: p_13,
+    category: 'Architectural design',
+  },
+  {
+    id: 14,
+    name: '1234',
+    src: p_14,
+    category: 'Architectural design',
+  },
+  {
+    id: 15,
+    name: '1234',
+    src: p_15,
+    category: 'Architectural design',
+  },
+  {
+    id: 16,
+    name: '1234',
+    src: p_16,
+    category: 'Architectural design',
+  },
+  {
+    id: 17,
+    name: '1234',
+    src: p_17,
+    category: 'Architectural design',
+  },
+  {
+    id: 18,
+    name: '1234',
+    src: p_18,
+    category: 'Architectural design',
+  },
+  {
+    id: 19,
+    name: '1234',
+    src: p_19,
+    category: 'Project of the season',
+  },
+  {
+    id: 20,
+    name: '1234',
+    src: p_20,
+    category: 'Project of the season',
+  },
+  {
+    id: 21,
+    name: '1234',
+    src: p_21,
+    category: 'Project of the season',
+  },
+  {
+    id: 22,
+    name: '1234',
+    src: p_22,
+    category: 'Project of the season',
+  },
+  {
+    id: 23,
+    name: '1234',
+    src: p_23,
+    category: 'Project of the season',
+  },
+  {
+    id: 24,
+    name: '1234',
+    src: p_24,
+    category: 'Project of the season',
+  },
+]
 
-  return images;
+export const getProjectsImages = (filterArray = []) => {
+  if (filterArray.length) {
+    let newArray = [];
+
+    for (const filter of filterArray) {
+      const array = PROJECTS_IMAGES.filter(image => image.category === filter);
+      newArray = [...newArray, ...array];
+    }
+
+    const newRanderArray = newArray.sort((a, b) => a.category.localeCompare(b.category));
+
+    return newRanderArray;
+  }
+
+  const randerArray = PROJECTS_IMAGES.sort((a, b) => a.category.localeCompare(b.category));
+
+  return randerArray;
 }

@@ -58,6 +58,22 @@
           transform: scale(1.04);
           opacity: 0.8;
         }
+
+        &::before {
+          border: 1px solid $gold;
+        }
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: $pad12;
+        right: $pad12;
+        bottom: $pad12;
+        left: $pad12;
+        border: 1px solid $green;
+        transition: all 500ms;
+        z-index: 1;
       }
     }
 
@@ -78,9 +94,9 @@
       @include on768 {
         cursor: pointer;
         position: absolute;
-        left: 20px;
-        bottom: 20px;
-        transform: translate(0, 50%);
+        left: $pad24;
+        bottom: $pad24;
+        transform: translate(0, 25%);
         font-size: 12px;
         color: #fff;
       }

@@ -120,7 +120,8 @@
     "portfolio_header_title": "Портфолио",
     "portfolio_button_projects": "Портфолио",
     "portfolio_button_gallery": "Галерея",
-    "porfolio_filters": [ "Интерьер", "Столовая", "Кабинет", "Холл", "Спальня", "Гостиная" ]
+    "porfolio_filters": [ "Жилые интерьеры", "Архитектурный дизайн", "Уникальная стилистика", "Проект сезона" ],
+    "porfolio_gallery_filters": [ "Интерьер", "Столовая", "Кабинет", "Холл", "Спальня", "Гостиная" ]
   },
 
 
@@ -254,6 +255,7 @@
     "portfolio_header_title": "Portfolio",
     "portfolio_button_projects": "Portfolio",
     "portfolio_button_gallery": "Gallery",
-    "porfolio_filters": [ "Interior","Dining room","Office","Hall","Bedroom","Living room" ]
+    "porfolio_filters": [ "Residential interiors", "Architectural design", "Unique stylistics", "Project of the season" ],
+    "porfolio_gallery_filters": [ "Interior","Dining room","Office","Hall","Bedroom","Living room" ]
   }
 }
