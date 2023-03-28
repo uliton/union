@@ -13,12 +13,13 @@ export const Project0001 = () => {
 
   return (
     <>
-      <div className='portfolio-room'>
+      <div className='portfolio-room container'>
         <Title content={'Title'}/>
 
-        <div className="container" style={{gridArea: "description", margin: '0 auto'}}>
-          <Description content={'Description'} />
-        </div>
+        <Description content={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, non consequatur libero animi aut nesciunt corporis dolore debitis velit eos atque tempore dolor minima est provident minus quia voluptatem, nulla deleniti? Dicta, culpa! Maxime, accusamus nesciunt non excepturi alias quidem perferendis provident a sunt laudantium. Aperiam veritatis ipsam debitis magni!'} project={true} />
+        {/* <div className="container" style={{gridArea: "description", margin: '0 auto'}}>
+        </div> */}
+
       </div>
     </>
   );

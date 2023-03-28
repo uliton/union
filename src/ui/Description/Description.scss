@@ -36,4 +36,11 @@
   &--rooms {
     text-align: left;
   }
+
+  &--project {
+    text-align: left;
+    column-count: 2;
+    column-gap: 60px;
+    margin: 0 auto;
+  }
 }

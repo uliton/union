@@ -1,18 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import { Carousel } from '../../ui/Carousel';
 
-import first from '../../images/carousel/first.jpg'
-import second from '../../images/carousel/second.jpg'
-import third from '../../images/carousel/third.jpg'
-import fourth from '../../images/carousel/fourth.jpg'
-import fifth from '../../images/carousel/fifth.jpg'
-import sixth from '../../images/carousel/sixth.jpg'
-import seventh from '../../images/carousel/seventh.jpg'
-import eighth from '../../images/carousel/eighth.jpg'
-import ninth from '../../images/carousel/ninth.jpg'
-import tenth from '../../images/carousel/tenth.jpg'
-import eleventh from '../../images/carousel/eleventh.jpg'
-import twelfth from '../../images/carousel/twelfth.jpg'
+// import first from '../../images/carousel/first.jpg'
+// import second from '../../images/carousel/second.jpg'
+// import third from '../../images/carousel/third.jpg'
+// import fourth from '../../images/carousel/fourth.jpg'
+// import fifth from '../../images/carousel/fifth.jpg'
+// import sixth from '../../images/carousel/sixth.jpg'
+// import seventh from '../../images/carousel/seventh.jpg'
+// import eighth from '../../images/carousel/eighth.jpg'
+// import ninth from '../../images/carousel/ninth.jpg'
+// import tenth from '../../images/carousel/tenth.jpg'
+// import eleventh from '../../images/carousel/eleventh.jpg'
+// import twelfth from '../../images/carousel/twelfth.jpg'
+import i_01 from '../../images/carousel/01.jpg'
+import i_02 from '../../images/carousel/02.jpg'
+import i_03 from '../../images/carousel/03.jpg'
+import i_04 from '../../images/carousel/04.jpg'
+import i_05 from '../../images/carousel/05.jpg'
+import i_06 from '../../images/carousel/06.jpg'
 
 export const Catalog = () => {
   const [imageCounte, setImageCounte] = useState(1);
@@ -20,42 +26,43 @@ export const Catalog = () => {
 
   const images = [
     {
-      src: first,
-      link: '/'
+      src: i_01,
+      link: 'portfolio/gallery'
     },{
-      src: second,
-      link: '/'
+      src: i_02,
+      link: 'portfolio/gallery'
     },{
-      src: third,
-      link: '/'
+      src: i_03,
+      link: 'portfolio/gallery'
     },{
-      src: fourth,
-      link: '/'
+      src: i_04,
+      link: 'portfolio/gallery'
     },{
-      src: fifth,
-      link: '/'
+      src: i_05,
+      link: 'portfolio/gallery'
     },{
-      src: sixth,
-      link: '/'
-    },{
-      src: seventh,
-      link: '/'
-    },{
-      src: eighth,
-      link: '/'
-    },{
-      src: ninth,
-      link: '/'
-    },{
-      src: tenth,
-      link: '/'
-    },{
-      src: eleventh,
-      link: '/'
-    },{
-      src: twelfth,
-      link: '/'
-    }
+      src: i_06,
+      link: 'portfolio/gallery'
+    },
+    // {
+    //   src: seventh,
+    //   link: 'portfolio'
+    // },{
+    //   src: eighth,
+    //   link: 'portfolio'
+    // },{
+    //   src: ninth,
+    //   link: 'portfolio'
+    // },{
+    //   src: tenth,
+    //   link: 'portfolio'
+    // },{
+    //   src: eleventh,
+    //   link: 'portfolio'
+    // },{
+    //   src: twelfth,
+    //   link: 'portfolio'
+    // }
   ]
 
   const handleWindowResize = () => {
