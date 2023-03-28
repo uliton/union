@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.622e2880.css",
-    "main.js": "./static/js/main.f1025164.js",
+    "main.css": "./static/css/main.ef550c90.css",
+    "main.js": "./static/js/main.eda45909.js",
     "static/media/projects.jpg": "./static/media/projects.a7d91d10ce4de1638882.jpg",
     "static/media/industry.jpg": "./static/media/industry.d66628df6459de3ff3db.jpg",
     "static/media/architecture.jpg": "./static/media/architecture.d2b18f491b64d655713c.jpg",
@@ -53,13 +53,14 @@
     "static/media/gothampro_medium.ttf": "./static/media/gothampro_medium.dca4b95d345c2abd8661.ttf",
     "static/media/gothampro.ttf": "./static/media/gothampro.4f71921a0823129cd8ba.ttf",
     "static/media/gothampro_black.ttf": "./static/media/gothampro_black.8c2f478dfa880e2de0a1.ttf",
+    "static/media/img.png": "./static/media/img.47f75cc6ed649dc62df6.png",
     "static/media/title.jpg": "./static/media/title.18f25f8922f5a6555d1d.jpg",
     "index.html": "./index.html",
-    "main.622e2880.css.map": "./static/css/main.622e2880.css.map",
-    "main.f1025164.js.map": "./static/js/main.f1025164.js.map"
+    "main.ef550c90.css.map": "./static/css/main.ef550c90.css.map",
+    "main.eda45909.js.map": "./static/js/main.eda45909.js.map"
   },
   "entrypoints": [
-    "static/css/main.622e2880.css",
-    "static/js/main.f1025164.js"
+    "static/css/main.ef550c90.css",
+    "static/js/main.eda45909.js"
   ]
 }
