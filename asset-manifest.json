@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "./static/css/main.a3717306.css",
-    "main.js": "./static/js/main.6d4f222d.js",
+    "main.css": "./static/css/main.d0b1fa5f.css",
+    "main.js": "./static/js/main.7762cfb5.js",
     "static/media/projects.jpg": "./static/media/projects.a7d91d10ce4de1638882.jpg",
     "static/media/industry.jpg": "./static/media/industry.d66628df6459de3ff3db.jpg",
     "static/media/architecture.jpg": "./static/media/architecture.d2b18f491b64d655713c.jpg",
     "static/media/design.png": "./static/media/design.89c0f335683c1408e9d5.png",
     "static/media/residence.jpg": "./static/media/residence.c5d3c26a2a693ccd1be8.jpg",
-    "static/media/320.jpg": "./static/media/320.71e847514ea241bdd8ee.jpg",
-    "static/media/portfolio.jpg": "./static/media/portfolio.6ed7d2f4f630cace9c67.jpg",
+    "static/media/header.jpg": "./static/media/header.71e847514ea241bdd8ee.jpg",
     "static/media/min.mp4": "./static/media/min.8336d7fc605508d88e97.mp4",
     "static/media/shop.png": "./static/media/shop.ca35faaeda6c4f4b63ff.png",
     "static/media/utilities.jpeg": "./static/media/utilities.be65148dd75d60f9a921.jpeg",
@@ -60,13 +59,13 @@
     "static/media/gothampro.ttf": "./static/media/gothampro.4f71921a0823129cd8ba.ttf",
     "static/media/gothampro_black.ttf": "./static/media/gothampro_black.8c2f478dfa880e2de0a1.ttf",
     "static/media/fourth.jpg": "./static/media/fourth.f64f1010f72c6fc394cc.jpg",
-    "static/media/bgi.jpg": "./static/media/bgi.18f25f8922f5a6555d1d.jpg",
+    "static/media/title.jpg": "./static/media/title.18f25f8922f5a6555d1d.jpg",
     "index.html": "./index.html",
-    "main.a3717306.css.map": "./static/css/main.a3717306.css.map",
-    "main.6d4f222d.js.map": "./static/js/main.6d4f222d.js.map"
+    "main.d0b1fa5f.css.map": "./static/css/main.d0b1fa5f.css.map",
+    "main.7762cfb5.js.map": "./static/js/main.7762cfb5.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3717306.css",
-    "static/js/main.6d4f222d.js"
+    "static/css/main.d0b1fa5f.css",
+    "static/js/main.7762cfb5.js"
   ]
 }
