@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "./static/css/main.6558f1fb.css",
-    "main.js": "./static/js/main.104bd9f9.js",
+    "main.js": "./static/js/main.f6d22c34.js",
     "static/media/projects.jpg": "./static/media/projects.a7d91d10ce4de1638882.jpg",
     "static/media/industry.jpg": "./static/media/industry.d66628df6459de3ff3db.jpg",
     "static/media/architecture.jpg": "./static/media/architecture.d2b18f491b64d655713c.jpg",
     "static/media/design.png": "./static/media/design.89c0f335683c1408e9d5.png",
-    "static/media/06.jpg": "./static/media/06.a675e305f1aab4db9050.jpg",
-    "static/media/01.jpg": "./static/media/01.a248cdf9843a985aeade.jpg",
     "static/media/residence.jpg": "./static/media/residence.c5d3c26a2a693ccd1be8.jpg",
-    "static/media/02.jpg": "./static/media/02.5a6d814c8019f06e3764.jpg",
-    "static/media/03.jpg": "./static/media/03.35286f4272a31e005d5d.jpg",
     "static/media/header.jpg": "./static/media/header.71e847514ea241bdd8ee.jpg",
-    "static/media/05.jpg": "./static/media/05.cfef17acb0eeb2735ce2.jpg",
-    "static/media/04.jpg": "./static/media/04.e5c603def373f900bda2.jpg",
     "static/media/min.mp4": "./static/media/min.8336d7fc605508d88e97.mp4",
     "static/media/shop.png": "./static/media/shop.ca35faaeda6c4f4b63ff.png",
     "static/media/utilities.jpeg": "./static/media/utilities.be65148dd75d60f9a921.jpeg",
+    "static/media/06.jpg": "./static/media/06.54aae56949f3cc5c2051.jpg",
+    "static/media/02.jpg": "./static/media/02.3bd53217ea1e7abe28a0.jpg",
+    "static/media/01.jpg": "./static/media/01.ee1f53d030ebc7a7bfdf.jpg",
+    "static/media/03.jpg": "./static/media/03.1987b2dec3a8b152cc84.jpg",
+    "static/media/05.jpg": "./static/media/05.c28f303fe57c0fafec54.jpg",
+    "static/media/04.jpg": "./static/media/04.526421ed402898f2a79f.jpg",
     "static/media/05.png": "./static/media/05.3d405268c6f0b8257d93.png",
     "static/media/p_24.jpeg": "./static/media/p_24.5bda555c816632565e15.jpeg",
     "static/media/02.png": "./static/media/02.3ae54261328c23d2dd09.png",
@@ -56,10 +56,10 @@
     "static/media/title.jpg": "./static/media/title.18f25f8922f5a6555d1d.jpg",
     "index.html": "./index.html",
     "main.6558f1fb.css.map": "./static/css/main.6558f1fb.css.map",
-    "main.104bd9f9.js.map": "./static/js/main.104bd9f9.js.map"
+    "main.f6d22c34.js.map": "./static/js/main.f6d22c34.js.map"
   },
   "entrypoints": [
     "static/css/main.6558f1fb.css",
-    "static/js/main.104bd9f9.js"
+    "static/js/main.f6d22c34.js"
   ]
 }
