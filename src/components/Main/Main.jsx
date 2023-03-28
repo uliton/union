@@ -26,19 +26,19 @@ export const Main = () => {
   return (
     <>
       <Header /> {}
-      <Intro /> {}
+      {/* <Intro /> {} */}
       <Catalog />
-      <Catch /> {}
+      {/* <Catch /> {} */}
       <Trends /> {}
-      <Architecture /> {}
-      <Products /> {}
-      <Rooms /> {}
+      {/* <Architecture /> {} */}
+      {/* <Products /> {} */}
+      {/* <Rooms /> {} */}
       <Showroom /> {}
       
       {/* <Utilities /> */}
 
-      <Shop /> {}
-      <Design /> {}
+      {/* <Shop /> {} */}
+      {/* <Design /> {} */}
       <Subscribe /> {}
     </>
   )
