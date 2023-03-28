@@ -49,6 +49,10 @@ export const Carousel = ({ imageCounte, images }) => {
                   alt={i}
                   className='carousel__item--img'
                 />
+
+                <p className="carousel__item--text">
+                  {image.text}
+                </p>
               </div>
             </Link>
           </li>

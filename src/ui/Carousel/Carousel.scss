@@ -17,15 +17,39 @@
       display: flex;
       overflow: hidden;
       background: #000;
+
+      &:hover {
+        .carousel__item--img {
+          transform: scale(1.04);
+          opacity: 0.75;
+        }
+      }
     }
 
     &--img {
       width: 100%;
       transition: all 800ms;
+    }
 
-      &:hover {
-        transform: scale(1.04);
-        opacity: 0.75;
+    &--text {
+      position: absolute;
+      bottom: $pad12;
+      left: $pad12;
+      font-size: 10px;
+      text-transform: uppercase;
+      font-weight: 3;
+      color: #fff;
+      user-select: none;
+      transform: translate(0, 25%);
+
+      @include on768 {
+        font-size: 12px;
+      }
+
+      @include on1280 {
+        bottom: $pad24;
+        left: $pad24;
+        font-size: 16px;
       }
     }
   }
