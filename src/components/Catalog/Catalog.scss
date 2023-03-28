@@ -1,4 +1,14 @@
 @import '../../utils/variables';
 @import '../../utils/mixins';
 
-.catalog {}
+.catalog {
+  margin: 0 auto 30px;
+
+  @include on768 {
+    margin: 0 auto 40px;
+  }
+
+  @include on1280 {
+    margin: 0 auto 60px;
+  }
+}
