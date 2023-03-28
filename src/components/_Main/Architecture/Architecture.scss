@@ -1,0 +1,23 @@
+@import '../../../utils/variables';
+@import '../../../utils/mixins';
+
+.architecture {
+  display: flex;
+  flex-direction: column;
+
+  @include on768 {
+    display: grid;
+    grid-template-areas:
+      "title description"
+      "title description"
+      "link description";
+    grid-template-columns: 320px 1fr;
+    gap: 56px;
+    row-gap: 0;
+  }
+
+  @include on1280 {
+    gap: 80px;
+    row-gap: 0;
+  }
+}

@@ -1,0 +1,124 @@
+@import '../../../utils/variables';
+@import '../../../utils/mixins';
+
+.rooms {
+  position: relative;
+  height: 340px;
+  overflow: hidden;
+  
+  @include on768 {
+    height: 380px;
+  }
+  @include on1280 {
+    height: 420px;
+  }
+
+  &__list {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: all 500ms;
+  }
+  
+  &__item {
+    list-style: none;
+    padding: 0 var(--pad);
+  }
+  
+  &__link {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 40% max-content;
+    grid-template-areas:
+    "title"
+    "description"
+    "anim-btn";
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    width: var(--itemWidth);
+
+    &:hover {
+      .rooms__anim-btn--box {
+        clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+      }
+    }
+  }
+
+  &__anim-btn {
+    position: relative;
+    font-weight: 3;
+    min-height: 60px;
+    display: inline-flex;
+    align-items: center;
+    color: $green;
+    text-transform: uppercase;
+    text-align: left;
+    max-width: max-content;
+    grid-area: anim-btn;
+
+    &--text {
+      padding: 5px 30px;
+    }
+
+    &--box {
+      position: absolute;
+      width: 100%;
+      height: 60px;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background: $green;
+      color: #fff;
+      clip-path: polygon(0 0,60px 0,60px 100%,0 100%);
+      transition: all 500ms;
+
+      &::after {
+        content: attr(data-content);
+        position: absolute;
+        padding: 5px 30px;
+        top: 50%;
+        left: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__button {
+    position: absolute;
+    bottom: 0;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &--left {
+      left: 44%;
+      transform: translateX(-50%);
+
+      @include on768 {
+        left: 46%;
+      }
+    }
+
+    &--right {
+      right: 44%;
+      transform: translateX(50%);
+
+      @include on768 {
+        right: 46%;
+      }
+    }
+  }
+}

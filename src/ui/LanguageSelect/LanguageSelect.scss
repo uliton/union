@@ -1,13 +1,24 @@
-.languageButton {
-  width: max-content;
-  padding: 0;
-  border: none;
-  outline: none;
-  color: $greyText;
-  background-color: inherit;
-  border-bottom: 1px solid $greyText;
+@import '../../utils/variables';
 
-  &:hover {
-    cursor: pointer;
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: $pad12;
+
+  &__query {
+    display: block;
+    width: max-content;
+    background-color: inherit;
+    cursor: default;
+    
+    &--menu {
+      color: $mainColor;
+      border-bottom: 1px solid $mainColor;
+    }
+    
+    &--footer {
+      color: $greyText;
+      border-bottom: 1px solid $greyText;
+    }
   }
 }

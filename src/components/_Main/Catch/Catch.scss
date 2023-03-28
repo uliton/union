@@ -1,0 +1,78 @@
+@import '../../../utils/variables';
+@import '../../../utils/mixins';
+
+.catch {
+  &__body {
+    background-color: #fff;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    padding: 12px;
+  }
+
+  &__input {
+    font-size: 14px;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: $green;
+    border: 1px solid $green;
+    border-radius: 4px;
+    outline: none;
+    transition: all 500ms;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__button {
+    font-size: 14px;
+    width: 280px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: $green;
+    border: 1px solid $green;
+    border-radius: 4px;
+    outline: none;
+    border-radius: 20px;
+    transition: all 500ms;
+
+    @include on768 {
+      padding: 10px 30px;
+      width: 300px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(0, 128, 0, .3);
+      border: 1px solid #fff;
+      color: #fff;
+    }
+
+    &--active {
+      background-color: $green;
+      color: #fff;
+      
+      &:hover {
+        background-color: $green;
+        border: 1px solid $green;
+      }
+    }
+  }
+
+  &__success {
+    font-size: 12px;
+    color: $green;
+    text-align: center;
+    width: 220px;
+    margin: 0 auto;
+  }
+}

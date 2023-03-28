@@ -1,0 +1,39 @@
+@import '../../../utils/variables';
+@import '../../../utils/mixins';
+
+.en {
+  width: 16px;
+  height: 16px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__G {
+    stroke: none;
+    stroke-width: 0;
+    stroke-dasharray: none;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 10;
+    fill: none;
+    fill-rule: nonzero;
+    opacity: 1;
+  }
+
+  &__P {
+    stroke-width: 1;
+
+    &--1 {
+      fill: rgb(243,244,245);
+    }
+
+    &--2 {
+      fill: rgb(204,0,0);
+    }
+
+    &--3 {
+      fill: rgb(0,0,102);
+    }
+  }
+}

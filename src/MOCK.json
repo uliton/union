@@ -1,5 +1,6 @@
 {
   "ru": {
+    "language_name": "ru",
     "modal_header": "Узнать больше",
     "modal_title": "Мы свяжемся с вами и ответим на все вопросы",
     "modal_name": "Ваше имя",
@@ -135,6 +136,7 @@
 
 
   "en": {
+    "language_name": "en",
     "modal_header": "More informathion",
     "modal_title": "We will contact you and answer all your questions",
     "modal_name": "Your name",

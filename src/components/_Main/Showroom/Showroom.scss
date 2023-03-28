@@ -1,0 +1,31 @@
+@import '../../../utils/variables';
+@import '../../../utils/mixins';
+
+.showroom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1140px;
+
+  @include on768 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr min-content min-content min-content 1fr;
+    grid-template-areas:
+      "n1 img"
+      "title img"
+      "description img"
+      "link img"
+      "n2 img";
+  }
+
+  &__img {
+    width: 100%;
+    margin-bottom: 16px;
+    grid-area: img;
+
+    @include on768 {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,33 +1,46 @@
+// Utils
 @import './utils/variables';
 @import './utils/mixins';
 @import './utils/reset';
 @import './utils/normolize';
 @import './utils/container';
 
-// Main page components
-@import './components/Modal/Modal.scss';
+// *
+@import './components/NotFound/NotFound.scss';
+
+// Main Layout
 @import './components/Menu/Menu.scss';
 @import './components/Navigation/Navigation.scss';
-@import './components/Header/Header.scss';
-@import './components/Intro/Intro.scss';
-@import './components/Catalog/Catalog.scss';
-@import './components/Catch/Catch.scss';
-@import './components/Trends/Trends.scss';
-@import './components/Architecture/Architecture.scss';
-@import './components/Products/Products.scss';
-@import './components/Rooms/Rooms.scss';
-@import './components/Showroom/Showroom.scss';
-@import './components/Utilities/Utilities.scss';
-@import './components/Shop/Shop.scss';
-@import './components/Design/Design.scss';
-@import './components/Subscribe/Subscribe.scss';
 @import './components/Footer/Footer.scss';
-@import './components/NotFound/NotFound.scss';
+
+// Main page components
+@import './components/Modal/Modal.scss';
+@import './components/_Main/Header/Header.scss';
+@import './components/_Main/Intro/Intro.scss';
+@import './components/_Main/Catch/Catch.scss';
+@import './components/_Main/Trends/Trends.scss';
+@import './components/_Main/Architecture/Architecture.scss';
+@import './components/_Main/Products/Products.scss';
+@import './components/_Main/Rooms/Rooms.scss';
+@import './components/_Main/Showroom/Showroom.scss';
+@import './components/_Main/Shop/Shop.scss';
+@import './components/_Main/Design/Design.scss';
+@import './components/_Main/Subscribe/Subscribe.scss';
+
+@import './components/Catalog/Catalog.scss';
+@import './components/Utilities/Utilities.scss';
+
+
+
+// Portfolio Layout
+@import './components/PortfolioHead/PortfolioHead.scss';
 
 // Portfolio page components
 @import './components/Portfolio/Portfolio.scss';
-@import './components/PortfolioHead/PortfolioHead.scss';
-@import './components/PortfolioRoom/PortfolioRoom.scss';
+@import './components/PortfolioGallery/PortfolioGallery.scss';
+
+
+
 
 // ui
 @import './ui/LanguageSelect/LanguageSelect.scss';
@@ -54,3 +67,9 @@
 @import './images/icons/Paypal/Paypal.scss';
 @import './images/icons/ArrowR/ArrowR.scss';
 @import './images/icons/ArrowL/ArrowL.scss';
+@import './images/icons/AE/Ae.scss';
+@import './images/icons/CH/Ch.scss';
+@import './images/icons/EN/En.scss';
+@import './images/icons/PL/Pl.scss';
+@import './images/icons/RU/Ru.scss';
+@import './images/icons/UA/Ua.scss';

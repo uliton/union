@@ -6,7 +6,10 @@ import { NotFound } from './components/NotFound';
 import { Portfolio } from './components/Portfolio';
 import { PortfolioLayout } from './components/PortfolioLayout';
 import { PortfolioGallery } from './components/PortfolioGallery';
-import { PortfolioRoom } from './components/PortfolioRoom';
+import { Project0001 } from './components/_Projects/0001/Project';
+import { Project0002 } from './components/_Projects/0002';
+import { Project0003 } from './components/_Projects/0003';
+import { Project0004 } from './components/_Projects/0004';
 
 export const App = () => {
   return (
@@ -15,10 +18,11 @@ export const App = () => {
           <Route index element={<Main />} />
           <Route path='portfolio' element={<PortfolioLayout />}>
             <Route index element={<Portfolio />} />
-            {/* <Route path=':filter' element={<Portfolio />} /> */}
             <Route path='gallery' element={<PortfolioGallery />} />
-            <Route path='1234' element={<PortfolioRoom />} />
-            {/* <Route path=':category' element={<PortfolioRoom />} /> */}
+            <Route path='0001' element={<Project0001 />} />
+            <Route path='0002' element={<Project0002 />} />
+            <Route path='0003' element={<Project0003 />} />
+            <Route path='0004' element={<Project0004 />} />
           </Route>
         </Route>
         <Route path='*' element={<NotFound />} />

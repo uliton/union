@@ -1,0 +1,109 @@
+@import '../../../utils/variables';
+@import '../../../utils/mixins';
+
+.trends {
+  &__info {
+    margin: 0 auto;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 100%;
+    border-right: 12px solid #fff;
+    border-left: 12px solid #fff;
+    overflow: hidden;
+    background-color: #fff;
+    list-style: none;
+
+    @include on768 {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      border-right: 24px solid #fff;
+      border-left: 24px solid #fff;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    &--link {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      text-decoration: none;
+      margin-bottom: 24px;
+      cursor: auto;
+
+      @include on768 {
+        margin-bottom: 0;
+        
+        &:hover {
+          .trends__item--img {
+            transform: scale(1.04);
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+    
+    &--imgBox {
+      position: relative;
+      display: flex;
+      overflow: hidden;
+      background: #000;
+      cursor: pointer;
+      
+      &:hover {
+        .trends__item--img {
+          transform: scale(1.04);
+          opacity: 0.8;
+        }
+
+        &::before {
+          border: 1px solid $gold;
+        }
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: $pad12;
+        right: $pad12;
+        bottom: $pad12;
+        left: $pad12;
+        border: 1px solid $green;
+        transition: all 500ms;
+        z-index: 1;
+      }
+    }
+
+    &--img {
+      width: 100%;
+      transition: all 800ms;
+    }
+
+    &--name {
+      color: $mainColor;
+      text-transform: uppercase;
+      font-size: 10px;
+      font-weight: 3;
+      text-align: center;
+      user-select: none;
+      cursor: default;
+      
+      @include on768 {
+        cursor: pointer;
+        position: absolute;
+        left: $pad24;
+        bottom: $pad24;
+        transform: translate(0, 25%);
+        font-size: 12px;
+        color: #fff;
+      }
+
+      @include on1280 {
+        font-size: 16px;
+      }
+    }
+  }
+}

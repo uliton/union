@@ -47,7 +47,7 @@ export const Menu = ({ isOpen, setMenuStatus, setLanguage }) => {
         </div>
 
         <div className="menu__footer">
-          <LanguageSelect setLanguage={setLanguage} />
+          <LanguageSelect setLanguage={setLanguage} menu={true} />
         </div>
       </div>
     </div>

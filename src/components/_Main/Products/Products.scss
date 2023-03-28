@@ -1,0 +1,57 @@
+@import '../../../utils/variables';
+@import '../../../utils/mixins';
+
+.products {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    border: 12px solid #fff;
+    overflow: hidden;
+    background-color: #fff;
+
+    @include on768 {
+      grid-template-columns: repeat(6, 1fr);
+      gap: 24px;
+    }
+  }
+
+  &__item {
+    list-style: none;
+    margin-bottom: 16px;
+
+    &__imgBox {
+      position: relative;
+      display: flex;
+      overflow: hidden;
+      margin: 0 0 8px 0;
+      background: #000;
+    }
+
+    &__img {
+      width: 100%;
+      transition: all 800ms;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.08);
+        opacity: 0.8;
+      }
+    }
+
+    &__name {
+      font-size: 12px;
+      font-weight: 2;
+      text-align: left;
+      margin-bottom: 4px;
+
+      @include on768 {
+        font-size: 14px;
+      }
+
+      @include on1280 {
+        font-size: 16px;
+      }
+    }
+  }
+}

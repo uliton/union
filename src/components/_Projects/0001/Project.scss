@@ -1,0 +1,28 @@
+@import '../../../utils/variables';
+@import '../../../utils/mixins';
+
+.portfolio-room {
+  max-width: 1024px;
+  margin: auto;
+
+  @include on768 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: min-content 1fr;
+    grid-template-areas:
+    "title title"
+    "img description";
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 12px;
+    grid-area: img;
+
+    @include on768 {
+    }
+    @include on1280 {
+    }
+  }
+}

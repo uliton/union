@@ -1,0 +1,17 @@
+@import '../../../utils/variables';
+@import '../../../utils/mixins';
+
+.intro {
+  &__configurator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    @include on768 {
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+}

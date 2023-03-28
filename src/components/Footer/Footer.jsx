@@ -24,7 +24,7 @@ export const Footer = ({ setLanguage }) => {
       </div>
 
       <div className="footer__service">
-        <LanguageSelect setLanguage={setLanguage} />
+        <LanguageSelect setLanguage={setLanguage} footer={true} />
 
         <span className='footer__service__creater'>
           <p>

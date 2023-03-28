@@ -1,10 +1,10 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
-import { getTranslation, Language } from '../../functions/language';
-import { getFilteredImages, getPorfolioFilters } from '../../functions/portfolio';
-import { Button } from '../../ui/Button/Button';
-import { getProjectsImages } from '../../functions/portfolio_projects';
-import { Checkbox } from '../../ui/Checkbox/Checkbox';
+import React, { useContext, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { getTranslation, Language } from "../../functions/language";
+import { getPorfolioFilters } from "../../functions/filters";
+import { getProjectsImages } from "../../functions/projects";
+import { Button } from "../../ui/Button/Button";
+import { Checkbox } from "../../ui/Checkbox/Checkbox";
 
 export const Portfolio = () => {
   const lang = useContext(Language);
@@ -14,17 +14,17 @@ export const Portfolio = () => {
 
   const filterSubmit = (filter) => {
     if (filterArray.includes(filter)) {
-      const newArray = filterArray.filter(f => f !== filter);
+      const newArray = filterArray.filter((f) => f !== filter);
 
       setFilterArray(newArray);
     } else {
       setFilterArray([...filterArray, filter]);
     }
-  }
+  };
 
   useEffect(() => {
-    setFilteredImages(getProjectsImages(filterArray))
-  }, [filterArray])
+    setFilteredImages(getProjectsImages(filterArray));
+  }, [filterArray]);
 
   // "document.documentElement.scrollTo" is the magic
   useEffect(() => {
@@ -36,14 +36,14 @@ export const Portfolio = () => {
   }, []);
 
   return (
-    <main className='portfolio container'>
+    <main className="portfolio container">
       <div className="portfolio__setings">
         <div className="portfolio__control">
-          <Link to=''>
+          <Link to="">
             <Button content={MOCK.portfolio_button_projects} />
           </Link>
 
-          <Link to='gallery'>
+          <Link to="gallery">
             <Button content={MOCK.portfolio_button_gallery} />
           </Link>
         </div>
@@ -51,10 +51,7 @@ export const Portfolio = () => {
         <div className="portfolio__filters">
           {getPorfolioFilters(lang).map((filter, i) => (
             <React.Fragment key={i}>
-              <Checkbox
-                filter={filter}
-                filterSubmit={filterSubmit}
-              />
+              <Checkbox filter={filter} filterSubmit={filterSubmit} />
             </React.Fragment>
           ))}
         </div>
@@ -65,10 +62,14 @@ export const Portfolio = () => {
           <Link
             key={i}
             to={img.name}
-            className='portfolio__preview__link'
+            className="portfolio__preview__link"
             data-conent={img.category}
           >
-            <img src={img.src} alt={img.name} className='portfolio__preview--img'/>
+            <img
+              src={img.src}
+              alt={img.name}
+              className="portfolio__preview--img"
+            />
           </Link>
         ))}
       </div>
