@@ -4,6 +4,7 @@ import showroom from '../../../images/showroom.jpeg';
 import { Title } from '../../../ui/Title';
 import { Description } from '../../../ui/Description';
 import { TextLink } from '../../../ui/TextLink';
+import { Image } from '../../../ui/Image/Image';
 
 export const Showroom = () => {
   const lang = useContext(Language);

@@ -1,0 +1,27 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: $mainColor;
+  grid-area: video;
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  content: normal;
+
+  &--test {
+    width: 350px;
+    height: 350px;
+  }
+
+  &__video {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+}

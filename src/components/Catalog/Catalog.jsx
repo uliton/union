@@ -27,27 +27,27 @@ export const Catalog = () => {
   const images = [
     {
       src: i_01,
-      link: 'portfolio/gallery',
+      link: 'portfolio/0001',
       text: 'Caramel',
     },{
       src: i_02,
-      link: 'portfolio/gallery',
+      link: 'portfolio/0002',
       text: 'Honey Fantasy',
     },{
       src: i_03,
-      link: 'portfolio/gallery',
+      link: 'portfolio/0003',
       text: 'Black Prince',
     },{
       src: i_04,
-      link: 'portfolio/gallery',
+      link: 'portfolio/0004',
       text: 'Gottlieb',
     },{
       src: i_05,
-      link: 'portfolio/gallery',
+      link: 'portfolio/0005',
       text: 'Fantasy Mix',
     },{
       src: i_06,
-      link: 'portfolio/gallery',
+      link: 'portfolio/0006',
       text: 'Royal Fantasy',
     },
     // {

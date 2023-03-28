@@ -10,7 +10,7 @@ export const Footer = ({ setLanguage }) => {
 
   return (
     <footer className='footer'>
-      <div className="footer__accordion">
+      {/* <div className="footer__accordion">
         {MOCK.footer_content.map((sectionContent, i) => (
           <React.Fragment key={i}>
             <Accordion
@@ -21,7 +21,7 @@ export const Footer = ({ setLanguage }) => {
             />
           </React.Fragment>
         ))}
-      </div>
+      </div> */}
 
       <div className="footer__service">
         <LanguageSelect setLanguage={setLanguage} footer={true} />

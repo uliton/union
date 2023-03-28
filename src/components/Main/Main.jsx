@@ -13,6 +13,7 @@ import { Shop } from '../_Main/Shop';
 import { Design } from '../_Main/Design';
 import { Subscribe } from '../_Main/Subscribe';
 import { Portfolio } from '../Portfolio';
+import Test from '../_Main/Test/Test';
 
 export const Main = () => {
   // "document.documentElement.scrollTo" is the magic
@@ -32,7 +33,9 @@ export const Main = () => {
 
       <Portfolio />
       {/* <Catch /> {} */}
-      <Trends /> {}
+
+      {/* <Trends /> {} */}
+
       {/* <Architecture /> {} */}
       {/* <Products /> {} */}
       {/* <Rooms /> {} */}
@@ -43,6 +46,8 @@ export const Main = () => {
       {/* <Shop /> {} */}
       {/* <Design /> {} */}
       <Subscribe /> {}
+
+      {/* <Test /> */}
     </>
   )
 }

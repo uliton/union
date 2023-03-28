@@ -10,6 +10,8 @@ import { Project0001 } from './components/_Projects/0001/Project';
 import { Project0002 } from './components/_Projects/0002';
 import { Project0003 } from './components/_Projects/0003';
 import { Project0004 } from './components/_Projects/0004';
+import { Project0005 } from './components/_Projects/0005';
+import { Project0006 } from './components/_Projects/0006';
 
 export const App = () => {
   return (
@@ -18,11 +20,13 @@ export const App = () => {
           <Route index element={<Main />} />
           <Route path='portfolio' element={<PortfolioLayout />}>
             <Route index element={<Portfolio />} />
-            <Route path='gallery' element={<PortfolioGallery />} />
+            {/* <Route path='gallery' element={<PortfolioGallery />} /> */}
             <Route path='0001' element={<Project0001 />} />
             <Route path='0002' element={<Project0002 />} />
             <Route path='0003' element={<Project0003 />} />
             <Route path='0004' element={<Project0004 />} />
+            <Route path='0005' element={<Project0005 />} />
+            <Route path='0006' element={<Project0006 />} />
           </Route>
         </Route>
         <Route path='*' element={<NotFound />} />
