@@ -49,6 +49,8 @@ export const Navigation = ({ menuStatus, setMenuStatus }) => {
     // }
   }
 
+  console.log(position)
+
   return (
     <div className={classNames('nav', {
       'nav--position': position

@@ -18,17 +18,22 @@ export const Header = () => {
   //   }
   // }, []);
 
+
   return (
     <section className='header' id='header'>
+
       <video
-        type='video/mp4'
-        src={min}
-        className='header__video'
-        preload="auto"
         autoPlay
         loop
+        muted
         playsInline
-      ></video>
+        className='header__video'
+      >
+        <source
+          src={min}
+          type="video/mp4"
+        />
+      </video>
 
       <div className="header__text">
         <div className="header__title">
