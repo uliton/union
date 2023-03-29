@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.ef550c90.css",
-    "main.js": "./static/js/main.eda45909.js",
+    "main.css": "./static/css/main.adda7a26.css",
+    "main.js": "./static/js/main.b95128ba.js",
     "static/media/projects.jpg": "./static/media/projects.a7d91d10ce4de1638882.jpg",
     "static/media/industry.jpg": "./static/media/industry.d66628df6459de3ff3db.jpg",
     "static/media/architecture.jpg": "./static/media/architecture.d2b18f491b64d655713c.jpg",
@@ -11,6 +11,7 @@
     "static/media/min.mp4": "./static/media/min.8336d7fc605508d88e97.mp4",
     "static/media/shop.png": "./static/media/shop.ca35faaeda6c4f4b63ff.png",
     "static/media/utilities.jpeg": "./static/media/utilities.be65148dd75d60f9a921.jpeg",
+    "static/media/showroom.jpeg": "./static/media/showroom.f63c9378e021f4ed8850.jpeg",
     "static/media/01.jpg": "./static/media/01.3a19848587aa5bb2eac9.jpg",
     "static/media/02.jpg": "./static/media/02.0595eeaec97a87a71860.jpg",
     "static/media/05.jpg": "./static/media/05.ed1536d7e95924b575a8.jpg",
@@ -46,7 +47,6 @@
     "static/media/p_18.jpeg": "./static/media/p_18.87fb50115103215e6783.jpeg",
     "static/media/p_4.jpeg": "./static/media/p_4.bd19f7233c273c521283.jpeg",
     "static/media/06.jpg": "./static/media/06.15d96c55466ae918a2c1.jpg",
-    "static/media/showroom.jpeg": "./static/media/showroom.6072cf79ead44849aaaa.jpeg",
     "static/media/03.jpg": "./static/media/03.fbdf2f0f16362915efa8.jpg",
     "static/media/gothampro_bold.ttf": "./static/media/gothampro_bold.764ba13de4409a990823.ttf",
     "static/media/gothampro_light.ttf": "./static/media/gothampro_light.dfbba8c980f43420d2d1.ttf",
@@ -56,11 +56,11 @@
     "static/media/img.png": "./static/media/img.47f75cc6ed649dc62df6.png",
     "static/media/title.jpg": "./static/media/title.18f25f8922f5a6555d1d.jpg",
     "index.html": "./index.html",
-    "main.ef550c90.css.map": "./static/css/main.ef550c90.css.map",
-    "main.eda45909.js.map": "./static/js/main.eda45909.js.map"
+    "main.adda7a26.css.map": "./static/css/main.adda7a26.css.map",
+    "main.b95128ba.js.map": "./static/js/main.b95128ba.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef550c90.css",
-    "static/js/main.eda45909.js"
+    "static/css/main.adda7a26.css",
+    "static/js/main.b95128ba.js"
   ]
 }
