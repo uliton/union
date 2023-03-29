@@ -33,12 +33,14 @@
 
     &--text {
       position: absolute;
-      bottom: $pad12;
-      left: $pad12;
+      bottom: $pad24;
+      left: 0;
       font-size: 10px;
       text-transform: uppercase;
-      font-weight: 3;
-      color: #fff;
+      // font-weight: 1;
+      color: $gold;
+      padding: $pad12 $pad24;
+      background: $mainColor;
       user-select: none;
       transform: translate(0, 25%);
 
@@ -47,8 +49,8 @@
       }
 
       @include on1280 {
-        bottom: $pad24;
-        left: $pad24;
+        // bottom: $pad24;
+        // left: $pad24;
         font-size: 16px;
       }
     }
@@ -73,11 +75,15 @@
     }
     
     &--left {
-      padding-left: 16px;
+      padding-left: $pad12;
       left: 0;
 
       &:hover::after {
         left: 0;
+      }
+      &:hover::before {
+        border-top: 1px solid #fff;
+        border-left: 1px solid #fff;
       }
 
       &::before {
@@ -86,9 +92,10 @@
         transform: rotateZ(-45deg);
         width: 16px;
         height: 16px;
-        border-top: 1px solid #fff;
-        border-left: 1px solid #fff;
+        border-top: 1px solid $gold;
+        border-left: 1px solid $gold;
         z-index: 1;
+        transition: all 500ms;
       }
 
       &::after {
@@ -104,11 +111,16 @@
     }
 
     &--right {
-      padding-right: 16px;
+      padding-right: $pad12;
       right: 0;
+      
 
       &:hover::after {
         right: 0;
+      }
+      &:hover::before {
+        border-top: 1px solid #fff;
+        border-right: 1px solid #fff;
       }
 
       &::before {
@@ -117,9 +129,10 @@
         transform: rotateZ(45deg);
         width: 16px;
         height: 16px;
-        border-top: 1px solid #fff;
-        border-right: 1px solid #fff;
+        border-top: 1px solid $gold;
+        border-right: 1px solid $gold;
         z-index: 1;
+        transition: all 500ms;
       }
 
       &::after {

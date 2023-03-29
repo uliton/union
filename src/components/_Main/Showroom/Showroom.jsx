@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { getTranslation, Language } from '../../../functions/language';
-import showroom from '../../../images/showroom.jpeg';
+// import showroom from '../../../images/showroom.jpeg';
+import showroom from './showroom.jpeg';
 import { Title } from '../../../ui/Title';
 import { Description } from '../../../ui/Description';
 import { TextLink } from '../../../ui/TextLink';
@@ -11,7 +12,7 @@ export const Showroom = () => {
   const MOCK = getTranslation(lang);
 
   return (
-    <section className='showroom'>
+    <section className='showroom container'>
       <div className="container" style={{gridArea: 'title', margin: '0 auto'}}>
         <Title content={MOCK.showroom_title} />
       </div>

@@ -10,13 +10,14 @@ export const Image = ({
   name = 'Union Stone',
   test = false,
   projects = false,
+  project = false,
 }) => {
   return (
     <div
       className={classNames('image-container', {
         'image-container--test': test,
         'image-container--projects': projects,
-
+        'image-container--project': project,
       })}
     >
       <Link to={link} className={classNames('image-container__link', {

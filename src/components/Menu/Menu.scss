@@ -110,7 +110,15 @@
   }
 
   &__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $pad24;
     padding: 16px;
     margin: 0 auto;
+
+    &__link {
+      color: $mainColor;
+    }
   }
 }

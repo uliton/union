@@ -44,9 +44,14 @@ export const Menu = ({ isOpen, setMenuStatus, setLanguage }) => {
           >
             {MOCK.nav_portfolio}
           </Link>
+
         </div>
 
         <div className="menu__footer">
+          <a href="tel:+48 538 327 976" className="menu__footer__link">+48 538 327 976</a>
+
+          <a href="mailto:info@unionstone.eu" className="menu__footer__link">info@unionstone.eu</a>
+
           <LanguageSelect setLanguage={setLanguage} menu={true} />
         </div>
       </div>
