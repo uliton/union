@@ -1,0 +1,184 @@
+[
+  {
+    "id": 1,
+    "product_name": "0007",
+    "main": true,
+    "category": "exterior",
+    "path": "https://www.studia-54.com/upload/resize_cache/iblock/30d/szdqxxgu0vxjkfi9qvyekmseowf63j97/637_441_2/080000_got.jpg"
+  },
+  {
+    "id": 2,
+    "product_name": "0007",
+    "main": false,
+    "category": "interior",
+    "path": "https://www.studia-54.com/upload/medialibrary/e4b/ea6wm191dcwmwppytsfnlllw6zvreblz/09.jpg"
+  },
+  {
+    "id": 3,
+    "product_name": "0007",
+    "main": false,
+    "category": "exterior",
+    "path": "https://www.studia-54.com/upload/medialibrary/ca5/d0sigwdmaak0yz3jx1rt17jp8nqu9bpb/07.jpg"
+  },
+  {
+    "id": 4,
+    "product_name": "0007",
+    "main": false,
+    "category": "exterior",
+    "path": "https://www.studia-54.com/upload/medialibrary/41c/vrw46pngr6b0dtsy0uusv6owxfkbesue/13.jpg"
+  },
+  {
+    "id": 5,
+    "product_name": "0007",
+    "main": false,
+    "category": "dining_room",
+    "path": "https://www.studia-54.com/upload/medialibrary/edf/b8dryzk0hm2o17xhp3enxi7h8l2s9j9o/12_got2.jpg"
+  },
+  {
+    "id": 6,
+    "product_name": "0007",
+    "main": false,
+    "category": "living_room",
+    "path": "https://www.studia-54.com/upload/medialibrary/74e/ezvsw712o31d3x56htevsiw7ar32zfaa/10.jpg"
+  },
+  {
+    "id": 7,
+    "product_name": "0008",
+    "main": true,
+    "category": "bedroom",
+    "path": "https://www.studia-54.com/upload/medialibrary/8b1/2njix71brva3ofe37lu3gjz1qi1l83nc/master_bedroom_1_no_logo_kononov.jpg"
+  },
+  {
+    "id": 8,
+    "product_name": "0008",
+    "main": false,
+    "category": "interior",
+    "path": "https://www.studia-54.com/upload/medialibrary/bd9/hklmecs6agxjy0uzev7w4mu7znmk81fx/master_bedroom_2_no_logo_kononov.jpg"
+  },
+  {
+    "id": 9,
+    "product_name": "0008",
+    "main": false,
+    "category": "hall",
+    "path": "https://www.studia-54.com/upload/medialibrary/9e3/gp09lyssafthzypxisx0t3xjj75gn0px/341_pomeshchenie-3_UrkinP_01.jpg"
+  },
+  {
+    "id": 10,
+    "product_name": "0008",
+    "main": false,
+    "category": "bathroom",
+    "path": "https://www.studia-54.com/upload/medialibrary/5cf/9xhmwd6q4h8j6c1d910am5utqc6zemro/Master_SU_2_no_logo_kiva.jpg"
+  },
+  {
+    "id": 11,
+    "product_name": "0008",
+    "main": false,
+    "category": "bathroom",
+    "path": "https://www.studia-54.com/upload/medialibrary/1f3/hme09p73l7xj5es00ujaye8dll4qolk0/Master_SU_1_no_logo_kiva.jpg"
+  },
+  {
+    "id": 12,
+    "product_name": "0009",
+    "main": true,
+    "category": "hall",
+    "path": "https://www.studia-54.com/upload/iblock/a6d/21tr5bk5afbe83z3qpjftgrsz5p0mr0g/5.jpg"
+  },
+  {
+    "id": 13,
+    "product_name": "0009",
+    "main": false,
+    "category": "hall",
+    "path": "https://www.studia-54.com/upload/medialibrary/ee1/lhoq84ixh7vmf6a35i5r2w03kfr3r7wf/9.jpg"
+  },
+  {
+    "id": 14,
+    "product_name": "0009",
+    "main": false,
+    "category": "living_room",
+    "path": "https://www.studia-54.com/upload/medialibrary/afd/4njrfl9m1w9qt6eefzpjvm3vm6clytpb/2.jpg"
+  },
+  {
+    "id": 15,
+    "product_name": "0009",
+    "main": false,
+    "category": "living_room",
+    "path": "https://www.studia-54.com/upload/medialibrary/f3a/p1016yza4lvir08qof0wbripnp4728t0/1.jpg"
+  },
+  {
+    "id": 16,
+    "product_name": "0009",
+    "main": false,
+    "category": "interior",
+    "path": "https://www.studia-54.com/upload/medialibrary/ec8/16cfrmpblzmwozusq0t35m3imv7d6jn4/8.jpg"
+  },
+  {
+    "id": 17,
+    "product_name": "0009",
+    "main": false,
+    "category": "interior",
+    "path": "https://www.studia-54.com/upload/medialibrary/252/cz54io88veciep5qo070xwunet8k3egq/3.jpg"
+  },
+  {
+    "id": 18,
+    "product_name": "0009",
+    "main": false,
+    "category": "dining_room",
+    "path": "https://www.studia-54.com/upload/medialibrary/694/u6qd3tro38alygwleqv2ox9fbhazksp0/4.jpg"
+  },
+  {
+    "id": 19,
+    "product_name": "0009",
+    "main": false,
+    "category": "office",
+    "path": "https://www.studia-54.com/upload/medialibrary/eda/llmxku23o9cdnxmvz0ok1180m72abi3z/10.jpg"
+  },
+  {
+    "id": 20,
+    "product_name": "0010",
+    "main": true,
+    "category": "bathroom",
+    "path": "https://www.studia-54.com/upload/iblock/73e/master_spalnya_002.jpg"
+  },
+  {
+    "id": 21,
+    "product_name": "0010",
+    "main": false,
+    "category": "bathroom",
+    "path": "https://www.studia-54.com/upload/medialibrary/4e0/master_spalnya_001.jpg"
+  },
+  {
+    "id": 22,
+    "product_name": "0010",
+    "main": false,
+    "category": "wardrobe",
+    "path": "https://www.studia-54.com/upload/medialibrary/ae1/ZHenskii_-garderob_1-Nastya-Ch.jpg"
+  },
+  {
+    "id": 23,
+    "product_name": "0010",
+    "main": false,
+    "category": "wardrobe",
+    "path": "https://www.studia-54.com/upload/medialibrary/d5c/No_Logo_Chroatia_Wardrobe_Man_1_Shiryaev.jpg"
+  },
+  {
+    "id": 24,
+    "product_name": "0010",
+    "main": false,
+    "category": "wardrobe",
+    "path": "https://www.studia-54.com/upload/medialibrary/5a9/No_Logo_Chroatia_Wardrobe_Man_4_Shiryaev.jpg"
+  },
+  {
+    "id": 25,
+    "product_name": "0010",
+    "main": false,
+    "category": "bathroom",
+    "path": "https://www.studia-54.com/upload/medialibrary/c38/master_bathroom_phomenko_no_logo_04.jpg"
+  },
+  {
+    "id": 26,
+    "product_name": "0010",
+    "main": false,
+    "category": "bathroom",
+    "path": "https://www.studia-54.com/upload/medialibrary/e6d/master_bathroom_phomenko_no_logo_01.jpg"
+  }
+]
