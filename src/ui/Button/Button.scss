@@ -21,4 +21,20 @@
     background-color: $green;
     color: #fff;
   }
+
+  &--imageModal {
+    position: absolute;
+    width: max-content;
+    right: $pad12;
+    bottom: $pad12;
+    background: $mainColor;
+    border: 1px solid #fff;
+    color: #fff;
+
+    &:hover {
+      border: 1px solid $gold;
+      color: $gold;
+      background: $mainColor;
+    }
+  }
 }

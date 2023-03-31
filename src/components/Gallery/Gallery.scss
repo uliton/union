@@ -17,6 +17,7 @@
 
   &__control {
     display: flex;
+    height: min-content;
     gap: $pad12;
   }
   
@@ -46,6 +47,7 @@
       position: relative;
       background: #000;
       overflow: hidden;
+      cursor: pointer;
 
       &::before {
         content: '';
@@ -72,7 +74,7 @@
       }
       
       &:hover {
-        .portfolio__preview--img {
+        .gallery__preview--img {
           transform: scale(1.04);
           opacity: 0.8;
         }
@@ -84,9 +86,9 @@
 
     }
 
-    &--img{
-      width: 100%;
-      transition: all 800ms;
-    }
+    // &--img{
+    //   width: 100%;
+    //   transition: all 800ms;
+    // }
   }
 }

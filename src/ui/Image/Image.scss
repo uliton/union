@@ -9,16 +9,14 @@
   background: $mainColor;
   width: 240px;
   height: 240px;
-
-  &--test {
-    width: 450px;
-    height: 250px;
-  }
+  position: relative;
 
   &--projects {
-    position: relative;
     width: 100%;
-    height: 380px;
+  }
+
+  &--gallery {
+    width: 100%;
   }
 
   &--project {
@@ -28,49 +26,47 @@
     @include on768 {
       height: fit-content;
     }
-    // max-width: 50%;
   }
-  
+
   &:hover {
     .image-container__img {
       transform: scale(1.04);
       opacity: 0.75;
     }
   }
-  
-  &__link {
+
+  &__container {
     display: flex;
     text-decoration: none;
-
-    &--projects {
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: $pad12 / 2;
+      right: $pad12 / 2;
+      bottom: $pad12 / 2;
+      left: $pad12 / 2;
+      border: 1px solid #fff;
+      transition: all 500ms;
+      z-index: 1;
+    }
+  
+    &::after {
+      content: attr(data-content);
+      text-transform: uppercase;
+      position: absolute;
+      top: 10%;
+      right: 0;
+      background: $mainColor;
+      color: $gold;
+      padding: 8px 16px;
+      z-index: 2;
+    }
+  
+    &:hover {
       &::before {
-        content: '';
-        position: absolute;
-        top: $pad12 / 2;
-        right: $pad12 / 2;
-        bottom: $pad12 / 2;
-        left: $pad12 / 2;
-        border: 1px solid rgba(0,0,0,0);
-        transition: all 500ms;
-        z-index: 1;
-      }
-  
-      &::after {
-        content: 'Union Stone';
-        position: absolute;
-        top: 10%;
-        right: 0;
-        background: $mainColor;
-        color: $gold;
-        padding: 8px 16px;
-        z-index: 2;
-      }
-  
-      &:hover {
-        &::before {
-          cursor: pointer;
+        cursor: pointer;
         border: 1px solid $gold;
-        }
       }
     }
   }
@@ -79,7 +75,6 @@
     object-fit: cover;
     object-position: center;
     width: 100%;
-    height: 100%;
     transition: all 800ms;
   }
 }

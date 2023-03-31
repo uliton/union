@@ -1,0 +1,80 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+.image-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,.9);
+  z-index: 5;
+  animation: born 500ms linear;
+
+  &--unmount, .image-modal__area {
+    animation: deth 500ms linear;
+  }
+
+  &__area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation: born 500ms linear;
+  }
+  
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: $mainColor;
+    padding: $pad24;
+    
+    &:hover {
+      cursor: pointer;
+
+      .close {
+        scale: 1.2;
+      }
+      .close__P {
+        fill: red;
+      }
+    }
+  }
+
+  &__body {
+    width: 80%;
+    height: 80%;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+@keyframes born {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes deth {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

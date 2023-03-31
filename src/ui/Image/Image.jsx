@@ -1,35 +1,80 @@
-import React from 'react';
+import React, { useState } from 'react';
 import defaultImg from './img.png';
 import './Image.scss';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
+import { ImageModal } from '../../components/ImageModal/ImageModal';
 
 export const Image = ({
   src = defaultImg,
   link = '',
   name = 'Union Stone',
-  test = false,
+  project_id,
   projects = false,
+  gallery = false,
   project = false,
 }) => {
+  const [modalStatus, setModalStatus] = useState(false);
+
+  // scroll disable
+  modalStatus ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto';
+
+  const handeClick = () => {
+    setModalStatus(true)
+  }
+
   return (
     <div
       className={classNames('image-container', {
-        'image-container--test': test,
         'image-container--projects': projects,
+        'image-container--gallery': gallery,
         'image-container--project': project,
       })}
     >
-      <Link to={link} className={classNames('image-container__link', {
-        'image-container__link--projects': projects,
-      })}>
-        <img
+      {link.length
+      ? (
+        <Link
+          to={link}
+          className={classNames('image-container__container', {
+            'image-container__container--projects': projects,
+          })}
+          data-content={name}
+        >
+          <img
+            src={src}
+            alt={name}
+            title={name}
+            className='image-container__img'
+          />
+        </Link>
+      )
+      : (
+        <div
+          className={classNames('image-container__container', {
+            'image-container__container--projects': projects,
+          })}
+          data-content={name}
+          onClick={handeClick}
+        >
+          <img
+            src={src}
+            alt={name}
+            title={name}
+            className={classNames('image-container__img', {
+              'image-container__img--gallery': gallery
+            })}
+            data-content={name}
+          />
+        </div>
+      )}
+
+      {modalStatus && (
+        <ImageModal
           src={src}
-          alt={name}
-          title={name}
-          className='image-container__img'
+          setModalStatus={setModalStatus}
+          project_id={project_id}
         />
-      </Link>
+      )}
     </div>
   );
 };

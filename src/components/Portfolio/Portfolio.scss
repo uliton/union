@@ -17,6 +17,7 @@
 
   &__control {
     display: flex;
+    height: min-content;
     gap: $pad12;
   }
   
@@ -84,7 +85,6 @@
           border: 1px solid $gold;
         }
       }
-
     }
 
     &--img{

@@ -7,6 +7,8 @@
     "modal_phone": "Номер телефона",
     "modal_button": "Узнать больше",
 
+    "gallery_modal_button": "Посмотреть проект",
+
     "nav_menu": "Меню",
     "nav_main": "Главная",
     "nav_portfolio": "Портфолио",
@@ -122,7 +124,7 @@
     "portfolio_button_projects": "Портфолио",
     "portfolio_button_gallery": "Галерея",
     "porfolio_filters": [ "Жилые интерьеры", "Архитектурный дизайн", "Уникальная стилистика", "Проект сезона" ],
-    "porfolio_gallery_filters": [ "Интерьер", "Столовая", "Кабинет", "Холл", "Спальня", "Гостиная" ]
+    "porfolio_gallery_filters": [ "Интерьер", "Столовая", "Кабинет", "Холл", "Спальня", "Гостиная", "Экстерьер", "Ванная", "Гардероб" ]
   },
 
 
@@ -142,6 +144,8 @@
     "modal_name": "Your name",
     "modal_phone": "Your phone",
     "modal_button": "More informathion",
+
+    "gallery_modal_button": "View project",
 
     "nav_menu": "Menu",
     "nav_main": "Main",
@@ -258,6 +262,6 @@
     "portfolio_button_projects": "Portfolio",
     "portfolio_button_gallery": "Gallery",
     "porfolio_filters": [ "Residential interiors", "Architectural design", "Unique stylistics", "Project of the season" ],
-    "porfolio_gallery_filters": [ "Interior","Dining room","Office","Hall","Bedroom","Living room" ]
+    "porfolio_gallery_filters": [ "Interior","Dining room","Office","Hall","Bedroom","Living room", "Exterior", "Bathroom", "Wardrobe" ]
   }
 }

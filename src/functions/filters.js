@@ -10,7 +10,7 @@ export const getPorfolioFilters = (lang) => {
 };
 
 // gallery filters
-export const getPorfolioGalleryFilters = (lang) => {
+export const getGalleryFilters = (lang) => {
   const MOCK = getTranslation(lang);
 
   const filters = MOCK.porfolio_gallery_filters;

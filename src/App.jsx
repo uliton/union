@@ -5,7 +5,7 @@ import { Main } from './components/Main';
 import { NotFound } from './components/NotFound';
 import { Portfolio } from './components/Portfolio';
 import { PortfolioLayout } from './components/PortfolioLayout';
-import { PortfolioGallery } from './components/PortfolioGallery';
+import { Gallery } from './components/Gallery';
 import { Project0001 } from './components/_Projects/0001/Project';
 import { Project0002 } from './components/_Projects/0002';
 import { Project0003 } from './components/_Projects/0003';
@@ -24,7 +24,7 @@ export const App = () => {
           <Route index element={<Main />} />
           <Route path='portfolio' element={<PortfolioLayout />}>
             <Route index element={<Portfolio />} />
-            <Route path='gallery' element={<PortfolioGallery />} />
+            <Route path='gallery' element={<Gallery />} />
             <Route path=':0001' element={<Project0001 />} />
             <Route path=':0002' element={<Project0002 />} />
             <Route path=':0003' element={<Project0003 />} />

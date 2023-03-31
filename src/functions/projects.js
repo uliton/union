@@ -172,6 +172,7 @@ import PROJECTS from '../PROJECTS.json';
 //   },
 // ]
 
+// projects
 export const getProjectsImages = (filterArray = []) => {
   if (filterArray.length) {
     let newArray = [];
@@ -181,9 +182,8 @@ export const getProjectsImages = (filterArray = []) => {
       const array = PROJECTS.filter(image => image.project_name === filter);
       newArray = [...newArray, ...array];
     }
-    
-    // console.log(newArray)
-    const newRanderArray = newArray.sort((a, b) => a.category.localeCompare(b.category));
+
+    const newRanderArray = newArray.sort((a, b) => a.project_name.localeCompare(b.project_name));
 
     return newRanderArray;
   }
@@ -195,3 +195,23 @@ export const getProjectsImages = (filterArray = []) => {
   return randerArray;
 }
 
+
+// gallery
+export const getGalleryImages = (filterArray = []) => {
+  if (filterArray.length) {
+    let newArray = [];
+
+    for (const filter of filterArray) {
+      const array = PROJECTS.filter(image => image.category === filter.toLowerCase().split(' ').join('_'));
+      newArray = [...newArray, ...array];
+    }
+
+    const newRanderArray = newArray.sort((a, b) => a.category.localeCompare(b.category));
+
+    return newRanderArray;
+  }
+
+  const randerArray = PROJECTS.sort((a, b) => a.category.localeCompare(b.category));
+
+  return randerArray;
+}

@@ -7,9 +7,12 @@ import { Title } from '../../../ui/Title';
 import { Description } from '../../../ui/Description';
 
 export const Design = () => {
-  const [modalStatus, setModalStatus] = useState(false);
   const lang = useContext(Language);
   const MOCK = getTranslation(lang);
+  const [modalStatus, setModalStatus] = useState(false);
+
+  // scroll disable
+  modalStatus ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto';
 
   return (
     <section className='design'>

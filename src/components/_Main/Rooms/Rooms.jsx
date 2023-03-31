@@ -38,33 +38,6 @@ export const Rooms = () => {
   ]
   const [displayImage, setDisplayImage] = useState(-1);
 
-  // const [rightCarouselArray, setRightCarouselArray] = useState([...carouselArray, ...carouselArray]);
-  // const [leftCarouselArray, setLeftCarouselArray] = useState(carouselArray);
-  // const [leftCarouselArrayStatus, setLeftCarouselArrayStatus] = useState(false);
-
-  // const handlerClickNext = () => {
-  //   let newArray = [...rightCarouselArray];
-
-  //   if (displayImage < -4 && rightCarouselArray.length + displayImage === 3) {
-  //     newArray = [...newArray, ...carouselArray]
-  //     setRightCarouselArray(newArray);
-  //   }
-  //   setDisplayImage(prev => prev - 1);
-  //   console.log(rightCarouselArray, displayImage);
-  // }
-  
-  // const handlerClickPrev = () => {
-  //   console.log(leftCarouselArrayStatus, displayImage > -4, rightCarouselArray.length - displayImage )
-  //   if (leftCarouselArrayStatus === false && displayImage > -4 && rightCarouselArray.length - displayImage === 10) {
-  //     setLeftCarouselArrayStatus(true);
-  //     console.log('in')
-  //   }
-
-  //   // if (leftCarouselArrayStatus && displayImage > -4 && rightCarouselArray.length - displayImage === 10) {
-  //   // }
-  //   setDisplayImage(prev => prev + 1);
-  // }
-
   const handlerClickPrev = () => {
     if (displayImage < 0) {
       setDisplayImage(prev => prev + 1);
