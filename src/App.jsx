@@ -12,6 +12,10 @@ import { Project0003 } from './components/_Projects/0003';
 import { Project0004 } from './components/_Projects/0004';
 import { Project0005 } from './components/_Projects/0005';
 import { Project0006 } from './components/_Projects/0006';
+import { Project0007 } from './components/_Projects/0007';
+import { Project0008 } from './components/_Projects/0008';
+import { Project0009 } from './components/_Projects/0009';
+import { Project0010 } from './components/_Projects/0010';
 
 export const App = () => {
   return (
@@ -20,13 +24,17 @@ export const App = () => {
           <Route index element={<Main />} />
           <Route path='portfolio' element={<PortfolioLayout />}>
             <Route index element={<Portfolio />} />
-            {/* <Route path='gallery' element={<PortfolioGallery />} /> */}
-            <Route path='0001' element={<Project0001 />} />
-            <Route path='0002' element={<Project0002 />} />
-            <Route path='0003' element={<Project0003 />} />
-            <Route path='0004' element={<Project0004 />} />
-            <Route path='0005' element={<Project0005 />} />
-            <Route path='0006' element={<Project0006 />} />
+            <Route path='gallery' element={<PortfolioGallery />} />
+            <Route path=':0001' element={<Project0001 />} />
+            <Route path=':0002' element={<Project0002 />} />
+            <Route path=':0003' element={<Project0003 />} />
+            <Route path=':0004' element={<Project0004 />} />
+            <Route path=':0005' element={<Project0005 />} />
+            <Route path=':0006' element={<Project0006 />} />
+            <Route path=':0007' element={<Project0007 />} />
+            <Route path=':0008' element={<Project0008 />} />
+            <Route path=':0009' element={<Project0009 />} />
+            <Route path=':0010' element={<Project0010 />} />
           </Route>
         </Route>
         <Route path='*' element={<NotFound />} />

@@ -19,21 +19,21 @@
 
   &__name {
     position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translate(0, -50%);
-    font-size: 24px;
-    font-weight: 3;
+    left: 12%;
+    bottom: 0;
+    // transform: translate(0, -50%);
+    font-size: 18px;
+    font-weight: 2;
     color: #fff;
     user-select: none;
     text-decoration: none;
 
     @include on768 {
-      font-size: 32px;
+      font-size: 26px;
       left: 15%;
     }
     @include on1280 {
-      font-size: 40px;
+      font-size: 32px;
     }
   }
 

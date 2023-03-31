@@ -10,6 +10,8 @@ import { Button } from "../../ui/Button/Button";
 import { getProjectsImages } from "../../functions/projects";
 import { Checkbox } from "../../ui/Checkbox/Checkbox";
 
+// import './PortfolioGallery.scss';
+
 export const PortfolioGallery = () => {
   const lang = useContext(Language);
   const MOCK = getTranslation(lang);
@@ -40,9 +42,9 @@ export const PortfolioGallery = () => {
   }, []);
 
   return (
-    <main className="portfolio container">
-      <div className="portfolio__setings">
-        <div className="portfolio__control">
+    <main className="gallery container">
+      <div className="gallery__setings">
+        <div className="gallery__control">
           <Link to="/portfolio">
             <Button content={MOCK.portfolio_button_projects} />
           </Link>
@@ -52,7 +54,7 @@ export const PortfolioGallery = () => {
           </Link>
         </div>
 
-        <div className="portfolio__filters">
+        <div className="gallery__filters">
           {getPorfolioGalleryFilters(lang).map((filter, i) => (
             <React.Fragment key={i}>
               <Checkbox filter={filter} filterSubmit={filterSubmit} />
@@ -66,18 +68,18 @@ export const PortfolioGallery = () => {
         
       </form> */}
 
-      <div className="portfolio__preview">
+      <div className="gallery__preview">
         {filteredImages.map((img, i) => (
           <Link
             key={i}
             to={`/portfolio/${img.name}`}
-            className="portfolio__preview__link"
+            className="gallery__preview__link"
             data-conent={img.category}
           >
             <img
               src={img.src}
               alt={img.name}
-              className="portfolio__preview--img"
+              className="gallery__preview--img"
             />
           </Link>
         ))}

@@ -49,7 +49,7 @@ export const Navigation = ({ menuStatus, setMenuStatus }) => {
     // }
   }
 
-  console.log(position)
+  // console.log(position)
 
   return (
     <div className={classNames('nav', {

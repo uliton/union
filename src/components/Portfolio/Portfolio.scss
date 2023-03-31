@@ -22,9 +22,13 @@
   
   &__filters {
     display: grid;
-    grid-template-columns: max-content max-content;
+    grid-template-columns: max-content;
     gap: $pad24 * 2;
     row-gap: 6px;
+
+    @include on1280 {
+      grid-template-columns: repeat(2, max-content);
+    }
   }
 
   &__preview {
