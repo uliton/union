@@ -25,16 +25,16 @@ export const App = () => {
           <Route path='portfolio' element={<PortfolioLayout />}>
             <Route index element={<Portfolio />} />
             <Route path='gallery' element={<Gallery />} />
-            <Route path=':0001' element={<Project0001 />} />
-            <Route path=':0002' element={<Project0002 />} />
-            <Route path=':0003' element={<Project0003 />} />
-            <Route path=':0004' element={<Project0004 />} />
-            <Route path=':0005' element={<Project0005 />} />
-            <Route path=':0006' element={<Project0006 />} />
-            <Route path=':0007' element={<Project0007 />} />
-            <Route path=':0008' element={<Project0008 />} />
-            <Route path=':0009' element={<Project0009 />} />
-            <Route path=':0010' element={<Project0010 />} />
+            <Route path='0001' element={<Project0001 />} />
+            <Route path='0002' element={<Project0002 />} />
+            <Route path='0003' element={<Project0003 />} />
+            <Route path='0004' element={<Project0004 />} />
+            <Route path='0005' element={<Project0005 />} />
+            <Route path='0006' element={<Project0006 />} />
+            <Route path='0007' element={<Project0007 />} />
+            <Route path='0008' element={<Project0008 />} />
+            <Route path='0009' element={<Project0009 />} />
+            <Route path='0010' element={<Project0010 />} />
           </Route>
         </Route>
         <Route path='*' element={<NotFound />} />

@@ -38,11 +38,15 @@
   }
 
   &--project {
+    width: 70%;
     font-size: 14px;
     text-align: left;
-    margin: 8px auto 20px;
+    margin: 8px auto 20px 0;
 
     @include on768 {
+      width: 100%;
+      columns: 2;
+      column-gap: $pad24 * 2;
       margin: 16px auto 20px;
     }
 

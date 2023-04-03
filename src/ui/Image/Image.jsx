@@ -23,6 +23,9 @@ export const Image = ({
     setModalStatus(true)
   }
 
+  const correctName = name.split('_').join(' ');
+  console.log(correctName)
+
   return (
     <div
       className={classNames('image-container', {
@@ -53,17 +56,16 @@ export const Image = ({
           className={classNames('image-container__container', {
             'image-container__container--projects': projects,
           })}
-          data-content={name}
+          data-content={correctName}
           onClick={handeClick}
         >
           <img
             src={src}
             alt={name}
-            title={name}
+            title={correctName}
             className={classNames('image-container__img', {
               'image-container__img--gallery': gallery
             })}
-            data-content={name}
           />
         </div>
       )}
