@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Image } from '../../../ui/Image';
+// import { Image } from '../../../ui/Image';
 import { Title } from '../../../ui/Title';
 import { Description } from '../../../ui/Description';
 import { getTranslation, Language } from '../../../functions/language';

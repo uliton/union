@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { getTranslation, Language } from '../../functions/language';
 import { Logo } from '../../images/icons/Logo';
 // import { Search } from '../../images/icons/Search';
@@ -16,40 +16,21 @@ export const Navigation = ({ menuStatus, setMenuStatus }) => {
   // scroll disable
   menuStatus ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto';
 
-  // let prevScrollpos = window.pageYOffset;
-  window.onscroll = function() {
-    const currentScrollPos = window.pageYOffset;
-
-    if (currentScrollPos > 3) {
-      setPosition(true);
-    } else {
-      setPosition(false);
+  useEffect(_ => {
+    const handleScroll = _ => { 
+      if (window.pageYOffset > 3) {
+        setPosition(true)
+      } else {
+        setPosition(false)
+      }
     }
 
-    //in top
-    // if (prevScrollpos === 0 && currentScrollPos < 5) {
-    //   // prevScrollpos = currentScrollPos;
-    //   return;
-    // }
-    // move down
-    // if (prevScrollpos < currentScrollPos) {
-    //   if (document.getElementById("nav").style.top !== "-90px") {
-    //     document.getElementById("nav").style.top = "-90px";
-    //   }
-    //   prevScrollpos = currentScrollPos;
-    //   return;
-    // }
-    // move up
-    // if (prevScrollpos > currentScrollPos) {
-    //   if (document.getElementById("nav").style.top !== "0") {
-    //     document.getElementById("nav").style.top = "0";
-    //   }
-    //   prevScrollpos = currentScrollPos;
-    //   return;
-    // }
-  }
+    window.addEventListener('scroll', handleScroll);
 
-  // console.log(position)
+    return _ => {
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }, []);
 
   return (
     <div className={classNames('nav', {
