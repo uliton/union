@@ -17,6 +17,7 @@
       opacity: 0.75;
     }
   }
+
   &--projects {
 
   }
@@ -29,13 +30,17 @@
     width: 100%;
     height: 240px;
     margin-bottom: $pad24;
+    height: fit-content;
 
     .image-container__img {
       height: 100%;
     }
-    height: fit-content;
-
-    @include on768 {
+    
+    &:hover {
+      .image-container__img {
+        transform: scale(1);
+        opacity: 1;
+      }
     }
   }
 
@@ -54,7 +59,7 @@
       transition: all 500ms;
       z-index: 1;
     }
-  
+
     &::after {
       content: attr(data-content);
       text-transform: uppercase;
@@ -66,7 +71,7 @@
       padding: 8px 16px;
       z-index: 2;
     }
-  
+
     &:hover {
       &::before {
         cursor: pointer;
@@ -74,10 +79,9 @@
       }
     }
   }
-  
+
   &__img {
     width: 100%;
-    // height: 240px;
     object-fit: cover;
     object-position: center;
     transition: all 800ms;

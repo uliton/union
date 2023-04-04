@@ -75,7 +75,7 @@ export const Catalog = () => {
     setWindowSize(window.innerWidth);
   };
 
-  const mobile = 390;
+  const mobile = 420;
   const tablet = 768;
   const desktop = 1280;
 

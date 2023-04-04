@@ -10,7 +10,7 @@ export const Gallery = () => {
   const lang = useContext(Language);
   const MOCK = getTranslation(lang);
   const [filterArray, setFilterArray] = useState([]);
-  const [filteredImages, setFilteredImages] = useState(getGalleryImages());
+  const [filteredImages, setFilteredImages] = useState(getGalleryImages(lang));
 
   const filterSubmit = (filter) => {
     if (filterArray.includes(filter)) {
@@ -23,7 +23,7 @@ export const Gallery = () => {
   };
 
   useEffect(() => {
-    setFilteredImages(getGalleryImages(filterArray));
+    setFilteredImages(getGalleryImages(lang, filterArray));
   }, [filterArray]);
 
   // "document.documentElement.scrollTo" is the magic
@@ -45,13 +45,13 @@ export const Gallery = () => {
           <Button content={MOCK.portfolio_button_gallery} />
         </div>
 
-        <div className="gallery__filters">
+        {/* <div className="gallery__filters">
           {getGalleryFilters(lang).map((filter, i) => (
             <React.Fragment key={i}>
               <Checkbox filter={filter} filterSubmit={filterSubmit} />
             </React.Fragment>
           ))}
-        </div>
+        </div> */}
       </div>
 
       <div className="gallery__preview">

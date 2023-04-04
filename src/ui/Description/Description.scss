@@ -7,6 +7,13 @@
   text-align: justify;
   margin-bottom: 16px;
 
+  @include on768 {
+    font-size: 16px;
+  }
+  @include on1280 {
+    font-size: 18px;
+  }
+
   &--noParagraph {
     text-align: center;
 
@@ -38,7 +45,7 @@
   }
 
   &--project {
-    width: 70%;
+    // width: 70%;
     font-size: 14px;
     text-align: left;
     margin: 8px auto 20px 0;

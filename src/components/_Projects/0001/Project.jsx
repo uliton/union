@@ -11,18 +11,18 @@ export const Project0001 = () => {
 
   return (
     <section className='project container'>
-      <Title content={'Caramel'} />
+      <Title content={MOCK.p_0001_title} />
 
       <div className='project__content'>
-        <Image src='https://ambstone.com/wp-content/uploads/2021/02/Caramel-1.jpg' project={true} />
+        <Image src='https://ambstone.com/wp-content/uploads/2021/02/Caramel-1.jpg' project={true} link=' ' />
 
         <div className="project__description">
-          <Description content={'Caramel, from light beige to honey-gold and brown, create a feeling of warmth and cosiness in the space. Light caramel shades visually space and fill it with light. At the same time due warmth of shades, even in very large rooms there is no feeling of emptiness.'} project={true} />
+          <Description content={MOCK.p_0001_description} project={true} />
 
           <div className='project__details details'>
             <div className="details__container">
               <div className="details__title">
-                Size chart:
+                {MOCK.project_details_title_1}
               </div>
 
               <div className="details__container__wrapper">
@@ -30,31 +30,31 @@ export const Project0001 = () => {
                   <div className="details__subcontainer">
                     <div className="details__subcontainer__line">
                       <p className="details__subtitle">
-                        Panel:
+                        {MOCK.project_details_subtitle_1}
                       </p>
 
                       <p className="details__subcontent">
-                        2.4 m (7’10”) * 1.2 m (3’11”)
+                        {MOCK.project_details_subcontent_p1}
                       </p>
                     </div>
 
                     <div className="details__subcontainer__line">
                       <p className="details__subtitle">
-                        Thickness:
+                        {MOCK.project_details_subtitle_2}
                       </p>
 
                       <p className="details__subcontent">
-                        18 mm
+                        {MOCK.project_details_subcontent_t}
                       </p>
                     </div>
 
                     <div className="details__subcontainer__line">
                       <p className="details__subtitle">
-                        Panel net weight:
+                        {MOCK.project_details_subtitle_3}
                       </p>
 
                       <p className="details__subcontent">
-                        54-56 kg (119.05 – 123.459 Ibs)
+                        {MOCK.project_details_subcontent_w1}
                       </p>
                     </div>
                   </div>
@@ -62,31 +62,31 @@ export const Project0001 = () => {
                   <div className="details__subcontainer">
                     <div className="details__subcontainer__line">
                       <p className="details__subtitle">
-                        Panel:
+                        {MOCK.project_details_subtitle_1}
                       </p>
 
                       <p className="details__subcontent">
-                        1.2 m (7’10”) * 0.6 m (1’12”)
+                        {MOCK.project_details_subcontent_p2}
                       </p>
                     </div>
 
                     <div className="details__subcontainer__line">
                       <p className="details__subtitle">
-                        Thickness:
+                        {MOCK.project_details_subtitle_2}
                       </p>
 
                       <p className="details__subcontent">
-                        18 mm
+                        {MOCK.project_details_subcontent_t}
                       </p>
                     </div>
 
                     <div className="details__subcontainer__line">
                       <p className="details__subtitle">
-                        Panel net weight:
+                        {MOCK.project_details_subtitle_3}
                       </p>
 
                       <p className="details__subcontent">
-                        13.49-14 kg (29.74 – 30.86 Ibs)
+                        {MOCK.project_details_subcontent_w2}
                       </p>
                     </div>
                   </div>
@@ -96,31 +96,31 @@ export const Project0001 = () => {
                   <div className="details__subcontainer">
                     <div className="details__subcontainer__line">
                       <p className="details__subtitle">
-                        Panel:
+                        {MOCK.project_details_subtitle_1}
                       </p>
 
                       <p className="details__subcontent">
-                        0.6 m (1’12”) * 0.3 m (0’98”)
+                        {MOCK.project_details_subcontent_p3}
                       </p>
                     </div>
 
                     <div className="details__subcontainer__line">
                       <p className="details__subtitle">
-                        Thickness:
+                        {MOCK.project_details_subtitle_2}
                       </p>
 
                       <p className="details__subcontent">
-                        18 mm
+                       {MOCK.project_details_subcontent_t}
                       </p>
                     </div>
 
                     <div className="details__subcontainer__line">
                       <p className="details__subtitle">
-                        Panel net weight:
+                        {MOCK.project_details_subtitle_3}
                       </p>
 
                       <p className="details__subcontent">
-                        3.37-3.5 kg (7.43 – 7.72 Ibs)
+                        {MOCK.project_details_subcontent_w3}
                       </p>
                     </div>
                   </div>
@@ -128,31 +128,31 @@ export const Project0001 = () => {
                   <div className="details__subcontainer">
                     <div className="details__subcontainer__line">
                       <p className="details__subtitle">
-                        Panel:
+                        {MOCK.project_details_subtitle_1}
                       </p>
 
                       <p className="details__subcontent">
-                        0.5 m (1’8″) * 0.5 m (1’8”)
+                        {MOCK.project_details_subcontent_p4}
                       </p>
                     </div>
 
                     <div className="details__subcontainer__line">
                       <p className="details__subtitle">
-                        Thickness:
+                        {MOCK.project_details_subtitle_2}
                       </p>
 
                       <p className="details__subcontent">
-                        18 mm
+                        {MOCK.project_details_subcontent_t}
                       </p>
                     </div>
 
                     <div className="details__subcontainer__line">
                       <p className="details__subtitle">
-                        Panel net weight:
+                        {MOCK.project_details_subtitle_3}
                       </p>
 
                       <p className="details__subcontent">
-                        4.68-4.86 kg (10.32 – 10.71 Ibs)
+                        {MOCK.project_details_subcontent_w4}
                       </p>
                     </div>
                   </div>
@@ -163,32 +163,32 @@ export const Project0001 = () => {
             <div className="details__wrapper">
               <div className="details__container">
                 <div className="details__title">
-                  Material:
+                 {MOCK.project_details_title_2}
                 </div>
                 
                 <div className="details__content">
-                  Amber
+                  {MOCK.project_details_description_1}
                 </div>
               </div>
 
               <div className="details__container">
                 <div className="details__title">
-                  Country origin:
+                  {MOCK.project_details_title_3}
                 </div>
                 
                 <div className="details__content">
-                  Ukraine
+                 {MOCK.project_details_description_2}
                 </div>
               </div>
             </div>
 
             <div className="details__container">
               <div className="details__title">
-                Applications:
+                {MOCK.project_details_title_4}
               </div>
               
               <div className="details__content">
-                Kitchen space, living room, bathroom, pools, saunas, hammam, bar, cinema, hotel lobby, flights of stairs, floors, building facades
+               {MOCK.project_details_description_3}
               </div>
             </div>
           </div>

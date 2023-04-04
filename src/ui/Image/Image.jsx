@@ -24,7 +24,6 @@ export const Image = ({
   }
 
   const correctName = name.split('_').join(' ');
-  console.log(correctName)
 
   return (
     <div

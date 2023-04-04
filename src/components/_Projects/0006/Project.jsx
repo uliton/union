@@ -14,7 +14,7 @@ export const Project0006 = () => {
       <Title content={MOCK.p_0006_title} />
 
       <div className='project__content'>
-        <Image src='https://ambstone.com/wp-content/uploads/2021/07/none.jpg' project={true} />
+        <Image src='https://ambstone.com/wp-content/uploads/2021/07/none.jpg' project={true} link=' ' />
 
         <div className="project__description">
           <Description content={MOCK.p_0006_description} project={true} />

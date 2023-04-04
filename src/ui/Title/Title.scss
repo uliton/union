@@ -8,6 +8,13 @@
   font-weight: 3;
   grid-area: title;
 
+  @include on768 {
+    font-size: 26px;
+  }
+  @include on1280 {
+    font-size: 32px;
+  }
+
   &--intro {
     font-weight: 4;
     text-align: left;

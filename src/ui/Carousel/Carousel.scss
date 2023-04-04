@@ -29,6 +29,15 @@
           top: 50%;
           opacity: 1;
         }
+
+        .carousel__item--text {
+          opacity: 1;
+
+          &::after {
+            left: 0;
+            right: 0;
+          }
+        }
       }
 
       &::before {
@@ -62,36 +71,61 @@
 
     &--img {
       width: 100%;
-      height: 400px;
+      height: 500px;
       object-fit: cover;
       transition: all 800ms;
 
       @include on768 {
-        height: 440px;
+        height: 540px;
       }
       @include on1280 {
-        height: 480px;
+        height: 580px;
       }
     }
 
     &--text {
       position: absolute;
-      bottom: $pad24;
+      bottom: 0;
       left: 0;
-      font-size: 10px;
+      right: 0;
+      font-size: 14px;
       text-transform: uppercase;
-      color: $gold;
-      padding: $pad12 $pad24;
-      background: $mainColor;
+      color: #fff;
+      padding: $pad24;
       user-select: none;
-      transform: translate(0, 25%);
+      transition: all 500ms;
+      z-index: 0;
+
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-color: $mainColor;
+        opacity: .8;
+        z-index: -1;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        right: 50%;
+        top: 0;
+        background: $gold;
+        transition: all 500ms;
+        z-index: -1;
+      }
 
       @include on768 {
-        font-size: 12px;
+        font-size: 16px;
       }
 
       @include on1280 {
-        font-size: 16px;
+        font-size: 18px;
       }
     }
   }

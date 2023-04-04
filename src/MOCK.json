@@ -122,7 +122,6 @@
     "not_found": "страница не найдена",
 
 
-
     "portfolio_header_title": "Портфолио",
     "portfolio_button_projects": "Портфолио",
     "portfolio_button_gallery": "Галерея",
@@ -139,7 +138,7 @@
     "project_details_subtitle_1": "Панель:",
     "project_details_subtitle_2": "Толщина:",
     "project_details_subtitle_3": "Масса нетто панели:",
-
+    
     "project_details_subcontent_p1": "2.4 м (7’10”) * 1.2 м (3’11”)",
     "project_details_subcontent_p2": "1.2 м (7’10”) * 0.6 м (1’12”)",
     "project_details_subcontent_p3": "0.6 м (1’12”) * 0.3 м (0’98”)",
@@ -150,11 +149,27 @@
     "project_details_subcontent_w3": "3.37-3.5 кг (7.43 – 7.72 Ibs)",
     "project_details_subcontent_w4": "4.68-4.86 кг (10.32 – 10.71 Ibs)",
     
+
+
+
+
+    "p_0001_title": "Карамель",
+    "p_0001_description": "Карамельный, от светло-бежевого до медово-золотого и коричневого, создает в пространстве ощущение тепла и уюта. Светлые карамельные оттенки зрительно оттеняют пространство и наполняют его светом. При этом за счет теплоты оттенков даже в очень больших помещениях не возникает ощущения пустоты.",
+    
+    "p_0002_title": "Медовая Фантазия",
+    "p_0002_description": "Один из самых модных оттенков носит вкусное название Медовая Фантазия. Создан для выражения безмятежности в интерьере и снятия стресса. Он прекрасно сочетается с любыми природными оттенками: с теплыми и холодными, со светлыми и темными. Именно такую медовую палитру люди выбирают для своего интерьера. Этот камень обладает впечатляющей способностью пропускать свет. При освещении оказывает уникальный терапевтический эффект.",
+    
+    "p_0003_title": "Черный Принц",
+    "p_0003_description": "Черный Принц стирает границы пространства, визуально расширяет его. Черный цвет выглядит очень плотным, создает особое глубокое ощущение, успокаивает, поглощает внешние раздражители. Уникальная технология обработки сырья максимально увеличивает естественное качество изображения камня.",
+    
+    "p_0004_title": "Готлиб",
+    "p_0004_description": "Готлиб представляет собой своеобразный камень из трехмерного пластового тела, сложенного воедино и застывшего, как ряд. Этот материал можно описать как живопись, настолько он сложный, объемный и яркий.",
+
+    "p_0005_title": "Фантазийный Микс",
+    "p_0005_description": "Фантазийный микс – коричневые тона этого материала придают помещению некую строгость, наполняют его классическим уютом, гармонией и спокойствием. Созданные природой, коричневые оттенки подкупают своей естественностью.",
+
     "p_0006_title": "Королевская Фантазия",
     "p_0006_description": "Один из самых ценных продуктов в нашей линейке. Изготовлен из отборного сырья ювелирного качества ручной очистки. Структура изделия передает основательность натурального камня. Неповторимость и неповторимость рисунка, насыщенный оранжевый цвет, переходящий в белый с тонами дымчатых облаков.",
-
-
-
 
 
 
@@ -332,6 +347,25 @@
     "project_details_subcontent_w2": "13.49-14 kg (29.74 – 30.86 Ibs)",
     "project_details_subcontent_w3": "3.37-3.5 kg (7.43 – 7.72 Ibs)",
     "project_details_subcontent_w4": "4.68-4.86 kg (10.32 – 10.71 Ibs)",
+    
+    
+    
+    
+    "p_0001_title": "Caramel",
+    "p_0001_description": "Caramel, from light beige to honey-gold and brown, create a feeling of warmth and cosiness in the space. Light caramel shades visually space and fill it with light. At the same time due warmth of shades, even in very large rooms there is no feeling of emptiness.",
+
+    "p_0002_title": "Honey Fantasy",
+    "p_0002_description": "One of the trendiest shades has delicious name Honey fantasy. Designed to express serenity in interior and take-downthe level of stress. It goes well with any natural shades: with warm and cold, with light and dark. People choose exactly such honey palette for their interiors. This stone has impressive ability to transmit light. When illuminated, it has a unique therapeutic effect.",
+
+    "p_0003_title": "Black Prince",
+    "p_0003_description": "Black Prince erases boundaries of space, visually expands it. The Black color looks very dense, creates a special deep feelings, soothes, absorbs external stimuli. The unique raw material processing technology maximize nature quality of stone image.",
+
+    "p_0004_title": "Gottlieb",
+    "p_0004_description": "Gottlieb is the stone in original manner from three-dimensional layer body combined together and frozen like row. This material can be described like painting, it is so complex, voluminous and bright.",
+
+    "p_0005_title": "Fantasy Mix",
+    "p_0005_description": "Fantasy mix - brown tones of this material give room some rigor, fill it classic comfort, harmony and tranquility. Made by nature, brown brights captivate naturalness.",
+
     "p_0006_title": "Royal Fantasy",
     "p_0006_description": "One of the most valuable product in our line. Made from selected raw materials of gem-quality manual cleaning. The structure of the product conveys solidity of natural stone. Uniqueness and uniqueness of the pattern, rich orange color that turns into white with smoky clouds tones.",
 
