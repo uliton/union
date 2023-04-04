@@ -53,7 +53,7 @@ export const Navigation = ({ menuStatus, setMenuStatus }) => {
 
   return (
     <div className={classNames('nav', {
-      'nav--position': position
+      'nav--position': position,
     })} id='nav'>
       <div className='nav__left'>
         <button

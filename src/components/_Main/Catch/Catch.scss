@@ -20,16 +20,16 @@
   &__input {
     font-size: 14px;
     width: 100%;
-    padding: 10px 20px;
+    padding: 16px 20px;
     background-color: #fff;
     color: $green;
     border: 1px solid $green;
     border-radius: 4px;
     outline: none;
     transition: all 500ms;
+    cursor: pointer;
 
     &:hover {
-      cursor: pointer;
     }
   }
 
@@ -75,4 +75,9 @@
     width: 220px;
     margin: 0 auto;
   }
+}
+
+#catch__input {
+  border-radius: 4px;
+  outline: none;
 }

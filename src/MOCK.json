@@ -3,8 +3,8 @@
     "language_name": "ru",
     "modal_header": "Узнать больше",
     "modal_title": "Мы свяжемся с вами и ответим на все вопросы",
-    "modal_name": "Ваше имя",
-    "modal_phone": "Номер телефона",
+    "modal_name": "Введите ваше имя",
+    "modal_phone": "123 456 7890",
     "modal_button": "Узнать больше",
 
     "gallery_modal_button": "Посмотреть проект",
@@ -17,16 +17,19 @@
     "header_title": "UNION STONE",
     "header_subtitle": "Плиты из чистого янтаря без клея и смолы - теперь в Книге рекордов Гиннеса!",
 
-    "intro_title": "Union Stone — это единственные в мире изделия из камней янтаря",
-    "intro_description": "Ювелиры Union - это хранители вековых традицы, которые передавались из поколения в поколение и сегодня они первые, кто смогли в ручню объединить каждый камень янтаря, в одно целое. Благодрая изучению Арабских стран, Alessandro Rossti изобрел революционную формулу, которая позволила получить беспрецедентный материал с исключительными характеристиками, предельной контрастностью, цвета и тепла",
+    "intro_title": "UNION STONE: эксклюзивные изделия из натурального янтаря, попавшие в Книгу рекордов Гиннеса",
+    "intro_subtitle": "Мы предлагаем продукцию, которая не имеет аналогов во всем мире.",
+    "intro_description_1": "UNION STONE - производитель эксклюзивных янтарных плит и изделий для мебели любых размеров. Сегодня UNION STONE активно презентует янтарные продукты по всему миру и уже сейчас сотрудничает с лучшими дизайнерскими ателье из Италии, Испании, Арабских стран, Америки и Австралии, чтобы создавать уникальные и престижные проекты для наших клиентов.",
+    "intro_description_2": "UNION STONE использует только натуральный янтарь, а готовая продукция не имеет химических добавок, клеев и смол. Известный факт, что янтарь - это идеальный материал с уникальным блеском и теплотой для создания эксклюзивных элементов интерьера. Также стоит помнить, что янтарь обладает уникальными свойствами: он является природным антибиотиком, имеет лечебные свойства, благодаря содержанию в нем природных эфиров, ионов и микроэлементов, которые сохраняются после обработки камня.",
+    "intro_description_3": "UNION STONE гордится качеством изделий и высоким уровнем сервиса. Наша компания всегда готова предложить уникальные решения для вашего интерьера, которые подчеркнут индивидуальность и стиль вашего пространства.",
     "intro_button_1": "Коллекция плит",
     "intro_button_2": "Заказать дизайн-проект",
     
     "catch_title": "Мы свяжемся с вами и ответим на все вопросы",
     "catch_success_1": "Ваш запрос успешно отправлен",
     "catch_success_2": "Наш менеджер свяжится с вами в ближайшее время",
-    "catch_name": "Ваше имя",
-    "catch_phone": "Номер телефона",
+    "catch_name": "Введите ваше имя",
+    "catch_phone": "123 456 7890",
     "catch_button": "Узнать больше",
 
     "trends_title": "Сделайте свой дом уникальным",
@@ -124,8 +127,50 @@
     "portfolio_button_projects": "Портфолио",
     "portfolio_button_gallery": "Галерея",
     "porfolio_filters": [ "Жилые интерьеры", "Архитектурный дизайн", "Уникальная стилистика", "Проект сезона" ],
-    "porfolio_gallery_filters": [ "Интерьер", "Столовая", "Кабинет", "Холл", "Спальня", "Гостиная", "Экстерьер", "Ванная", "Гардероб" ]
+    "porfolio_gallery_filters": [ "Интерьер", "Столовая", "Кабинет", "Холл", "Спальня", "Гостиная", "Экстерьер", "Ванная", "Гардероб" ],
+    
+    "project_details_title_1": "Таблица размеров:",
+    "project_details_title_2": "Материал:",
+    "project_details_title_3": "Страна происхождения:",
+    "project_details_title_4": "Приложения:",
+    "project_details_description_1": "Янтарь",
+    "project_details_description_2": "Украина",
+    "project_details_description_3": "Кухонное пространство, гостиная, ванная комната, бассейны, сауны, хаммам, бар, кинотеатр, холл отеля, лестничные марши, этажи, фасады зданий",
+    "project_details_subtitle_1": "Панель:",
+    "project_details_subtitle_2": "Толщина:",
+    "project_details_subtitle_3": "Масса нетто панели:",
+
+    "project_details_subcontent_p1": "2.4 м (7’10”) * 1.2 м (3’11”)",
+    "project_details_subcontent_p2": "1.2 м (7’10”) * 0.6 м (1’12”)",
+    "project_details_subcontent_p3": "0.6 м (1’12”) * 0.3 м (0’98”)",
+    "project_details_subcontent_p4": "0.5 м (1’8″) * 0.5 м (1’8”)",
+    "project_details_subcontent_t": "18 мм",
+    "project_details_subcontent_w1": "54-56 кг (119.05 – 123.459 Ibs)",
+    "project_details_subcontent_w2": "13.49-14 кг (29.74 – 30.86 Ibs)",
+    "project_details_subcontent_w3": "3.37-3.5 кг (7.43 – 7.72 Ibs)",
+    "project_details_subcontent_w4": "4.68-4.86 кг (10.32 – 10.71 Ibs)",
+    
+    "p_0006_title": "Королевская Фантазия",
+    "p_0006_description": "Один из самых ценных продуктов в нашей линейке. Изготовлен из отборного сырья ювелирного качества ручной очистки. Структура изделия передает основательность натурального камня. Неповторимость и неповторимость рисунка, насыщенный оранжевый цвет, переходящий в белый с тонами дымчатых облаков.",
+
+
+
+
+
+
+    "p_0007_i_d_1": "бестселлер для домашнего дизайна.",
+    "p_0007_d_1": "Caramel - это не просто плита для домашнего дизайна, это настоящее произведение искусства, которое вдохнет новую жизнь в любое помещение. Оттенки от светлого бежевого до золотисто-медового и коричневого цвета создают привлекательный, теплый и уютный интерьер. Светлые карамельные оттенки визуально расширяют пространство и наполняют его светом, что создает впечатление безграничной свободы и гармонии.",
+    "p_0007_d_2": "Но это еще не все! Янтарный аромат, который излучает карамель, не только не навязчив, но и полезен для здоровья. Этот аромат снимает стресс и усталость, улучшает концентрацию и сон, а также помогает снять головную боль.",
+    "p_0007_d_3": "Так что, Caramel - это не только плита для домашнего дизайна, но и прекрасный инструмент для создания комфортной и здоровой атмосферы в любом помещении."
   },
+
+
+
+
+
+
+
+
 
 
 
@@ -141,8 +186,8 @@
     "language_name": "en",
     "modal_header": "More informathion",
     "modal_title": "We will contact you and answer all your questions",
-    "modal_name": "Your name",
-    "modal_phone": "Your phone",
+    "modal_name": "Enter your name",
+    "modal_phone": "123 456 7890",
     "modal_button": "More informathion",
 
     "gallery_modal_button": "View project",
@@ -155,16 +200,19 @@
     "header_title": "UNION STONE",
     "header_subtitle": "Pure Amber Slabs Without Glue or Resin - Now in the Guinness World Records!",
 
-    "intro_title": "Union Stone is the only amber stone product in the world",
-    "intro_description": "Union jewelers are the keepers of centuries-old traditions that have been passed down from generation to generation, and today they are the first to be able to combine each amber stone into one whole by hand. Thanks to the study of the Arab countries, Alessandro Rossti invented a revolutionary formula that allowed him to obtain an unprecedented material with exceptional characteristics, extreme contrast, color and warmth",
+    "intro_title": "UNION STONE: Exclusive Products Made from Natural Amber Featured in the Guinness World Records",
+    "intro_subtitle": "We offer products that have no analogues in the world.",
+    "intro_description_1": "UNION STONE is a manufacturer of exclusive amber slabs and furniture items of any size. Today, UNION STONE actively presents amber products around the world and already collaborates with the best design studios from Italy, Spain, the Arab countries, America, and Australia to create unique and prestigious projects for our clients.",
+    "intro_description_2": "UNION STONE uses only natural amber, and the finished products have no chemical additives, glues, or resins. It is a well-known fact that amber is an ideal material with a unique shine and warmth for creating exclusive interior elements. It is also worth remembering that amber has unique properties: it is a natural antibiotic, has medicinal properties due to the presence of natural ethers, ions, and microelements that are preserved after stone processing.",
+    "intro_description_3": "UNION STONE is proud of the quality of its products and the high level of service. Our company is always ready to offer unique solutions for your interior that will emphasize the individuality and style of your space.",
     "intro_button_1": "Slab collection",
     "intro_button_2": "Order a design project",
 
     "catch_title": "We will contact you and answer all your questions",
     "catch_success_1": "Your request is successful",
     "catch_success_2": "Our manager will contact you shortly",
-    "catch_name": "Your name",
-    "catch_phone": "Your phone",
+    "catch_name": "Enter your name",
+    "catch_phone": "123 456 7890",
     "catch_button": "More informathion",
 
     "trends_title": "Make your home unique",
@@ -262,6 +310,34 @@
     "portfolio_button_projects": "Portfolio",
     "portfolio_button_gallery": "Gallery",
     "porfolio_filters": [ "Residential interiors", "Architectural design", "Unique stylistics", "Project of the season" ],
-    "porfolio_gallery_filters": [ "Interior","Dining room","Office","Hall","Bedroom","Living room", "Exterior", "Bathroom", "Wardrobe" ]
+    "porfolio_gallery_filters": [ "Interior","Dining room","Office","Hall","Bedroom","Living room", "Exterior", "Bathroom", "Wardrobe" ],
+
+    "project_details_title_1": "Size chart:",
+    "project_details_title_2": "Material:",
+    "project_details_title_3": "Country origin:",
+    "project_details_title_4": "Applications:",
+    "project_details_description_1": "Amber",
+    "project_details_description_2": "Ukraine",
+    "project_details_description_3": "Kitchen space, living room, bathroom, pools, saunas, hammam, bar, cinema, hotel lobby, flights of stairs, floors, building facades",
+    "project_details_subtitle_1": "Panel:",
+    "project_details_subtitle_2": "Thickness:",
+    "project_details_subtitle_3": "Panel net weight:",
+
+    "project_details_subcontent_p1": "2.4 m (7’10”) * 1.2 m (3’11”)",
+    "project_details_subcontent_p2": "1.2 m (7’10”) * 0.6 m (1’12”)",
+    "project_details_subcontent_p3": "0.6 m (1’12”) * 0.3 m (0’98”)",
+    "project_details_subcontent_p4": "0.5 m (1’8″) * 0.5 m (1’8”)",
+    "project_details_subcontent_t": "18 mm",
+    "project_details_subcontent_w1": "54-56 kg (119.05 – 123.459 Ibs)",
+    "project_details_subcontent_w2": "13.49-14 kg (29.74 – 30.86 Ibs)",
+    "project_details_subcontent_w3": "3.37-3.5 kg (7.43 – 7.72 Ibs)",
+    "project_details_subcontent_w4": "4.68-4.86 kg (10.32 – 10.71 Ibs)",
+    "p_0006_title": "Royal Fantasy",
+    "p_0006_description": "One of the most valuable product in our line. Made from selected raw materials of gem-quality manual cleaning. The structure of the product conveys solidity of natural stone. Uniqueness and uniqueness of the pattern, rich orange color that turns into white with smoky clouds tones.",
+
+    "p_0007_i_d_1": "a bestseller for home design.",
+    "p_0007_d_1": "Caramel is not just a home design tile, it is a true work of art that will breathe new life into any space. Shades ranging from light beige to golden honey and brown create an attractive, warm and cozy interior. Light caramel shades visually expand the space and fill it with light, creating a feeling of boundless freedom and harmony.",
+    "p_0007_d_2": "But that's not all! The amber scent emitted by caramel is not only non-intrusive, but also beneficial for health. This scent relieves stress and fatigue, improves concentration and sleep, and also helps to relieve headaches.",
+    "p_0007_d_3": "So, Caramel is not only a home design tile, but also a wonderful tool for creating a comfortable and healthy atmosphere in any space."
   }
 }

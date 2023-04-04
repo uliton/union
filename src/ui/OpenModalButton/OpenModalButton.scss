@@ -12,14 +12,24 @@
   outline: none;
   transition: all 500ms;
 
+  &:hover {
+    cursor: pointer;
+    background-color: $green;
+    color: #fff;
+  }
+
   @include on768 {
     padding: 10px 30px;
     width: 300px;
   }
 
-  &:hover {
-    cursor: pointer;
-    background-color: $green;
-    color: #fff;
+  &--intro {
+    color: $greenBg;
+    border: 1px solid $greenBg;
+
+    &:hover {
+      background-color: $greenBg;
+      border: 1px solid #fff;
+    }
   }
 }

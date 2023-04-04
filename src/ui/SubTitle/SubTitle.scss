@@ -1,0 +1,44 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+.sub-title {
+  text-align: center;
+  margin: 0 0 18px 0;
+  font-size: 20px;
+  font-weight: 3;
+  grid-area: subtitle;
+
+  &--intro {
+    font-weight: 2;
+    // background-image: url(../../images/bg/title.jpg);
+    // background-position: center;
+    // background-clip: text;
+    color: transparent;
+  }
+
+  // &--trends {
+  //   margin-right: auto;
+  //   margin-left: auto;
+  //   width: 256px;
+  // }
+
+  // &--architecture {
+  //   @include on768 {
+  //     margin: 0;
+  //     text-align: left;
+  //   }
+  // }
+
+  // &--rooms {
+  //   text-align: left;
+  // }
+
+  // &--utilities {
+  //   margin: auto;
+  //   transform: rotateZ(90deg);
+
+  //   @include on768 {
+  //     font-size: 44px;
+  //   }
+  // }
+}

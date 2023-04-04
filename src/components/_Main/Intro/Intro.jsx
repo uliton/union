@@ -3,6 +3,7 @@ import { getTranslation, Language } from '../../../functions/language';
 import { Modal } from '../../Modal';
 import { OpenModalButton } from '../../../ui/OpenModalButton';
 import { Title } from '../../../ui/Title';
+import { SubTitle } from '../../../ui/SubTitle';
 import { Description } from '../../../ui/Description';
 
 export const Intro = () => {
@@ -14,30 +15,39 @@ export const Intro = () => {
   modalStatus ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto';
 
   return (
-    <section className='intro container'>
-      <Title content={MOCK.intro_title} intro={true} />
+    <section className='intro'>
+      <div className="intro__container container">
 
-      <Description content={MOCK.intro_description} />
+        <Title content={MOCK.intro_title} intro={true} />
 
-      <div className="intro__configurator">
-        {/* first button */}
-        <OpenModalButton
-          content={MOCK.intro_button_1}
-          onClick={setModalStatus}
-        />
+        <SubTitle content={MOCK.intro_subtitle} />
 
-        {/* second button */}
-        <OpenModalButton
-          content={MOCK.intro_button_2}
-          onClick={setModalStatus}
-        />
+        <Description content={MOCK.intro_description_1} />
+        <Description content={MOCK.intro_description_2} />
+        <Description content={MOCK.intro_description_3} />
 
-        {modalStatus && (
-          <Modal
-            ident={'Intro Modal'}
-            setModalStatus={setModalStatus}
+        <div className="intro__configurator">
+          {/* first button */}
+          <OpenModalButton
+            content={MOCK.intro_button_1}
+            onClick={setModalStatus}
+            intro={true}
           />
-        )}
+
+          {/* second button */}
+          <OpenModalButton
+            content={MOCK.intro_button_2}
+            onClick={setModalStatus}
+            intro={true}
+          />
+
+          {modalStatus && (
+            <Modal
+              ident={'Intro Modal'}
+              setModalStatus={setModalStatus}
+            />
+          )}
+        </div>
       </div>
     </section>
   );

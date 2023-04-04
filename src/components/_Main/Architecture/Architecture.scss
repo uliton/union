@@ -2,22 +2,35 @@
 @import '../../../utils/mixins';
 
 .architecture {
-  display: flex;
-  flex-direction: column;
 
-  @include on768 {
-    display: grid;
-    grid-template-areas:
-      "title description"
-      "title description"
-      "link description";
-    grid-template-columns: 320px 1fr;
-    gap: 56px;
-    row-gap: 0;
+
+  &__content {
+    transform: translate(0, 120%);
+    display: flex;
+    flex-direction: column;
+    transition: all 500ms ease 0ms;
+    opacity: 0;
+
+    &--visible {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+
+    @include on768 {
+      display: grid;
+      grid-template-areas:
+        "title description"
+        "title description"
+        "link description";
+      grid-template-columns: 320px 1fr;
+      gap: 56px;
+      row-gap: 0;
+    }
+  
+    @include on1280 {
+      gap: 80px;
+      row-gap: 0;
+    }
   }
 
-  @include on1280 {
-    gap: 80px;
-    row-gap: 0;
-  }
 }
