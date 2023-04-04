@@ -4,16 +4,17 @@
 .title {
   text-align: center;
   margin: 0 0 18px 0;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 3;
   grid-area: title;
 
   &--intro {
     font-weight: 4;
-    background-image: url(../../images/bg/title.jpg);
-    background-position: center;
-    background-clip: text;
-    color: transparent;
+    text-align: left;
+    // background-image: url(../../images/bg/title.jpg);
+    // background-position: center;
+    // background-clip: text;
+    color: #fff;
     margin: 0 0 4px 0;
   }
 

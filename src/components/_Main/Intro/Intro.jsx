@@ -20,7 +20,7 @@ export const Intro = () => {
 
         <Title content={MOCK.intro_title} intro={true} />
 
-        <SubTitle content={MOCK.intro_subtitle} />
+        <SubTitle content={MOCK.intro_subtitle} intro={true} />
 
         <Description content={MOCK.intro_description_1} />
         <Description content={MOCK.intro_description_2} />
@@ -28,18 +28,18 @@ export const Intro = () => {
 
         <div className="intro__configurator">
           {/* first button */}
-          <OpenModalButton
+          {/* <OpenModalButton
             content={MOCK.intro_button_1}
             onClick={setModalStatus}
             intro={true}
-          />
+          /> */}
 
           {/* second button */}
-          <OpenModalButton
+          {/* <OpenModalButton
             content={MOCK.intro_button_2}
             onClick={setModalStatus}
             intro={true}
-          />
+          /> */}
 
           {modalStatus && (
             <Modal

@@ -4,11 +4,11 @@
 .intro {
   background: $greenBg;
   color: #fff;
-  padding: 20px 0 60px;
+  padding: 60px 0;
   margin-bottom: 0;
 
   @include on768 {
-    padding: 20px 0 100px;
+    padding: 100px 0;
     margin-bottom: 0;
   }
 
