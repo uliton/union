@@ -1,17 +1,17 @@
 import React, { useContext, useState } from 'react';
 import { getTranslation, Language } from '../../functions/language';
 import { Logo } from '../../images/icons/Logo';
-import { Search } from '../../images/icons/Search';
-import { Favorite } from '../../images/icons/Favorite';
-import { Bag } from '../../images/icons/Bag';
+// import { Search } from '../../images/icons/Search';
+// import { Favorite } from '../../images/icons/Favorite';
+// import { Bag } from '../../images/icons/Bag';
 import { MenuIcon } from '../../images/icons/MenuIcon';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 
 export const Navigation = ({ menuStatus, setMenuStatus }) => {
+  const [position, setPosition] = useState(false);
   const lang = useContext(Language);
   const MOCK = getTranslation(lang);
-  const [position, setPosition] = useState(false);
 
   // scroll disable
   menuStatus ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto';
