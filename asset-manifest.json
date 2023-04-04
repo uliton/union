@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.c928c729.css",
-    "main.js": "./static/js/main.cf77e915.js",
+    "main.css": "./static/css/main.1765b6b8.css",
+    "main.js": "./static/js/main.d7c452d6.js",
     "static/media/projects.jpg": "./static/media/projects.a7d91d10ce4de1638882.jpg",
     "static/media/industry.jpg": "./static/media/industry.d66628df6459de3ff3db.jpg",
     "static/media/architecture.jpg": "./static/media/architecture.d2b18f491b64d655713c.jpg",
@@ -30,13 +30,12 @@
     "static/media/gothampro.ttf": "./static/media/gothampro.4f71921a0823129cd8ba.ttf",
     "static/media/gothampro_black.ttf": "./static/media/gothampro_black.8c2f478dfa880e2de0a1.ttf",
     "static/media/img.png": "./static/media/img.47f75cc6ed649dc62df6.png",
-    "static/media/title.jpg": "./static/media/title.18f25f8922f5a6555d1d.jpg",
     "index.html": "./index.html",
-    "main.c928c729.css.map": "./static/css/main.c928c729.css.map",
-    "main.cf77e915.js.map": "./static/js/main.cf77e915.js.map"
+    "main.1765b6b8.css.map": "./static/css/main.1765b6b8.css.map",
+    "main.d7c452d6.js.map": "./static/js/main.d7c452d6.js.map"
   },
   "entrypoints": [
-    "static/css/main.c928c729.css",
-    "static/js/main.cf77e915.js"
+    "static/css/main.1765b6b8.css",
+    "static/js/main.d7c452d6.js"
   ]
 }
