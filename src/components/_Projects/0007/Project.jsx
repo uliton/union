@@ -3,7 +3,6 @@ import React, { useContext } from 'react';
 import { Title } from '../../../ui/Title';
 import { Description } from '../../../ui/Description';
 import { getTranslation, Language } from '../../../functions/language';
-import './Project.scss';
 import { Catch } from '../../_Main/Catch';
 import i_01 from './imgs/01.jpg';
 import i_02 from './imgs/02.jpg';

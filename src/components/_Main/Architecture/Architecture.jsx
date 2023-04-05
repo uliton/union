@@ -30,7 +30,7 @@ export const Architecture = () => {
           <Description content={MOCK.architecture_description_3} architecture={true} />
         </div>
 
-        <TextLink path='portfolio/test' content={MOCK.architecture_link} architecture={true} />
+        <TextLink path='portfolio' content={MOCK.architecture_link} architecture={true} />
       </div>
     </section>
   );

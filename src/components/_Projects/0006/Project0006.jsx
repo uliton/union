@@ -3,7 +3,6 @@ import { Image } from '../../../ui/Image';
 import { Title } from '../../../ui/Title';
 import { Description } from '../../../ui/Description';
 import { getTranslation, Language } from '../../../functions/language';
-import './Project0006.scss';
 
 export const Project0006 = () => {
   const lang = useContext(Language);

@@ -45,7 +45,6 @@
   }
 
   &--project {
-    // width: 70%;
     font-size: 14px;
     text-align: left;
     margin: 8px auto 20px 0;
@@ -55,10 +54,12 @@
       columns: 2;
       column-gap: $pad24 * 2;
       margin: 16px auto 20px;
+      font-size: 16px;
     }
 
     @include on1280 {
       margin: 0 auto 20px;
+      font-size: 18px;
     }
   }
 }

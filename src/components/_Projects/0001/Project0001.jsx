@@ -4,22 +4,28 @@ import { Image } from '../../../ui/Image';
 import { Title } from '../../../ui/Title';
 import { Description } from '../../../ui/Description';
 import { getTranslation, Language } from '../../../functions/language';
-import './Project0001.scss';
 import { Catch } from '../../_Main/Catch';
+import i_01 from './imgs/01.jpg';
+import i_02 from './imgs/02.jpg';
+import i_03 from './imgs/03.jpg';
+import i_04 from './imgs/04.jpg';
+import i_05 from './imgs/05.jpg';
+import video from '../video/0000.mp4';
+const past = 'https://ambstone.com/wp-content/uploads/2021/02/Caramel-1.jpg';
 
 export const Project0001 = () => {
   const lang = useContext(Language);
   const MOCK = getTranslation(lang);
 
   return (
-    <section className='project0001'>
+    <section className='project'>
       <div className="container">
-        <img src='https://ambstone.com/wp-content/uploads/2021/02/Caramel-1.jpg' alt="" className='project__img project__img--main' />
+        <img src={i_01} alt="" className='project__img project__img--main' />
 
         <Title content={MOCK.p_0001_title} />
 
         <div className="project__img-container">
-          <img src='https://ambstone.com/wp-content/uploads/2021/02/Caramel-1.jpg' alt="" className='project__img' />
+          <img src={i_02} alt="" className='project__img' />
           <p className="project__img--description">
             {MOCK.p_0001_i_d_1}
           </p>
@@ -28,9 +34,9 @@ export const Project0001 = () => {
         <Description content={MOCK.p_0001_d_1} project={true} />
 
         <div className="project__img-container">
-          <img src='https://ambstone.com/wp-content/uploads/2021/02/Caramel-1.jpg' alt="" className='project__img' />
+          <img src={i_03} alt="" className='project__img' />
           <p className="project__img--description">
-            ---
+            
           </p>
         </div>
 
@@ -216,28 +222,40 @@ export const Project0001 = () => {
       <div className="container">
         <div className="project__flex-box">
           <div className="project__img-container">
-            <img src='https://ambstone.com/wp-content/uploads/2021/02/Caramel-1.jpg' alt="" className='project__img' />
+            <img src={i_04} alt="" className='project__img' />
             <p className="project__img--description">
-              ---
+              
             </p>
           </div>
 
           <div className="project__img-container">
-            <img src='https://ambstone.com/wp-content/uploads/2021/02/Caramel-1.jpg' alt="" className='project__img' />
+            <img src={i_05} alt="" className='project__img' />
             <p className="project__img--description">
-              ---
+              
             </p>
           </div>
         </div>
 
         <Description content={MOCK.p_0001_d_3} project={true} />
 
-        <div className="project__img-container">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className='project__video'
+        >
+          <source
+            src={video}
+            type="video/mp4"
+          />
+        </video>
+        {/* <div className="project__img-container">
           <img src='https://ambstone.com/wp-content/uploads/2021/02/Caramel-1.jpg' alt="" className='project__img' />
           <p className="project__img--description">
-            ---
+            
           </p>
-        </div>
+        </div> */}
 
         <Description content={MOCK.p_0001_d_4} project={true} />
       </div>
