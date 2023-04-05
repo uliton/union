@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.42e42320.css",
-    "main.js": "./static/js/main.417d65f0.js",
-    "static/media/0000.mp4": "./static/media/0000.8111696abf854269a8f9.mp4",
+    "main.css": "./static/css/main.2baf5686.css",
+    "main.js": "./static/js/main.b4cb1ba0.js",
     "static/media/projects.jpg": "./static/media/projects.a7d91d10ce4de1638882.jpg",
     "static/media/industry.jpg": "./static/media/industry.d66628df6459de3ff3db.jpg",
     "static/media/architecture.jpg": "./static/media/architecture.d2b18f491b64d655713c.jpg",
@@ -32,11 +31,11 @@
     "static/media/gothampro_black.ttf": "./static/media/gothampro_black.8c2f478dfa880e2de0a1.ttf",
     "static/media/img.png": "./static/media/img.47f75cc6ed649dc62df6.png",
     "index.html": "./index.html",
-    "main.42e42320.css.map": "./static/css/main.42e42320.css.map",
-    "main.417d65f0.js.map": "./static/js/main.417d65f0.js.map"
+    "main.2baf5686.css.map": "./static/css/main.2baf5686.css.map",
+    "main.b4cb1ba0.js.map": "./static/js/main.b4cb1ba0.js.map"
   },
   "entrypoints": [
-    "static/css/main.42e42320.css",
-    "static/js/main.417d65f0.js"
+    "static/css/main.2baf5686.css",
+    "static/js/main.b4cb1ba0.js"
   ]
 }
