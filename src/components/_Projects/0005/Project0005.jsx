@@ -3,21 +3,21 @@ import { Image } from '../../../ui/Image';
 import { Title } from '../../../ui/Title';
 import { Description } from '../../../ui/Description';
 import { getTranslation, Language } from '../../../functions/language';
-import './Project.scss';
+import './Project0005.scss';
 
-export const Project0004 = () => {
+export const Project0005 = () => {
   const lang = useContext(Language);
   const MOCK = getTranslation(lang);
 
   return (
     <section className='project container'>
-      <Title content={MOCK.p_0004_title} />
+      <Title content={MOCK.p_0005_title} />
 
       <div className='project__content'>
-        <Image src='https://ambstone.com/wp-content/uploads/2021/07/Gottlieb.jpg' project={true} link=' ' />
+        <Image src='https://ambstone.com/wp-content/uploads/2021/07/fantasyMix.jpg' project={true} link=' ' />
 
         <div className="project__description">
-          <Description content={MOCK.p_0004_description} project={true} />
+          <Description content={MOCK.p_0005_description} project={true} />
 
           <div className='project__details details'>
             <div className="details__container">

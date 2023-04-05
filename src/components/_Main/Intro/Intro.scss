@@ -2,6 +2,8 @@
 @import '../../../utils/mixins';
 
 .intro {
+  // width: 100vw;
+  margin: 0 auto;
   background: $greenBg;
   color: #fff;
   padding: 60px 0;

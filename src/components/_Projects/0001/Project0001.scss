@@ -4,13 +4,12 @@
 @include on768 {}
 @include on1280 {}
 
-.project {
-  max-width: 540px;
-  // margin-bottom: 100%;
-
-  @include on768 {
-    max-width: 690px;
-  }
+.project0001 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0;
 
   &__content {
     display: flex;
@@ -53,7 +52,6 @@
     }
   }
 
-
   &__flex-box {
     @include on768 {
       display: grid;
@@ -64,8 +62,15 @@
 }
 
 .details {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: $greenBg;
   letter-spacing: 0.2px;
   font-size: 12px;
+  padding-top: 20px;
+  color: #fff;
+  margin-bottom: $pad24;
 
   &__wrapper {
     @include on1280 {
