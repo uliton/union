@@ -10,7 +10,7 @@ import i_02 from './imgs/02.jpg';
 import i_03 from './imgs/03.jpg';
 import i_04 from './imgs/04.jpg';
 import i_05 from './imgs/05.jpg';
-import video from '../video/0000.mp4';
+// import video from '../video/0000.mp4';
 const past = 'https://ambstone.com/wp-content/uploads/2021/02/Caramel-1.jpg';
 
 export const Project0001 = () => {
@@ -238,7 +238,16 @@ export const Project0001 = () => {
 
         <Description content={MOCK.p_0001_d_3} project={true} />
 
-        <video
+        <div className="project__video">
+          <iframe
+            src="https://www.youtube.com/embed/KVdeADkiDmI?autoplay=1&mute=1&loop=1&playlist=KVdeADkiDmI"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        </div>
+        {/* <video
           autoPlay
           loop
           muted
@@ -249,7 +258,7 @@ export const Project0001 = () => {
             src={video}
             type="video/mp4"
           />
-        </video>
+        </video> */}
         {/* <div className="project__img-container">
           <img src='https://ambstone.com/wp-content/uploads/2021/02/Caramel-1.jpg' alt="" className='project__img' />
           <p className="project__img--description">
