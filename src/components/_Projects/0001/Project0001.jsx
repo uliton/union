@@ -52,6 +52,7 @@ export const Project0001 = () => {
         <Description content={MOCK.p_0001_d_2} project={true} />
       </div>
 
+      {/* green line */}
       <div className='project__details details'>
         <div className='container'>
           <div className="details__container">

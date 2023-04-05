@@ -31,16 +31,22 @@ export const Project0003 = () => {
       <div className="container">
         <img src={i_01} alt="" className='project__img project__img--main' />
 
-        <Title content={MOCK.p_0001_title} />
+        <Title content={MOCK.p_0003_title} />
+
+        <Description content={MOCK.p_0003_d_1} project={true} />
+        <br />
 
         <div className="project__img-container">
           <img src={i_02} alt="" className='project__img' />
           <p className="project__img--description">
-            {MOCK.p_0001_i_d_1}
+            {MOCK.p_0003_i_d_1}
           </p>
         </div>
 
-        <Description content={MOCK.p_0001_d_1} project={true} />
+        <Description content={MOCK.p_0003_d_2} project={true} />
+        <br />
+        <Description content={MOCK.p_0003_d_3} project={true} />
+        <br />
 
         <div className="project__img-container">
           <img src={i_03} alt="" className='project__img' />
@@ -49,9 +55,13 @@ export const Project0003 = () => {
           </p>
         </div>
 
-        <Description content={MOCK.p_0001_d_2} project={true} />
+        <Description content={MOCK.p_0003_d_4} project={true} />
+        <br />
+        <Description content={MOCK.p_0003_d_5} project={true} />
+        <br />
       </div>
 
+      {/* green line */}
       <div className='project__details details'>
         <div className='container'>
           <div className="details__container">
@@ -228,7 +238,13 @@ export const Project0003 = () => {
         </div>
       </div>
 
+
       <div className="container">
+        <Description content={MOCK.p_0003_d_6} project={true} />
+        <br />
+        <Description content={MOCK.p_0003_d_7} project={true} />
+        <br />
+
         <div className="project__flex-box">
           <div className="project__img-container">
             <img src={i_04} alt="" className='project__img' />
@@ -245,7 +261,12 @@ export const Project0003 = () => {
           </div>
         </div>
 
-        <Description content={MOCK.p_0001_d_3} project={true} />
+        <Description content={MOCK.p_0003_d_8} project={true} />
+        <br />
+        <Description content={MOCK.p_0003_d_9} project={true} />
+        <br />
+        <Description content={MOCK.p_0003_d_10} project={true} />
+        <br />
 
         <div className="project__video">
           <iframe
@@ -256,38 +277,12 @@ export const Project0003 = () => {
             allowFullScreen
           ></iframe>
         </div>
-        {/* <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className='project__video'
-        >
-          <source
-            src={video}
-            type="video/mp4"
-          />
-        </video> */}
-        {/* <div className="project__img-container">
-          <img src='https://ambstone.com/wp-content/uploads/2021/02/Caramel-1.jpg' alt="" className='project__img' />
-          <p className="project__img--description">
-            
-          </p>
-        </div> */}
-
-        <Description content={MOCK.p_0001_d_4} project={true} />
+        
+        <Description content={MOCK.p_0003_d_11} project={true} />
+        <br />
       </div>
 
       <Catch />
-
-      {/* <div className='project__content'>
-        <Image src='https://ambstone.com/wp-content/uploads/2021/02/Caramel-1.jpg' project={true} link=' ' />
-
-        <div className="project__description">
-          <Description content={MOCK.p_0001_description} project={true} />
-
-        </div>
-      </div> */}
     </section>
   );
 };
