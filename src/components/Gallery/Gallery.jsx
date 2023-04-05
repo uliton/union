@@ -24,6 +24,10 @@ export const Gallery = () => {
 
   useEffect(() => {
     setFilteredImages(getGalleryImages(lang, filterArray));
+  },[lang]);
+
+  useEffect(() => {
+    setFilteredImages(getGalleryImages(lang, filterArray));
   }, [filterArray]);
 
   // "document.documentElement.scrollTo" is the magic
@@ -54,6 +58,8 @@ export const Gallery = () => {
         </div>
       </div> */}
 
+
+
       <div className="gallery__preview">
         {filteredImages.map(img => (
           <React.Fragment key={img.id}>
@@ -61,6 +67,7 @@ export const Gallery = () => {
               name={img.category}
               src={img.path}
               gallery={true}
+              link=" "
               project_id={img.project_id}
             />
           </React.Fragment>

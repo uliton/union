@@ -57,7 +57,8 @@ export const Portfolio = () => {
         {filteredImages.map(img => (
           <React.Fragment key={img.id}>
             <Image
-              link={img.project_id}
+              // link={img.project_id}
+              link=" "
               name={img.project_name}
               src={img.path}
               projects={true}

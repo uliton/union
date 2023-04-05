@@ -10,7 +10,6 @@ import i_02 from './imgs/02.jpg';
 import i_03 from './imgs/03.jpg';
 import i_04 from './imgs/04.jpg';
 import i_05 from './imgs/05.jpg';
-// import video from '../video/0000.mp4';
 const past = 'https://ambstone.com/wp-content/uploads/2021/02/Caramel-1.jpg';
 
 export const Project0001 = () => {

@@ -19,7 +19,8 @@ export const getProjectsImages = (lang, filterArray = []) => {
 
   const mainImagesArray = getProjects(lang).filter(image => image.main);
 
-  const randerArray = mainImagesArray.sort((a, b) => a.project_name.localeCompare(b.project_name));
+  // треба буде поміняти місцями a та b
+  const randerArray = mainImagesArray.sort((a, b) => b.project_name.localeCompare(a.project_name));
 
   return randerArray;
 }
@@ -40,7 +41,8 @@ export const getGalleryImages = (lang, filterArray = []) => {
     return newRanderArray;
   }
 
-  const randerArray = getProjects(lang).sort((a, b) => a.category.localeCompare(b.category));
+  // треба буде поміняти місцями a та b
+  const randerArray = getProjects(lang).sort((a, b) => b.category.localeCompare(a.category));
 
   return randerArray;
 }
