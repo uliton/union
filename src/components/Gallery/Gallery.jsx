@@ -36,8 +36,8 @@ export const Gallery = () => {
   }, []);
 
   return (
-    <main className="gallery container">
-      <div className="gallery__setings">
+    <section className="gallery container">
+      {/* <div className="gallery__setings">
         <div className="gallery__control">
           <Button content={MOCK.portfolio_button_projects} link={"/portfolio"} />
 
@@ -45,14 +45,14 @@ export const Gallery = () => {
           <Button content={MOCK.portfolio_button_gallery} />
         </div>
 
-        {/* <div className="gallery__filters">
+        <div className="gallery__filters">
           {getGalleryFilters(lang).map((filter, i) => (
             <React.Fragment key={i}>
               <Checkbox filter={filter} filterSubmit={filterSubmit} />
             </React.Fragment>
           ))}
-        </div> */}
-      </div>
+        </div>
+      </div> */}
 
       <div className="gallery__preview">
         {filteredImages.map(img => (
@@ -66,6 +66,6 @@ export const Gallery = () => {
           </React.Fragment>
         ))}
       </div>
-    </main>
+    </section>
   );
 };

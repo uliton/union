@@ -9,7 +9,7 @@
 
   &__text {
     width: max-content;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 2;
     color: $mainColor;
     border-bottom: 1px solid $mainColor;
@@ -18,6 +18,14 @@
     &:hover {
       color: $green;
       border-bottom: 1px solid $green;
+    }
+
+    @include on768 {
+      font-size: 14px;
+    }
+
+    @include on1280 {
+      font-size: 16px;
     }
 
     &--architecture {

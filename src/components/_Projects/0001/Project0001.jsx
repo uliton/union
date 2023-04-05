@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Intro } from '../../_Main/Intro';
 import { Image } from '../../../ui/Image';
 import { Title } from '../../../ui/Title';
@@ -16,6 +16,15 @@ const past = 'https://ambstone.com/wp-content/uploads/2021/02/Caramel-1.jpg';
 export const Project0001 = () => {
   const lang = useContext(Language);
   const MOCK = getTranslation(lang);
+
+  // "document.documentElement.scrollTo" is the magic
+  useEffect(() => {
+    document.documentElement.scrollTo({
+      top: 0,
+      left: 0,
+      // behavior: "instant", // Optional, to skip the scrolling animation
+    });
+  }, []);
 
   return (
     <section className='project'>

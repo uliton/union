@@ -12,6 +12,7 @@ import { Utilities } from '../Utilities';
 import { Shop } from '../_Main/Shop';
 import { Design } from '../_Main/Design';
 import { Subscribe } from '../_Main/Subscribe';
+import { Gallery } from '../Gallery';
 
 export const Main = () => {
   // "document.documentElement.scrollTo" is the magic
@@ -28,8 +29,9 @@ export const Main = () => {
       <Header /> {}
       <Intro /> {}
       <Catalog />
-      <Catch /> {}
-      <Trends /> {}
+      {/* <Catch /> {} */}
+      {/* <Trends /> {} */}
+      <Gallery />
       <Architecture /> {}
       <Products /> {}
       <Rooms /> {}
@@ -37,8 +39,8 @@ export const Main = () => {
       
       {/* <Utilities /> */}
 
-      <Shop /> {}
-      <Design /> {}
+      {/* <Shop /> {} */}
+      {/* <Design /> {} */}
       <Subscribe /> {}
     </>
   )

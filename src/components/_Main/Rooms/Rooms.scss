@@ -3,14 +3,14 @@
 
 .rooms {
   position: relative;
-  height: 340px;
+  height: 400px;
   overflow: hidden;
   
   @include on768 {
-    height: 380px;
+    height: 440px;
   }
   @include on1280 {
-    height: 420px;
+    height: 480px;
   }
 
   &__list {
@@ -32,7 +32,7 @@
   &__link {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 25% 40% max-content;
+    grid-template-rows: 20% 50% max-content;
     grid-template-areas:
     "title"
     "description"

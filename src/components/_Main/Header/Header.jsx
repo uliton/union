@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { getTranslation, Language } from '../../../functions/language';
 import min from '../../../videos/min.mp4';
-// import max from '../../videos/max.mp4';
 
 export const Header = () => {
   const lang = useContext(Language);
@@ -17,7 +16,6 @@ export const Header = () => {
   //     setRenderVideo(max);
   //   }
   // }, []);
-
 
   return (
     <section className='header' id='header'>

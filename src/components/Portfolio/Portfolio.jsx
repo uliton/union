@@ -37,21 +37,21 @@ export const Portfolio = () => {
 
   return (
     <main className="portfolio container">
-      <div className="portfolio__setings">
+      {/* <div className="portfolio__setings">
         <div className="portfolio__control">
           <Button content={MOCK.portfolio_button_projects}/>
 
           <Button content={MOCK.portfolio_button_gallery} link={"gallery"} />
         </div>
 
-        {/* <div className="portfolio__filters">
+        <div className="portfolio__filters">
           {getPorfolioFilters(lang).map((filter, i) => (
             <React.Fragment key={i}>
               <Checkbox filter={filter} filterSubmit={filterSubmit} />
             </React.Fragment>
           ))}
-        </div> */}
-      </div>
+        </div>
+      </div> */}
 
       <div className="portfolio__preview">
         {filteredImages.map(img => (

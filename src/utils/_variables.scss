@@ -1,3 +1,5 @@
+@import './mixins';
+
 $mainColor: rgb(33, 33, 33);
 $greyBg: #F7F7F7;
 $greyText: #D4D4D4;
@@ -9,6 +11,13 @@ $pad12: 12px;
 $pad24: 24px;
 
 :root {
-  --itemWidth: 260px;
+  --itemWidth: 280px;
   --pad: 56px;
+
+  @include on768 {
+    --itemWidth: 300px;
+  }
+  @include on1280 {
+    --itemWidth: 320px;
+  }
 }

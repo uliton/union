@@ -3,7 +3,7 @@ import { getTranslation } from "./functions/language";
 export const getProjects = (lang) => {
   const MOCK = getTranslation(lang);
 
-  console.log(lang);
+  // console.log(lang);
 
   const PROJECTS = [
     {
