@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "./static/css/main.738d335f.css",
-    "main.js": "./static/js/main.9aae4feb.js",
+    "main.css": "./static/css/main.42e42320.css",
+    "main.js": "./static/js/main.417d65f0.js",
+    "static/media/0000.mp4": "./static/media/0000.8111696abf854269a8f9.mp4",
     "static/media/projects.jpg": "./static/media/projects.a7d91d10ce4de1638882.jpg",
     "static/media/industry.jpg": "./static/media/industry.d66628df6459de3ff3db.jpg",
     "static/media/architecture.jpg": "./static/media/architecture.d2b18f491b64d655713c.jpg",
@@ -13,10 +14,10 @@
     "static/media/shop.png": "./static/media/shop.ca35faaeda6c4f4b63ff.png",
     "static/media/03.jpg": "./static/media/03.fbdf2f0f16362915efa8.jpg",
     "static/media/04.jpg": "./static/media/04.88ef85714fcf63f8564a.jpg",
+    "static/media/05.jpg": "./static/media/05.ed1536d7e95924b575a8.jpg",
     "static/media/02.jpg": "./static/media/02.0595eeaec97a87a71860.jpg",
     "static/media/utilities.jpeg": "./static/media/utilities.be65148dd75d60f9a921.jpeg",
     "static/media/showroom.jpeg": "./static/media/showroom.f63c9378e021f4ed8850.jpeg",
-    "static/media/05.jpg": "./static/media/05.ed1536d7e95924b575a8.jpg",
     "static/media/05.png": "./static/media/05.3d405268c6f0b8257d93.png",
     "static/media/02.png": "./static/media/02.3ae54261328c23d2dd09.png",
     "static/media/03.png": "./static/media/03.73c505ab5ac2da6aa75a.png",
@@ -31,11 +32,11 @@
     "static/media/gothampro_black.ttf": "./static/media/gothampro_black.8c2f478dfa880e2de0a1.ttf",
     "static/media/img.png": "./static/media/img.47f75cc6ed649dc62df6.png",
     "index.html": "./index.html",
-    "main.738d335f.css.map": "./static/css/main.738d335f.css.map",
-    "main.9aae4feb.js.map": "./static/js/main.9aae4feb.js.map"
+    "main.42e42320.css.map": "./static/css/main.42e42320.css.map",
+    "main.417d65f0.js.map": "./static/js/main.417d65f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.738d335f.css",
-    "static/js/main.9aae4feb.js"
+    "static/css/main.42e42320.css",
+    "static/js/main.417d65f0.js"
   ]
 }
