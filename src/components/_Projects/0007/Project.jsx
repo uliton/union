@@ -16,14 +16,14 @@ export const Project0007 = () => {
 
   return (
     <section className='project container'>
-      {/* <img src="https://www.studia-54.com/upload/iblock/a33/r1h0uydcd1xxnrfpzxco51a7m8u5rm2p/080000_got.jpg" alt="" className='project__img project__img--main' /> */}
+      <img src={i_01} alt="" className='project__img project__img--main' />
 
       <Title content={'Villa Amani in South Africa'} />
 
       <div className="project__img-container">
         <img src={i_01} alt="" className='project__img' />
         <p className="project__img--description">
-          {`Caramel: ${MOCK.p_0007_i_d_1}`}
+          {MOCK.p_0007_i_d_1}
         </p>
       </div>
       
@@ -48,7 +48,7 @@ export const Project0007 = () => {
 
       <Description content={MOCK.p_0007_d_3} project={true} />
 
-      <div className="flex-box">
+      <div className="project__flex-box">
         <div className="project__img-container">
           <img src={i_02} alt="" className='project__img' />
           <p className="project__img--description">

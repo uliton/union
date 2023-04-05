@@ -26,6 +26,41 @@
   &__description {
 
   }
+
+  &__img {
+    width: 100%;
+
+    &--main {
+      margin-bottom: $pad24 * 3;
+    }
+
+    &--description {
+      color: $greyText;
+      position: relative;
+      text-align: center;
+      margin-bottom: $pad24;
+
+      &::before {
+        content: '';
+        width: 180px;
+        height: 1px;
+        background-color: $gold;
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+
+  &__flex-box {
+    @include on768 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: $pad12;
+    }
+  }
 }
 
 .details {
@@ -78,5 +113,4 @@
   &__subcontent {
     font-size: 10px;
   }
-
 }

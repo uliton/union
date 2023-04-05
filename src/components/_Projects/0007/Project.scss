@@ -51,6 +51,14 @@
       }
     }
   }
+
+  &__flex-box {
+    @include on768 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: $pad12;
+    }
+  }
 }
 
 .details {
@@ -102,14 +110,5 @@
   }
   &__subcontent {
     font-size: 10px;
-  }
-
-}
-
-.flex-box {
-  @include on768 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: $pad12;
   }
 }
