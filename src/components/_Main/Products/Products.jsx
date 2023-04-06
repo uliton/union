@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 import { getTranslation, Language } from '../../../functions/language';
-import one from '../../../images/products/01.png';
-import two from '../../../images/products/02.png';
-import three from '../../../images/products/03.png';
-import four from '../../../images/products/04.png';
-import five from '../../../images/products/05.png';
-import six from '../../../images/products/06.png';
+import one from './imgs/01.jpeg';
+import two from './imgs/02.jpeg';
+import three from './imgs/03.jpeg';
+import four from './imgs/04.jpeg';
+import five from './imgs/05.jpeg';
+import six from './imgs/06.jpeg';
 import { TextLink } from '../../../ui/TextLink';
 import { Title } from '../../../ui/Title';
 

@@ -46,13 +46,19 @@
     "architecture_link": "Коллекции",
     
     "products_title": "Открой для себя продукты UNION",
-    "products_item_1": "Кулон",
-    "products_item_2": "Стена/Потолок",
-    "products_item_3": "Пол",
-    "products_item_4": "Стол",
-    "products_item_5": "Знаковые продукты",
-    "products_item_6": "Новое",
+    "products_item_1": "Fantasy Mix",
+    "products_item_2": "Gottlieb",
+    "products_item_3": "Honey Fantasy",
+    "products_item_4": "Caramel",
+    "products_item_5": "Black Prince",
+    "products_item_6": "Royal Fantasy",
     "products_link": "Показать продукты",
+    
+
+
+
+
+
 
     "rooms_title_1": "Гостиные",
     "rooms_title_2": "Ванные комнаты",
@@ -316,12 +322,12 @@
     "architecture_link": "Collections",
 
     "products_title": "Discover products by UNION",
-    "products_item_1": "Pendant",
-    "products_item_2": "Wall/Ceiling",
-    "products_item_3": "Floor",
-    "products_item_4": "Table",
-    "products_item_5": "Iconic Products",
-    "products_item_6": "New",
+    "products_item_1": "Fantasy Mix",
+    "products_item_2": "Gottlieb",
+    "products_item_3": "Honey Fantasy",
+    "products_item_4": "Caramel",
+    "products_item_5": "Black Prince",
+    "products_item_6": "Royal Fantasy",
     "products_link": "Show products",
 
     "rooms_title_1": "Living rooms",
