@@ -4,7 +4,6 @@ import { Language, getTranslation } from '../../../functions/language';
 import { Title } from '../../../ui/Title';
 import { Description } from '../../../ui/Description';
 import { Image } from '../../../ui/Image';
-// import { Gallery } from '../../Gallery';
 import img from '../../../images/bg/portfolio.jpg';
 
 export const About = () => {

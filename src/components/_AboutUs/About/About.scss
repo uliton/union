@@ -8,5 +8,12 @@
     object-fit: cover;
     object-position: center;
     margin-bottom: $pad24;
+
+    @include on768 {
+      height: 240px;
+    }
+    @include on768 {
+      height: 280px;
+    }
   }
 }
