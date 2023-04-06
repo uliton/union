@@ -35,18 +35,18 @@ export const Products = () => {
           <TextLink path='portfolio' content={MOCK.products_link} />
         </li>
 
-        {/* two */}
+        {/* six */}
         <li className="products__item">
           <div className='products__item__imgBox'>
             <img
-              src={two}
-              alt={MOCK.products_item_2}
+              src={six}
+              alt={MOCK.products_item_6}
               className='products__item__img'
             />
           </div>
 
           <p className='products__item__name'>
-            {MOCK.products_item_2}
+            {MOCK.products_item_6}
           </p>
 
           <TextLink path='portfolio' content={MOCK.products_link} />
@@ -103,18 +103,18 @@ export const Products = () => {
           <TextLink path='portfolio' content={MOCK.products_link} />
         </li>
 
-        {/* six */}
+        {/* two */}
         <li className="products__item">
           <div className='products__item__imgBox'>
             <img
-              src={six}
-              alt={MOCK.products_item_6}
+              src={two}
+              alt={MOCK.products_item_2}
               className='products__item__img'
             />
           </div>
 
           <p className='products__item__name'>
-            {MOCK.products_item_6}
+            {MOCK.products_item_2}
           </p>
 
           <TextLink path='portfolio' content={MOCK.products_link} />

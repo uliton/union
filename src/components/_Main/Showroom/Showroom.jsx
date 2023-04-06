@@ -6,6 +6,7 @@ import { Title } from '../../../ui/Title';
 import { Description } from '../../../ui/Description';
 import { TextLink } from '../../../ui/TextLink';
 import { Image } from '../../../ui/Image/Image';
+import video from './video/ttt.mp4';
 
 export const Showroom = () => {
   const lang = useContext(Language);
@@ -17,11 +18,24 @@ export const Showroom = () => {
         <Title content={MOCK.showroom_title} />
       </div>
 
-      <img
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className='showroom__video'
+      >
+        <source
+          src={video}
+          type="video/mp4"
+        />
+      </video>
+
+      {/* <img
         src={showroom}
         alt={MOCK.showroom_title}
         className='showroom__img'
-      />
+      /> */}
 
       <div className="container" style={{gridArea: 'description', margin: '0 auto'}}>
         <Description content={MOCK.showroom_description} />
