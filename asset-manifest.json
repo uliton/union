@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.a9e3d1fb.css",
-    "main.js": "./static/js/main.a78e11b7.js",
+    "main.css": "./static/css/main.91518243.css",
+    "main.js": "./static/js/main.f63955e6.js",
     "static/media/ttt.mp4": "./static/media/ttt.28a92ec618bab5240679.mp4",
     "static/media/projects.jpg": "./static/media/projects.a7d91d10ce4de1638882.jpg",
     "static/media/industry.jpg": "./static/media/industry.d66628df6459de3ff3db.jpg",
@@ -9,6 +9,7 @@
     "static/media/design.png": "./static/media/design.89c0f335683c1408e9d5.png",
     "static/media/residence.jpg": "./static/media/residence.c5d3c26a2a693ccd1be8.jpg",
     "static/media/header.jpg": "./static/media/header.71e847514ea241bdd8ee.jpg",
+    "static/media/portfolio.jpg": "./static/media/portfolio.6ed7d2f4f630cace9c67.jpg",
     "static/media/01.jpg": "./static/media/01.aaa3e10139693855c3b7.jpg",
     "static/media/min.mp4": "./static/media/min.8336d7fc605508d88e97.mp4",
     "static/media/shop.png": "./static/media/shop.ca35faaeda6c4f4b63ff.png",
@@ -44,11 +45,11 @@
     "static/media/gothampro_black.ttf": "./static/media/gothampro_black.8c2f478dfa880e2de0a1.ttf",
     "static/media/img.png": "./static/media/img.47f75cc6ed649dc62df6.png",
     "index.html": "./index.html",
-    "main.a9e3d1fb.css.map": "./static/css/main.a9e3d1fb.css.map",
-    "main.a78e11b7.js.map": "./static/js/main.a78e11b7.js.map"
+    "main.91518243.css.map": "./static/css/main.91518243.css.map",
+    "main.f63955e6.js.map": "./static/js/main.f63955e6.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9e3d1fb.css",
-    "static/js/main.a78e11b7.js"
+    "static/css/main.91518243.css",
+    "static/js/main.f63955e6.js"
   ]
 }
