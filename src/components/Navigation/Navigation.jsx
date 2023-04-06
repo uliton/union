@@ -47,15 +47,19 @@ export const Navigation = ({ menuStatus, setMenuStatus }) => {
 
         <div
           id='nav__menu'
-          className="nav__menu"
+          className="nav__link"
           onClick={() => setMenuStatus(true)}
         >
           {MOCK.nav_menu}
         </div>
         {/* bl */}
 
-        <Link to='portfolio' className="nav__portfolio" id='nav__portfolio'>
+        <Link to='portfolio' className="nav__link" id='nav__portfolio'>
           {MOCK.nav_portfolio}
+        </Link>
+
+        <Link to='about' className="nav__link" id='nav__about'>
+          {MOCK.nav_about}
         </Link>
 
         {/* <Link to='/' className="nav__shop" id='nav__shop'>

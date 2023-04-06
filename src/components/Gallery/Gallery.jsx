@@ -40,7 +40,7 @@ export const Gallery = () => {
   }, []);
 
   return (
-    <section className="gallery container">
+    <div className="gallery container">
       {/* <div className="gallery__setings">
         <div className="gallery__control">
           <Button content={MOCK.portfolio_button_projects} link={"/portfolio"} />
@@ -73,6 +73,6 @@ export const Gallery = () => {
           </React.Fragment>
         ))}
       </div>
-    </section>
+    </div>
   );
 };

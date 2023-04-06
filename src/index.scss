@@ -33,7 +33,7 @@
 
 
 // Portfolio Layout
-@import './components/PortfolioHead/PortfolioHead.scss';
+@import './components/Head/Head.scss';
 
 // Portfolio page components
 @import './components/ImageModal/ImageModal.scss';
@@ -42,6 +42,8 @@
 @import './components/_Projects/Project.scss';
 
 
+// About
+@import './components/_AboutUs/About/About.scss';
 
 
 // ui

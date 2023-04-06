@@ -19,7 +19,12 @@ export const Menu = ({ isOpen, setMenuStatus, setLanguage }) => {
       <div className="menu__body">
 
         <div className="menu__header">
-          <Logo menu={true} />
+          <Link
+            to='/'
+            onClick={() => setMenuStatus(false)}
+          >
+            <Logo menu={true} />
+          </Link>
 
           <div
             type='button'
@@ -43,6 +48,14 @@ export const Menu = ({ isOpen, setMenuStatus, setLanguage }) => {
             onClick={() => {setMenuStatus(false)}}
           >
             {MOCK.nav_portfolio}
+          </Link>
+
+          <Link
+            to='about'
+            className='menu__link'
+            onClick={() => {setMenuStatus(false)}}
+          >
+            {MOCK.nav_about}
           </Link>
 
         </div>

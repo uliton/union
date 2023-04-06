@@ -1,7 +1,7 @@
 @import '../../utils/variables';
 @import '../../utils/mixins';
 
-.portfolio-header {
+.head {
   position: relative;
   margin-bottom: 40px;
   width: 100%;
@@ -21,7 +21,6 @@
     position: absolute;
     left: 12%;
     bottom: 0;
-    // transform: translate(0, -50%);
     font-size: 18px;
     font-weight: 2;
     color: #fff;

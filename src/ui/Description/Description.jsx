@@ -8,6 +8,7 @@ export const Description = ({
   shop = false,
   rooms = false,
   project = false,
+  about = false,
 }) => {
   return (
     <div className={classNames('description', {
@@ -16,6 +17,7 @@ export const Description = ({
       'description--shop': shop,
       'description--rooms': rooms,
       'description--project': project,
+      'description--about': about,
     })}>
       {content}
     </div>

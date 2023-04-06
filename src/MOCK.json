@@ -12,6 +12,7 @@
     "nav_menu": "Меню",
     "nav_main": "Главная",
     "nav_portfolio": "Портфолио",
+    "nav_about": "Про нас",
     "nav_online_shop": "Онлайн магазин",
 
     "header_title": "UNION STONE",
@@ -254,7 +255,19 @@
     "p_0007_i_d_1": "Бестселлер для домашнего дизайна.",
     "p_0007_d_1": "Caramel - это не просто плита для домашнего дизайна, это настоящее произведение искусства, которое вдохнет новую жизнь в любое помещение. Оттенки от светлого бежевого до золотисто-медового и коричневого цвета создают привлекательный, теплый и уютный интерьер. Светлые карамельные оттенки визуально расширяют пространство и наполняют его светом, что создает впечатление безграничной свободы и гармонии.",
     "p_0007_d_2": "Но это еще не все! Янтарный аромат, который излучает карамель, не только не навязчив, но и полезен для здоровья. Этот аромат снимает стресс и усталость, улучшает концентрацию и сон, а также помогает снять головную боль.",
-    "p_0007_d_3": "Так что, Caramel - это не только плита для домашнего дизайна, но и прекрасный инструмент для создания комфортной и здоровой атмосферы в любом помещении."
+    "p_0007_d_3": "Так что, Caramel - это не только плита для домашнего дизайна, но и прекрасный инструмент для создания комфортной и здоровой атмосферы в любом помещении.",
+
+
+
+    "about_header_title": "Про нас",
+    "about_title_1": "ВООБРАЗИТЕ СВОЕ ПРОСТРАНСТВО",
+    "about_title_2": "ПРОФИЛЬ КОМПАНИИ",
+    "about_title_3": "КАЧЕСТВО",
+    "about_title_4": "ЭКОЛОГИЧНОСТЬ",
+    "about_description_1": "В UNION STONE мы помогаем создавать произведения искусства, вдохновляем на создание уникальных дизайнов и улучшаем жизнь наших клиентов с помощью плит и мебели из янтаря. Мы известны широким ассортиментом продукции и способностью создавать индивидуальные проекты, чтобы наши клиенты могли воплотить свои идеи в жизнь. Мы уважаем, мы вдохновляем, мы улучшаем, мы поставляем; сегодня, завтра, вне зависимости от амбиций, вне зависимости от вызова, в UNION STONE мы позаботимся о всех деталях, крупных или мелких. Наш энтузиазм и опыт вместе с пристальным вниманием к деталям позволяет нам предоставлять широкий ассортимент интегрированных решений из янтаря, что дает вам свободу творчества и простор для воображения.",
+    "about_description_2": "UNION STONE - это уникальный и эксклюзивный бренд, специализирующийся на производстве настенных и половых плиток, а также мебели из янтаря. Мы работаем с ведущими дизайнерскими компаниями и ателье в Объединенных Арабских Эмиратах, Англии, Италии, Польше и других странах Европы. Наша компания быстро развивается и сейчас имеет штаб-квартиру в Польше, но уже сейчас мы ведем переговоры по поставке камня по всему миру, включая Европу, Средний Восток, Северную Африку, Азию, Северную и Южную Америки, а также Австралию.",
+    "about_description_3": "Компания UNION STONE идет в ногу со временем и стремится к постоянному улучшению качества своей продукции. Мы гордимся тем, что были первыми в мире, кто создал крупнейшую плиту из янтаря, не содержащую клея, обоксидной смолы и других химических склеивающих материалов. Этот факт зафиксирован в Книге рекордов Гиннеса. Таким образом, мы доказываем, что наши янтарные плиты являются 100% янтарными кусками, которые сохраняют все свои доброжелательные свойства.",
+    "about_description_4": "UNION STONE стремится быть в лидерах экологической ответственности в индустрии. Мы принимаем на себя ответственность за уменьшение нашего следа на окружающей среде, начиная с выбора материалов и заканчивая окончательной продукцией. Мы производим наши плиты и мебель из янтаря, природного материала, который не только является прочным и красивым, но и экологически чистым и безопасным для здоровья. Мы также постоянно работаем над улучшением наших производственных процессов и использованием энергии, чтобы сократить наш след на окружающую среду. UNION STONE убеждена, что экологические ценности должны быть в центре нашего бизнеса, и мы готовы работать с нашими клиентами и партнерами, чтобы продвигать устойчивое будущее вместе."
   },
 
 
@@ -288,6 +301,7 @@
     "nav_menu": "Menu",
     "nav_main": "Main",
     "nav_portfolio": "Portfolio",
+    "nav_about": "About us",
     "nav_online_shop": "Online shop",
     
     "header_title": "UNION STONE",
@@ -523,6 +537,18 @@
     "p_0007_i_d_1": "A bestseller for home design.",
     "p_0007_d_1": "Caramel is not just a home design tile, it is a true work of art that will breathe new life into any space. Shades ranging from light beige to golden honey and brown create an attractive, warm and cozy interior. Light caramel shades visually expand the space and fill it with light, creating a feeling of boundless freedom and harmony.",
     "p_0007_d_2": "But that's not all! The amber scent emitted by caramel is not only non-intrusive, but also beneficial for health. This scent relieves stress and fatigue, improves concentration and sleep, and also helps to relieve headaches.",
-    "p_0007_d_3": "So, Caramel is not only a home design tile, but also a wonderful tool for creating a comfortable and healthy atmosphere in any space."
+    "p_0007_d_3": "So, Caramel is not only a home design tile, but also a wonderful tool for creating a comfortable and healthy atmosphere in any space.",
+
+
+
+    "about_header_title": "About us",
+    "about_title_1": "IMAGINE YOUR SPACE",
+    "about_title_2": "COMPANY PROFILE",
+    "about_title_3": "QUALITY",
+    "about_title_4": "ECO-FRIENDLINESS",
+    "about_description_1": "At UNION STONE, we help create icons of style and miracles, with our products represented in some of the most iconic buildings in the world. We are known for our wide range of products and ability to create custom series for both small and large projects, allowing our clients to bring their ideas to life. We respect, inspire, improve, and deliver - today, tomorrow, no matter the challenge. Our enthusiasm and experience, combined with meticulous attention to detail, allow us to offer a wide range of integrated solutions in amber stone, giving you the freedom to be creative and imagine possibilities.",
+    "about_description_2": "UNION STONE is a unique and exclusive brand specializing in wall and floor tiles, as well as furniture made of amber. We collaborate with renowned design companies and studios in the United Arab Emirates, England, Italy, Poland, and other European countries. The company is rapidly growing and currently has its headquarters in Poland, but is already in negotiations in Europe, the Middle East, North Africa, Asia, North and South America, and Australia.",
+    "about_description_3": "Our company, UNION STONE, keeps up with the times and strives for constant improvement of the quality of our products. We take pride in being the first in the world to create the largest amber tile without glue, oxidized resin, or other chemical bonding materials. This fact has been recorded in the Guinness Book of Records. Thus, we prove that our amber tiles are 100% made of amber pieces and maintain all their beneficial properties.",
+    "about_description_4": "UNION STONE strives to be a leader in environmental responsibility in the industry. We take responsibility for reducing our footprint on the environment, starting from the choice of materials and ending with the final product. We produce our amber stone tiles and furniture from a natural material that is not only durable and beautiful, but also environmentally friendly and safe for health. We also constantly work on improving our production processes and energy use to reduce our impact on the environment. UNION STONE believes that environmental values should be at the heart of our business, and we are ready to work with our clients and partners to promote a sustainable future together."
   }
 }

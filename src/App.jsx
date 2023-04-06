@@ -6,6 +6,7 @@ import { NotFound } from './components/NotFound';
 import { Portfolio } from './components/Portfolio';
 import { PortfolioLayout } from './components/PortfolioLayout';
 import { Gallery } from './components/Gallery';
+import { About } from './components/_AboutUs/About';
 import { Project0001 } from './components/_Projects/0001/Project0001';
 import { Project0002 } from './components/_Projects/0002/Project0002';
 import { Project0003 } from './components/_Projects/0003/Project0003';
@@ -30,6 +31,7 @@ export const App = () => {
             <Route path='0006' element={<Project0006 />} />
             <Route path='0007' element={<Project0007 />} />
           </Route>
+          <Route path='about' element={<About />} />
         </Route>
         <Route path='*' element={<NotFound />} />
       </Routes>

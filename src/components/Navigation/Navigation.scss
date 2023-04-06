@@ -38,7 +38,7 @@
       fill:#E8C347;
     }
 
-    .nav__menu, .nav__portfolio, .nav__shop {
+    .nav__link {
       color: $mainColor;
     }
   }
@@ -46,7 +46,7 @@
   &:hover {
     background-color: #fff;
 
-    .nav__menu, .nav__portfolio, .nav__shop {
+    .nav__link {
       color: $mainColor;
     }
 
@@ -91,11 +91,12 @@
     cursor: pointer;
   }
 
-  &__menu {
+  &__link {
     display: none;
     user-select: none;
+    text-decoration: none;
     color: #fff;
-
+    
     @include on768 {
       display: flex;
     }
@@ -106,17 +107,6 @@
     }
   }
 
-  &__portfolio, &__shop {
-    display: none;
-    user-select: none;
-    text-decoration: none;
-    color: #fff;
-
-    @include on768 {
-      display: flex;
-    }
-  }
-
   &__logo {
     position: absolute;
     left: 50%;
@@ -124,7 +114,7 @@
   }
 }
 
-#nav__menu, #nav__portfolio, #nav__shop {
+#nav__menu, #nav__portfolio, #nav__about,#nav__shop {
   &:hover {
     color: $green;
   }

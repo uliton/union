@@ -3,11 +3,7 @@
 
 .gallery {
   position: relative;
-  // margin: 0 auto 60px;
-
-  // @include on768 {
-  //   margin: 0 auto 100px;
-  // }
+  margin: 0 auto;
 
   &__setings {
     display: none;
