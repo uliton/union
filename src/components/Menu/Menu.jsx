@@ -16,7 +16,9 @@ export const Menu = ({ isOpen, setMenuStatus, setLanguage }) => {
       })}
       >
 
-      <div className="menu__body">
+      <div className={classNames('menu__body', {
+        'menu__body--is-open': isOpen
+      })}>
 
         <div className="menu__header">
           <Link
