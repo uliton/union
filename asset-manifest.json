@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "./static/css/main.1b4f3f5e.css",
-    "main.js": "./static/js/main.89c3768a.js",
-    "static/media/ttt.mp4": "./static/media/ttt.28a92ec618bab5240679.mp4",
+    "main.css": "./static/css/main.e7e168e0.css",
+    "main.js": "./static/js/main.b44baee9.js",
+    "static/media/showroom.mp4": "./static/media/showroom.28a92ec618bab5240679.mp4",
     "static/media/projects.jpg": "./static/media/projects.a7d91d10ce4de1638882.jpg",
     "static/media/industry.jpg": "./static/media/industry.d66628df6459de3ff3db.jpg",
     "static/media/architecture.jpg": "./static/media/architecture.d2b18f491b64d655713c.jpg",
@@ -10,17 +10,16 @@
     "static/media/residence.jpg": "./static/media/residence.c5d3c26a2a693ccd1be8.jpg",
     "static/media/header.jpg": "./static/media/header.71e847514ea241bdd8ee.jpg",
     "static/media/portfolio.jpg": "./static/media/portfolio.6ed7d2f4f630cace9c67.jpg",
-    "static/media/01.jpg": "./static/media/01.aaa3e10139693855c3b7.jpg",
     "static/media/min.mp4": "./static/media/min.8336d7fc605508d88e97.mp4",
     "static/media/shop.png": "./static/media/shop.ca35faaeda6c4f4b63ff.png",
-    "static/media/03.jpg": "./static/media/03.fbdf2f0f16362915efa8.jpg",
     "static/media/04.jpg": "./static/media/04.8fd121b733085c342cc9.jpg",
     "static/media/05.jpg": "./static/media/05.4073dd3f13861f34c242.jpg",
+    "static/media/03.jpg": "./static/media/03.fbdf2f0f16362915efa8.jpg",
     "static/media/02.jpg": "./static/media/02.64d4e3304ea73c3158cd.jpg",
     "static/media/utilities.jpeg": "./static/media/utilities.be65148dd75d60f9a921.jpeg",
-    "static/media/showroom.jpeg": "./static/media/showroom.f63c9378e021f4ed8850.jpeg",
     "static/media/13.jpg": "./static/media/13.75fc827e18c53d2e2897.jpg",
     "static/media/11.jpg": "./static/media/11.f9fe016852a65fb310bd.jpg",
+    "static/media/01.jpg": "./static/media/01.aaa3e10139693855c3b7.jpg",
     "static/media/16.jpg": "./static/media/16.7a41f64d31115277efc9.jpg",
     "static/media/08.jpg": "./static/media/08.ba1c1e995cdcc226145e.jpg",
     "static/media/10.jpg": "./static/media/10.8cc012ee1cbd349d1d64.jpg",
@@ -45,11 +44,11 @@
     "static/media/gothampro_black.ttf": "./static/media/gothampro_black.8c2f478dfa880e2de0a1.ttf",
     "static/media/img.png": "./static/media/img.47f75cc6ed649dc62df6.png",
     "index.html": "./index.html",
-    "main.1b4f3f5e.css.map": "./static/css/main.1b4f3f5e.css.map",
-    "main.89c3768a.js.map": "./static/js/main.89c3768a.js.map"
+    "main.e7e168e0.css.map": "./static/css/main.e7e168e0.css.map",
+    "main.b44baee9.js.map": "./static/js/main.b44baee9.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b4f3f5e.css",
-    "static/js/main.89c3768a.js"
+    "static/css/main.e7e168e0.css",
+    "static/js/main.b44baee9.js"
   ]
 }
