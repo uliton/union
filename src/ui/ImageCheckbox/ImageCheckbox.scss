@@ -1,0 +1,75 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+.panel {
+  position: relative;
+  &__agree {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+
+    @include on768 {
+      top: -24px;
+      left: -24px;
+    }
+  }
+
+  &__label {}
+
+  &__input {
+    &:checked {
+      .panels__label::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__checkbox {
+    width: 120px;
+    height: 120px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 8px grey;
+    cursor: pointer;
+    
+    @include on768 {
+      width: 140px;
+      height: 140px;
+    }
+
+    &--caramel {
+      background-image: url(../../images/carousel/01.jpg);
+    }
+
+    &--honey-fantasy {
+      background-image: url(../../images/carousel/02.jpg);
+    }
+    &--black-prince {
+      background-image: url(../../images/carousel/03.jpg);
+    }
+    &--gottlieb {
+      background-image: url(../../images/carousel/04.jpg);
+    }
+    &--fantasy-mix {
+      background-image: url(../../images/carousel/05.jpg);
+    }
+    &--royal-fantasy {
+      background-image: url(../../images/carousel/06.jpg);
+    }
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 14px;
+
+    @media (min-width: 520px) {
+      font-size: 15px;
+    }
+
+    @include on768 {
+      font-size: 16px;
+    }
+  }
+}

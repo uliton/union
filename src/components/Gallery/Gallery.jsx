@@ -41,10 +41,9 @@ export const Gallery = () => {
 
   return (
     <div className="gallery container">
-      {/* <div className="gallery__setings">
+      <div className="gallery__setings">
         <div className="gallery__control">
           <Button content={MOCK.portfolio_button_projects} link={"/portfolio"} />
-
 
           <Button content={MOCK.portfolio_button_gallery} />
         </div>
@@ -56,9 +55,7 @@ export const Gallery = () => {
             </React.Fragment>
           ))}
         </div>
-      </div> */}
-
-
+      </div>
 
       <div className="gallery__preview">
         {filteredImages.map(img => (
@@ -67,7 +64,6 @@ export const Gallery = () => {
               name={img.category}
               src={img.path}
               gallery={true}
-              link=" "
               project_id={img.project_id}
             />
           </React.Fragment>

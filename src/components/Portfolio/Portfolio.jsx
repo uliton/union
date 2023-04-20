@@ -37,7 +37,7 @@ export const Portfolio = () => {
 
   return (
     <main className="portfolio container">
-      {/* <div className="portfolio__setings">
+      <div className="portfolio__setings">
         <div className="portfolio__control">
           <Button content={MOCK.portfolio_button_projects}/>
 
@@ -51,7 +51,7 @@ export const Portfolio = () => {
             </React.Fragment>
           ))}
         </div>
-      </div> */}
+      </div>
 
       <div className="portfolio__preview">
         {filteredImages.map(img => (

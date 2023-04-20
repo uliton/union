@@ -12,6 +12,7 @@ export const LanguageSelect =({
   setLanguage,
   menu = false,
   footer = false,
+  setMenuStatus = () => {},
 }) => {
   const lang = useContext(Language);
   const MOCK = getTranslation(lang);
@@ -27,12 +28,12 @@ export const LanguageSelect =({
         {MOCK.language_name.toUpperCase()}
       </p>
       
-      <En onChange={setLanguage} />
+      <En onChange={setLanguage} setMenuStatus={setMenuStatus} />
       {/* <Ua onChange={''} /> */}
       {/* <Pl onChange={''} /> */}
       {/* <Ae onChange={''} /> */}
       {/* <Ch onChange={''} /> */}
-      <Ru onChange={setLanguage} />
+      <Ru onChange={setLanguage} setMenuStatus={setMenuStatus} />
     </div>
   );
 };

@@ -29,6 +29,16 @@
 
     &--main {
       margin-bottom: $pad24 * 3;
+      height: 200px;
+      object-fit: cover;
+      object-position: center;
+
+      @include on768 {
+        height: 240px;
+      }
+      @include on1280 {
+        height: 280px;
+      }
     }
 
     &--description {

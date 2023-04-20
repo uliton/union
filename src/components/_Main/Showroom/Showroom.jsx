@@ -1,12 +1,11 @@
 import React, { useContext } from 'react';
 import { getTranslation, Language } from '../../../functions/language';
-// import showroom from '../../../images/showroom.jpeg';
-import showroom from './showroom.jpeg';
 import { Title } from '../../../ui/Title';
 import { Description } from '../../../ui/Description';
 import { TextLink } from '../../../ui/TextLink';
-import { Image } from '../../../ui/Image/Image';
-import video from './video/ttt.mp4';
+// import showroom from './showroom.jpeg';
+// import { Image } from '../../../ui/Image/Image';
+import video from './showroom.mp4';
 
 export const Showroom = () => {
   const lang = useContext(Language);

@@ -7,6 +7,8 @@
 
 // *
 @import './components/NotFound/NotFound.scss';
+@import './components/Modal/Modal.scss';
+@import './components/ModalBig/ModalBig.scss';
 
 // Main Layout
 @import './components/Menu/Menu.scss';
@@ -14,7 +16,6 @@
 @import './components/Footer/Footer.scss';
 
 // Main page components
-@import './components/Modal/Modal.scss';
 @import './components/_Main/Header/Header.scss';
 @import './components/_Main/Intro/Intro.scss';
 @import './components/_Main/Catch/Catch.scss';
@@ -78,6 +79,7 @@
 @import './images/icons/PL/Pl.scss';
 @import './images/icons/RU/Ru.scss';
 @import './images/icons/UA/Ua.scss';
+@import './images/icons/Agree/Agree.scss';
 
 
 // @import 'intl-tel-input/build/css/intlTelInput.css';

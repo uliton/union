@@ -226,4 +226,4 @@ export const getProjects = (lang) => {
   ]
 
   return PROJECTS;
-}
+};

@@ -10,7 +10,7 @@ export const Title = ({
   utilities = false,
 }) => {
   return (
-    <title
+    <div
       className={classNames('title', {
         'title--intro': intro,
         'title--trends': trends,
@@ -20,6 +20,6 @@ export const Title = ({
       })}
     >
         {content}
-      </title>
+      </div>
   );
 };

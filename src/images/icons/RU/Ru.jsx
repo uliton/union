@@ -1,9 +1,10 @@
 import React from 'react';
 
-export const Ru = ({ onChange }) => {
+export const Ru = ({ onChange, setMenuStatus }) => {
   const lang = 'ru';
   const handleClick = () => {
     onChange(lang);
+    setMenuStatus(false);
   }
 
   return (

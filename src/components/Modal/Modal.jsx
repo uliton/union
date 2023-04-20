@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import classNames from "classnames";
 import { getTranslation, Language } from "../../functions/language";
 import { sendContacts } from "../../functions/t_mess";
@@ -12,14 +12,15 @@ export const Modal = ({ ident, setModalStatus }) => {
   const [unmount, setUnmount] = useState(false);
 
   const handleExitClick = () => {
+    setTimeout(() => {
+      setModalStatus(false);
+    }, 500);
     setUnmount(true);
   };
 
-  const modalUnmount = () => {
-    if (unmount) {
-      setModalStatus(false);
-    }
-  };
+  useEffect(() => {
+    return clearTimeout();
+  }, []);
 
   const handleInputChange = (value) => {
     const symbols = '(+-1234567890)';
@@ -68,7 +69,6 @@ export const Modal = ({ ident, setModalStatus }) => {
       className={classNames('modal', {
         'modal--unmount': unmount
       })}
-      onAnimationEnd={modalUnmount}
     >
       <div className="modal__area" onClick={handleExitClick}></div>
 

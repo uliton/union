@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import classNames from "classnames";
 import { getTranslation, Language } from "../../functions/language";
 import { Close } from "../../images/icons/Close";
@@ -10,14 +10,15 @@ export const ImageModal = ({ src, setModalStatus, project_id }) => {
   const [unmount, setUnmount] = useState(false);
 
   const handleExitClick = () => {
+    setTimeout(() => {
+      setModalStatus(false);
+    }, 500);
     setUnmount(true);
   };
 
-  const modalUnmount = () => {
-    if (unmount) {
-      setModalStatus(false);
-    }
-  };
+  useEffect(() => {
+    return clearTimeout();
+  }, []);
 
   return (
     <div
@@ -25,7 +26,6 @@ export const ImageModal = ({ src, setModalStatus, project_id }) => {
       className={classNames('image-modal', {
         'image-modal--unmount': unmount
       })}
-      onAnimationEnd={modalUnmount}
     >
       <div
         className="image-modal__close"

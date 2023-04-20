@@ -13,7 +13,8 @@ import { Project0003 } from './components/_Projects/0003/Project0003';
 import { Project0004 } from './components/_Projects/0004/Project0004';
 import { Project0005 } from './components/_Projects/0005/Project0005';
 import { Project0006 } from './components/_Projects/0006/Project0006';
-import { Project0007 } from './components/_Projects/0007';
+import { Test } from './components/_test/Test';
+// import { Project0007 } from './components/_Projects/0007';
 
 export const App = () => {
   return (
@@ -29,9 +30,10 @@ export const App = () => {
             <Route path='0004' element={<Project0004 />} />
             <Route path='0005' element={<Project0005 />} />
             <Route path='0006' element={<Project0006 />} />
-            <Route path='0007' element={<Project0007 />} />
+            {/* <Route path='0007' element={<Project0007 />} /> */}
           </Route>
           <Route path='about' element={<About />} />
+          <Route path='test' element={<Test />} />
         </Route>
         <Route path='*' element={<NotFound />} />
       </Routes>

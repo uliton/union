@@ -8,6 +8,8 @@
   -webkit-border-image: none;
 }
 
+
+
 html {
   scroll-behavior: smooth;
   line-height: 1.6;
@@ -26,17 +28,41 @@ html {
   }
 }
 
+
+
 html, button, input {
   font-family: Gotham;
   font-weight: 1;
   color: $mainColor;
 }
 
+
+// to hide scrollbar
+body {
+  overflow-y: hidden;
+}
+// chrome, safari, opera
+body::-webkit-scrollbar {
+  display: none;
+}
+// firefox
+html {
+  scrollbar-width: none;
+}
+// IE
+body {
+  -ms-overflow-style: none;
+}
+
+
+
 textarea, input[type="text"] {
   -webkit-border-radius: 0;
   -webkit-appearance: none;
   border-radius: 0;
 }
+
+
 
 section {
   margin: 0 auto 60px;

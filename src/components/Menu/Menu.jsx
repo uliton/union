@@ -65,7 +65,11 @@ export const Menu = ({ isOpen, setMenuStatus, setLanguage }) => {
 
           <a href="mailto:info@unionstone.eu" className="menu__footer__link">info@unionstone.eu</a>
 
-          <LanguageSelect setLanguage={setLanguage} menu={true} />
+          <LanguageSelect
+            setLanguage={setLanguage}
+            menu={true}
+            setMenuStatus={setMenuStatus}
+          />
         </div>
       </div>
     </div>

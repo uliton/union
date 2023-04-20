@@ -3,7 +3,7 @@ import { Head } from '../../Head/Head';
 import { Language, getTranslation } from '../../../functions/language';
 import { Title } from '../../../ui/Title';
 import { Description } from '../../../ui/Description';
-import { Image } from '../../../ui/Image';
+// import { Image } from '../../../ui/Image';
 import img from '../../../images/bg/portfolio.jpg';
 
 export const About = () => {
@@ -31,7 +31,6 @@ export const About = () => {
         <Title content={MOCK.about_title_4} />
         <Description content={MOCK.about_description_4} about={true} />
       </section>
-      
     </>
   );
 };

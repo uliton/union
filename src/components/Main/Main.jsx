@@ -29,9 +29,9 @@ export const Main = () => {
       <Header /> {}
       <Intro /> {}
       <Catalog />
-      {/* <Catch /> {} */}
-      {/* <Trends /> {} */}
-      <Gallery />
+      <Catch /> {}
+      <Trends /> {}
+      {/* <Gallery /> */}
       <Architecture /> {}
       <Products /> {}
       <Rooms /> {}
@@ -39,8 +39,8 @@ export const Main = () => {
       
       {/* <Utilities /> */}
 
-      {/* <Shop /> {} */}
-      {/* <Design /> {} */}
+      <Shop /> {}
+      <Design /> {}
       <Subscribe /> {}
     </>
   )
